@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>资源使用历史</title>  <!--资源主页面，纯html-->
+
+    <link href="./css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
+    <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="./js/child.js"></script>
+    <script src="./js/datatables.min.js"></script>
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box box-solid">
+                        <div class="box-body">
+                            <table class="cell-boader compact stripe" style="text-align: center;" id="usageTable">
+                                <thead>
+                                    <tr>
+                                        <th>月份</th>
+                                        <th>CPU(核小时)</th>
+                                        <th>CPU费用</th>
+                                        <th>GPU(小时)</th>
+                                        <th>GPU费用</th>
+                                        <th>内存(GB小时)</th>
+                                        <th>内存费用</th>
+                                        <th>应用费用</th>
+                                        <th>总费用</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        var tablejson = [];
+
+        ajRequest()
+
+        function createTable(tablejson) {
+            var n = " - ";
+            var D = '￥';
+            $(document).ready(function() {
+                table = $('#usageTable').DataTable({
+                    "data": tablejson,
+                    "columns": [{
+                        "render": function(data, type, row, meta) {
+                            return '<a style="color:rgb(0,0,238);text-decoration:underline;cursor:pointer;" rel="' + row.Month +'" id="' + row.Month + '" onclick="toMonthlyUsage(this)">' + row.Month + '</a>'
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return row.CPU_Hours.toFixed(4)
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return D + row.CPU_Cost.toFixed(2)
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return row.GPU_Hours.toFixed(4)
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return D + row.GPU_Cost.toFixed(2)
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return row.Mem_GB_Hours.toFixed(4)
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return D + row.Mem_Cost.toFixed(2)
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return D + row.App_Cost.toFixed(2)
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return D + row.Total_Cost.toFixed(2)
+                        }
+                    }],
+                    "paging": true,
+                    "ordering": true,
+                    "order": [[0, "desc"]],
+                    "info": true,
+                    "searching": true,
+                    "pagingType": "simple_numbers",
+                    "stateSave": true,
+                    "lengthChange": true,
+                    "autoWidth": false,
+                    "language": {
+                        "sDecimal": "",
+                        "sEmptyTable": "表中数据为空",
+                        "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                        "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                        "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                        "sInfoPostFix": "",
+                        "sThousands": ",",
+                        "sLengthMenu": "显示 _MENU_ 项结果",
+                        "sLoadingRecords": "载入中...",
+                        "sProcessing": "处理中...",
+                        "sSearch": "搜索:",
+                        "sZeroRecords": "没有匹配结果",
+                        "oPaginate": {
+                            "sFirst": "首页",
+                            "sPrevious": "上一页",
+                            "sNext": "下一页",
+                            "sLast": "尾页"
+                        },
+                        "oAria": {
+                            "sSortAscending": ": 以升序排列此列",
+                            "sSortDescending": ": 以降序排列此列"
+                        }
+                    },
+                });
+            });
+        }
+
+        function ajRequest() {
+            Win10_child._ajax("php/getUsage.php", {}).then(res => {  // 请求php，通过资源使用历史php接口来获取数据
+                tablejson = res;
+                createTable(tablejson);
+            }).catch(err => {
+                Win10_child.childLayer(err.message, err.message);
+            })
+        }
+        function toMonthlyUsage(par) {
+            params = par.id;
+            if (params) {
+                var currentpro = {month: params};
+                localStorage.setItem("currentpro", JSON.stringify(currentpro));
+                Win10_child.openUrl("./monthly.php", params);  // 按月详细资源使用信息接口
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<?php
+include 'check_session.php';
+include 'filefunctions.php';
+include '../../php/vncfunc.php';
+
+if (!isset($_GET['jobid']) || !isset($_GET['pw'])) {
+    echo $error_return;
+    error_log("Did not get job id or pw");
+    die();
+}
+
+$jobid = $_GET['jobid'];
+$password = $_GET['pw'];
+
+$r = vncurl($jobid, $password, $uname);
+
+if ($r['code'] != 0)
+    fail($r['message']);
+
+$ret['code'] = 0;
+$ret['message'] = 'successful';
+$ret['data'] = $r['url'];
+
+echo json_encode($ret);
+?>

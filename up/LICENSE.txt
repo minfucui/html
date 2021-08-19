@@ -1,0 +1,203 @@
+                 SkyForm AIP Subscription Agreement
+BY USING SKYFORM AIP AND ASSOCIATED SUPPORT SERVICES, YOU ARE ACCEPTING
+THIS AGREEMENT AND ACKNOWLEDGES YOU HAVE READ AND UNDERSTANDS THIS
+AGREEMENT. IF YOU ARE ACTING ON BEHALF OF AN ORGANIZATION, YOU ARE
+DEEMED TO HAVE THE AUTHORITY TO ENTER INTO THIS AGREEMENT ON BEHALF
+OF THAT ORGANIZATION. IF YOU DO NOT ACCEPT THE TERMS OF THIS
+AGREEMENT, YOU MUST NOT USE SKYCLOUD SOFTWARE OR SERVICES. 
+1.0       DEFINITIONS
+"Agreement" means this Software Subscription Agreement;
+"Skycloud" means Skycloud Software Corporation., a corporation
+organized under the laws of the People's Republic of China;
+"Servers" means the quantity of physical computers which the Software
+is entitled to manage;
+"Documents" means all user documentation supplied by Skycloud with
+the Software;
+"Software" means the specific Skycloud computer program(s) in binary
+format, supplied by Skycloud hereunder, and includes any Documents.
+"Client" means a person or an organization that uses the software
+distributed by Skycloud
+2.0       GRANT OF USE
+(a)	Non-Production Use. If Client has subscribed the Software for
+non-production purposes, subject to the terms and conditions of this
+Agreement, Skycloud grants to Client a personal, limited, non-
+exclusive permission to use the Software and Documents in a non-
+production environment, solely for the non-production purposes of
+testing, evaluation, and integration development between the Software
+and products sold or licensed by Client, for a subscription term
+corresponding to the period of time. At the expiry of such
+subscription term, Skycloud may in its sole discretion renew the
+subscription term for a subsequent term.
+(b)	Production Use. If Client has subscribed the Software for
+production use, subject to the terms and conditions of this
+Agreement, Skycloud grants to Client a personal, limited, non-
+exclusive permission to use the Software only for Client’s internal
+business purposes, and only for use on the Designated System, if
+applicable, with the Servers. This Agreement can be extended by
+Skycloud to cover additional Servers of Software, upon Client’s
+payment of the relevant fees. 
+3.0       RESTRICTIONS
+Client may not: (a) rent, lease, loan, assign, transfer, share, or
+resell the Software; (b) make the Software available to third
+parties,
+other than for Client’s internal business purposes, without the prior
+written consent of Skycloud; (c) create and distribute derivative works
+based on the Software, or use the Software for any purpose other than
+as provided for in this Agreement; (d) increase the number of Servers,
+except upon payment of the relevant fees to Skycloud; (e) if applicable,
+make changes to the Designated System, or make any changes in the
+geographic location from that shown on Client’s purchase order, subject
+to Skycloud’s consent, such consent not to be unreasonably withheld or
+delayed; (f) export or re-export any Software in violation of any
+applicable laws, regulations, executive orders, including without
+limitation China
+versions of the same.
+4.0       PAYMENT
+In exchange for the rights granted under this Agreement, Client agrees
+to pay the fee, set out in the quotation and invoice delivered to Client
+in respect of the Software (the “Fee”). The entire Fee is payable within
+thirty (30) days upon issuance of the invoice. If, however, non-resident
+withholding tax or a similar levy is imposed and a valid government
+withholding tax certificate is sent at the time of payment to the
+remittance address, then the net amount may be remitted by Client.
+If non-resident withholding tax or a similar levy is imposed and a valid
+government withholding tax certificate is not supplied at the time of
+payment, then Client shall pay such additional amount as shall result in
+Skycloud receiving the total Fee or any other amounts it would have paid
+but for such tax or levy. All Software is delivered to Client F.O.B.
+Origin.
+5.0       LICENSE AND OWNERSHIP
+5.1 Software. Each type of Software is governed by a license grant or an
+end user license agreement, which license terms are contained or
+referenced in the appendices to this Agreement or the applicable Order
+Form.
+5.2 Freedom to Use Ideas. Subject to Client's rights in Client Information
+and notwithstanding anything to the contrary contained in this Agreement,
+the ideas, methods, concepts, know-how, structures, techniques, inventions,
+developments, processes, discoveries, improvements and other information
+and materials developed in and during the course of any Order Form may be
+used by Skycloud, without an obligation to account, in any way Skycloud
+deems appropriate, including by or for itself or its clients or customers.
+5.3 Marks. Unless expressly stated in an Order Form, no right or license,
+express or implied, is granted in this Agreement for the use of any Skycloud,
+Skycloud Affiliate, Client or third party trade names, service marks or
+trademarks, including, without limitation, the distribution of the Software
+utilizing any Skycloud or Skycloud Affiliate trademarks.
+6.0       WARRANTY
+(a)	Skycloud warrants that: (i) the support services as part of the
+software subscription will be performed in a professional and workmanlike
+manner by qualified personnel; (ii) it has the authority to enter into this
+Agreement with Client; and (iii) to Skycloud's knowledge, Skycloud branded
+Software does not, at the time of delivery to Client, include malicious or
+hidden mechanisms or code for the purpose of damaging or corrupting the
+Software.
+(b)	EXCEPT AS OTHERWISE SET OUT IN THIS AGREEMENT, THE SOFTWARE IS
+PROVIDED TO CLIENT ON AN "AS IS" BASIS AND SKYCLOUD DISCLAIMS ALL OTHER
+WARRANTIES, REPRESENTATIONS AND CONDITIONS, EXPRESS, IMPLIED, STATUTORY
+OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OR CONDITION OF
+MERCHANTABILITY, MERCHANTABLE QUALITY, OR FITNESS FOR A PARTICULAR PURPOSE,
+OR ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE. IN PARTICULAR,
+SKYCLOUD DOES NOT WARRANT OR REPRESENT THAT THE SOFTWARE WILL OPERATE
+UNINTERRUPTED OR ERROR FREE OR THAT DEFECTS IN THE SOFTWARE ARE CORRECTABLE
+OR WILL BE CORRECTED.
+The limited warranty set forth above gives Client specific legal rights.
+Client may have additional rights that vary from jurisdiction to jurisdiction.
+7.0     LIMITATIONS OF LIABILITY
+EXCEPT WITH RESPECT TO CLAIMS UNDER SECTION 3.0 (RESTRICTIONS), IN NO EVENT
+WILL EITHER PARTY’S CUMULATIVE LIABILITY, EXTEND BEYOND SUCH PARTY’S ACTUAL,
+DIRECT, PROVABLE DAMAGES IN AN AMOUNT NOT TO EXCEED THE AMOUNT PAID BY CLIENT
+FOR THE SOFTWARE SUBSCRIPTION. THIS LIMITATION OF LIABLITY SHALL ALSO NOT
+APPLY TO CLAIMS WITH RESPECT TO DAMAGE TO TANGIBLE PERSONAL PROPERTY,
+PERSONAL INJURY OR DEATH, OR TO CLAIMS ARISING FROM WILLFUL MISCONDUCT OR
+GROSS NEGLIGENCE.
+EXCEPT WITH RESPECT TO CLAIMS UNDER SECTION 3.0 (RESTRICTIONS), IN NO EVENT
+WILL EITHER PARTY OR SKYCLOUD BE LIABLE FOR ANY PUNITIVE, AGGREVATED,
+EXEMPLARY, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR INDIRECT DAMAGES OR ANY
+LOSS OF PROFITS, LOSS OF BUSINESS OR GOODWILL, OR FOR LOSS OF DATA OR USE
+OF DATA OF ANY KIND HOWEVER CAUSED, WHETHER FOR BREACH OF WARRANTY, BREACH
+OR REPUDIATION OF CONTRACT, TORT, NEGLIGENCE, OR OTHERWISE, EVEN IF SUCH
+PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS.
+8.0     TERMINATION
+Skycloud may terminate this Agreement if Client breaches any term or
+condition of this Agreement (including failure to make payment), and Client
+fails to cure such breach within seven (7) days after receipt of written
+notice of the breach from Skycloud. Without limiting the foregoing, if
+Client becomes insolvent or any proceedings have been commenced by or
+against Client under any bankruptcy, insolvency or similar laws, this
+Agreement will immediately terminate. Upon termination of this Agreement,
+Client will immediately stop using the Software and will certify in writing
+to Skycloud of such action. Skycloud will not be liable to Client for
+damages of any kind by reason of such termination.
+9.0     GENERAL
+(a)	Client may not assign this Agreement or transfer the rights
+granted under it without the prior written consent of Skycloud, which
+consent may not be unreasonably withheld or delayed.
+(b)	Any notice given by one party to the other will be deemed to
+be given on: the date it is delivered personally; the next business day,
+if sent by fax; or the next business day following the day shown on the
+receipt, if sent by registered mail.
+(c)	No provision of this Agreement shall be construed against a
+party because it drafted that provision.
+(d)	This Agreement shall be governed by and construed in accordance
+with the laws of the People's Republic of China, without regard to the
+principles of conflicts of laws thereof. Each of the parties hereto
+irrevocably: (a) submits to the jurisdiction of, and venue in, any federal
+or state court of competent jurisdiction located in the Haidian District,
+Beijing in connection with any claims or disputes arising under this
+Agreement and (b) waives its right to a trial by jury with respect to any
+disputes pertaining to this Agreement. The United Nations Convention on
+Contracts for the International Sale of Goods shall not apply to this
+Agreement. The parties also agree that their respective rights and
+obligations hereunder shall be solely and exclusively as set forth herein
+and that Uniform Computer Information Transactions Act (UCITA), whether
+enacted in whole or in part by any state or applicable jurisdiction,
+regardless of how codified, shall not apply to this Agreement and is
+hereby disclaimed.
+(e)	In the event this Agreement conflicts with any terms and conditions
+affixed to any purchase order or otherwise specified by Client, Skycloud’s
+acceptance of Client’s order and delivery of the subscription services is
+solely on the express understanding and condition that this Agreement
+contains the only terms and conditions that will apply to such order and
+Skycloud hereby objects to and rejects any conflicting or additional
+terms and conditions.
+(f)	Skycloud may sub-contract with any affiliated company, however
+such sub-contract shall not relieve Skycloud from any liability for
+performance.
+
+The Star And Thank Author License (SATA)
+
+Copyright (c) 2017 Yuri2(yuri2peter@qq.com)
+
+Project Url: https://github.com/yuri2peter/win10-ui
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software. 
+
+And wait, the most important, you shall star/+1/like the project(s) in project url 
+section above first, and then thank the author(s) in Copyright section. 
+
+Here are some suggested ways:
+
+ - Email the authors a thank-you letter, and make friends with him/her/them.
+ - Report bugs or issues.
+ - Tell friends what a wonderful project this is.
+ - And, sure, you can just express thanks in your mind without telling the world.
+
+Contributors of this project by forking have the option to add his/her name and 
+forked project url at copyright and project url sections, but shall not delete 
+or modify anything else in these two sections.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

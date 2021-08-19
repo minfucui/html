@@ -1,0 +1,15 @@
+gui_project_job_limit: 1  # 1: GUI project can only run one job per user
+                          # other value: no limit
+data_home: /home/$USER    # if defined, the project CWD will be
+                          # data_home/project_name. The entire directory
+                          # is removed after the project is deleted
+forum: yes
+title: 神工坊
+watermark: img/simforge2.png
+login_logo: img/simforge.png
+#licenses:
+#- server: '1700@linux7'
+#  features:
+#    - acfd
+#    - anshpc_pack
+#lmstat: /var/www/html/cmd/lmstat

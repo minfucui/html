@@ -1,0 +1,57 @@
+#!/bin/bash
+#
+# Copyright (c) 2020 SkyForm Software Corporation
+#
+# This script installs SkyForm AIP user portal on the local host.
+# It requires AIP default admin portal pre-installed.
+#
+
+portal_dir=/var/www/html
+for file in index.php dashboard.php; do
+    if [ ! -f $portal_dir/$file ]; then
+        echo "Cannot find SkyForm AIP Admin Portal on local host"
+        exit 1
+    fi
+done
+
+if [ -f /etc/redhat-release ]; then
+    allp=`rpm -qa`
+    error=0
+    packages="php-pecl-yaml"
+    for p in $packages; do
+        echo $allp | grep $p > /dev/null
+        if [ $? != 0 ]; then
+            echo "Error: the software package $p is not installed."
+            error=1
+        fi
+    done
+    if [ $error == 1 ]; then
+        exit 1
+    fi
+fi
+
+if [ ! -d $portal_dir/up ]; then
+    mkdir $portal_dir/up
+fi
+config=0
+if [ -f $portal_dir/up/config.yaml ]; then
+    config=1
+    mv $portal_dir/up/config.yaml config.yaml.exist
+fi
+cp -r * $portal_dir/up
+
+if [ $config == 1 ]; then
+    mv $portal_dir/up/config.yaml $portal_dir/up/config.yaml.template
+    mv config.yaml.exist $portal_dir/up/config.yaml
+fi
+if [ ! -d $portal_dir/up/data ]; then
+    mkdir $portal_dir/up/data
+    chmod 700 $portal_dir/up/data
+    chown -R apache:apache $portal_dir/up/data
+fi
+if [ ! -d $portal_dir/bills ]; then
+    mkdir $portal_dir/bills
+    chmod 700 $portal_dir/bills
+    chown -R apache:apache  $portal_dir/bills
+fi
+echo "Installation successful!"

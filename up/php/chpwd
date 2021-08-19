@@ -1,0 +1,10 @@
+#!/bin/bash
+/usr/bin/expect << EOF
+spawn passwd
+expect {
+  "*UNIX password*" { send "$1\n";exp_continue }
+  "New password*" { send "$2\n";exp_continue }
+  "Retype new password*" { send "$2\n" }
+}
+expect eof
+EOF

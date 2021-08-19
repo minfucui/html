@@ -1,0 +1,70 @@
+gui_project_job_limit: 1  # 1: GUI project can only run one job per user
+                          # other value: no limit
+data_home: $HOME/WORK
+#data_home: /home/export/base/nsccwuxi_amd/$USER/WORK    # if defined, the project CWD will be
+                          # data_home/project_name. The entire directory
+                          # is removed after the project is deleted
+instance_on_desk: false  # 桌面有无实例
+forum: yes  # 暂时没用到
+title: 神工坊
+watermark: img/simforge2.png
+login_logo: img/simforge.png
+op_control: '../apps'  # 管理option里对前台的一些控制，很有限
+job_size_list:
+- 1
+- 2
+- 4
+- 8
+- 12
+- 16
+- 24
+- 32
+- 48
+- 64
+app_access:
+  PointWise:
+  - simforge6
+  - simforge2
+  - amd_app
+  - amd_xqy
+  电子散热仿真App:
+  - simforge6
+  FluentMesh2020:
+  - amd_app
+  - simforge6
+  - cwater
+  CFD-POST2020:
+  - amd_app
+  - simforge6
+  - sim_xqy
+  - cwater
+  CFX-pre2020:
+  - amd_app
+  - simforge6
+  - sim_xqy
+  - cwater
+  CFX2020:
+  - amd_app
+  - simforge6
+  - sim_xqy
+  - cwater
+  StarCCM1404:
+  - amd_app
+  - simforge6
+  - zhufq
+  - amd_xqy
+  - nirf
+  SC_Batch1404:
+  - amd_app
+  - zhufq
+  - nirf
+#
+#download:
+#- name: Windows文件压缩工具
+#  url: http://dl.2345.com/haozip/2345haozip_v6.1.0.11022.exe
+#licenses:
+#- server: '1700@linux7'
+#  features:
+#    - acfd
+#    - anshpc_pack
+#lmstat: /var/www/html/cmd/lmstat

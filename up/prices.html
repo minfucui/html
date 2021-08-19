@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>产品价格</title>
+
+    <link href="./css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
+    <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="./js/child.js"></script>
+    <script src="./js/datatables.min.js"></script>
+</head>
+
+<body>
+
+    <div class="content-wrapper">
+
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box box-solid">
+                        <div class="box-body">
+                            <table class="cell-boader compact stripe" style="text-align: center;" id="priceTable">
+                                <thead>
+                                    <tr>
+                                        <th>产品名</th>
+                                        <th>类别</th>
+                                        <th>单位</th>
+                                        <th>标准价格</th>
+                                        <th>我的价格</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        var tablejson = [];
+
+        Win10_child._ajax("php/getPrices.php", {}).then(res => {  // 获得产品价格以及我的价格接口，貌似没有用到数据库的prices表
+            tablejson = res;
+            createTable(tablejson);
+        }).catch(err => {
+            Win10_child.childLayer(err.message, err.message);
+        })
+
+        function createTable(tablejson) {
+            var n = " - "
+            $(document).ready(function() {
+                table = $('#priceTable').DataTable({
+                    "data": tablejson,
+                    "columns": [{
+                        "render": function(data, type, row, meta) {
+                            return row.product
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return row.type
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return row.unit
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return '￥' + row.sPrice
+                        }
+                    }, {
+                        "render": function(data, type, row, meta) {
+                            return '￥' + row.mPrice
+                       }
+                    }],
+                    "paging": true,
+                    "ordering": false,
+                    "info": true,
+                    "searching": true,
+                    "pagingType": "simple_numbers",
+                    "stateSave": true,
+                    "destroy": true,
+                    "lengthChange": true,
+                    "lengthMenu": [25],
+                    "language": {
+                        "sDecimal": "",
+                        "sEmptyTable": "表中数据为空",
+                        "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                        "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                        "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                        "sInfoPostFix": "",
+                        "sThousands": ",",
+                        "sLengthMenu": "显示 _MENU_ 项结果",
+                        "sLoadingRecords": "载入中...",
+                        "sProcessing": "处理中...",
+                        "sSearch": "搜索:",
+                        "sZeroRecords": "没有匹配结果",
+                        "oPaginate": {
+                            "sFirst": "首页",
+                            "sPrevious": "上一页",
+                            "sNext": "下一页",
+                            "sLast": "尾页"
+                        },
+                        "oAria": {
+                            "sSortAscending": ": 以升序排列此列",
+                            "sSortDescending": ": 以降序排列此列"
+                        }
+                    },
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>

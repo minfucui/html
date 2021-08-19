@@ -1,0 +1,171 @@
+.tab-head h2 {
+    border-bottom: solid cornflowerblue 1px;
+    /* border-left: solid cornflowerblue 1px; */
+    width: 33%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    /* float: left; */
+    text-align: center;
+    display: inline-block
+}
+
+.tab-content {
+    /* border: solid cornflowerblue 1px; */
+    width: 100%;
+    display: block
+    /* height: 100px; */
+}
+
+.tab-content div {
+    display: none;
+}
+
+.selected {
+    /* background-color: #98B8F0; */
+    border-bottom: solid cornflowerblue 3px!important;
+    /* border-radius: 4px; */
+}
+
+.tab-content .show {
+    display: block;
+}
+
+.operation {
+    margin: 10px 0;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.operation span {
+    display: inline-block;
+    width: 24%;
+    /* display: block; */
+    word-break: break-all;
+    word-wrap: break-word;
+    vertical-align: top;
+    /* text-align: center */
+}
+
+.operation span:nth-child(odd) {
+    text-align: right
+}
+
+.operation span:nth-child(even) {
+    text-align: left
+}
+
+.workstate {
+    margin: 10px 0;
+    background-color: #87BCE7;
+    color: white!important;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+ul {
+    padding: 10px;
+    background-color: #B4B4B4;
+    border-radius: 4px;
+}
+
+.yellow {
+    background-color: #eec500!important;
+}
+
+.blue {
+    background-color: #0091e3!important;
+}
+
+.green {
+    background-color: #00bf13!important;
+}
+
+.red {
+    background-color: #ca2000!important;
+}
+
+.origin {
+    background-color: #00bf13!important;
+    color: white!important;
+    // float: right;
+    cursor: pointer;
+    outline: none;
+}
+
+.stop {
+    background-color: #eec500!important;
+    color: white!important;
+    cursor: pointer;
+    outline: none;
+}
+
+.recovery {
+    background-color: #0091e3!important;
+    color: white!important;
+    cursor: pointer;
+    outline: none;
+}
+
+.file {
+    background-color: #0078ff!important;
+    color: white!important;
+    cursor: pointer;
+    outline: none;
+}
+
+.restart {
+    background-color: #00bf13!important;
+    color: white!important;
+    cursor: pointer;
+    outline: none;
+}
+
+.kill {
+    background-color: #ca2000!important;
+    color: white!important;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttonGroup {
+    margin: 10px 0;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.disable-button {
+    opacity: 0.5;
+    cursor: not-allowed!important;
+}
+
+.stop:hover {
+    background-color: #ddb800!important;
+}
+
+.recovery:hover {
+    background-color: #0082ce!important;
+}
+
+.origin:hover,
+.restart:hover {
+    background-color: #00a811!important;
+}
+
+.kill:hover {
+    background-color: #b41e00!important;
+}
+
+.stop:active,
+.recovery:active,
+.restart:active,
+.kill:active,
+.origin:active {
+    transform: translateY(4px);
+}
+
+.disable-button:active {
+    transform: translateY(0px)!important;
+}
