@@ -1,0 +1,97 @@
+  page_title: PROJECT_DATA
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: add
+      modal: add-modal
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    table:
+      id: projects
+      thead:
+      - PROJECT
+      - DESCRIPTION
+      - CONFIDENTIAL
+      - NUM_INSTANCES
+      - STORAGE
+      - RUNNING_JOBS
+      - LAST_MODIFIED
+      tbody:
+      - name
+      - description
+      - confidential
+      - numinstances
+      - storage
+      - numjobs
+      - lastmodtime
+      update:
+        interval: 60
+        url: php/files.php
+        post: '{"action":"update"}'
+      order: '[[7, "desc"]]'
+  - width: 12
+    file:
+      height: 400px
+  modals:
+  - modal: add-modal
+    title: NEW_PROJECT
+    body:
+    - label: PROJECT
+      type: text
+      id: name
+    - label: CONFIDENTIAL
+      type: select
+      id: confidential
+      options: confidential
+    - label: DESCRIPTION
+      id: description
+      type: textarea
+      rows: 3
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/files.php
+      post: '{"action":"new_project"}'
+      data: all
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/files.php
+      post: '{"action": "delete_projects"}'
+      confirm: 
+        - name
+        - numinstances
+    - label: CANCEL
+      attr: success
+      action: cancel
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: PROJECT
+      type: fixed_text
+      id: name
+    - label: CONFIDENTIAL
+      type: select
+      id: confidential
+      options: confidential
+    - label: DESCRIPTION
+      id: description
+      type: textarea
+      rows: 3
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/files.php
+      post: '{"action":"modify_project"}'
+    - label: CANCEL
+      attr: success
+      action: cancel

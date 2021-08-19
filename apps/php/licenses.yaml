@@ -1,0 +1,26 @@
+  page_title: LICENSES
+  rows:
+  - width: 12    # 1-12
+    table:
+      id: licenses
+      thead:
+      - SERVER
+      - VENDOR
+      - FEATURE
+      - TOTAL
+      - USED
+      - AVAILABLE
+      tbody:
+      - server
+      - vendor
+      - feature
+      - total
+      - used
+      - available
+      update:
+        interval: 30
+        url: php/licenses.php
+        post: '{"action":"update"}'
+      lengthMenu: '[30, 100, 500]'
+      idkey: none
+      noselect: yes

@@ -1,0 +1,45 @@
+  page_title: APP_INSTANCES
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    table:
+      id: projects
+      thead:
+      - INSTANCE_NAME
+      - PROJECT
+      - ACTIVEJOBS
+      - APP_NAME
+      - LAST_MODIFIED
+      tbody:
+      - ins_name
+      - projname
+      - activejobs
+      - appname
+      - last_update
+      update:
+        interval: 60
+        url: php/appins.php
+        post: '{"action":"update"}'
+      order: '[[3, "desc"]]'
+      idkey: ins_name
+  - width: 12
+    file:
+      height: 400px
+  modals:
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/appins.php
+      post: '{"action": "delete_ins"}'
+      confirm: 
+        - ins_name
+        - projname
+    - label: CANCEL
+      attr: success
+      action: cancel

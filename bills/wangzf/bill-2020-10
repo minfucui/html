@@ -1,0 +1,92 @@
+{
+ "User": "wangzf",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.27694444444444444,
+ "Mem_GB_Hours": 0.15075307316250272,
+ "GPU_Hours": 0.18,
+ "App_Cost": 0.9083333333333334,
+ "CPU_Cost": 0.13847222222222222,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.09,
+ "Total_Cost": 1.8605555555555555,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 0.09694444444444444,
+   "Cost": 0.4847222222222222
+  },
+  "FluentMeshing": {
+   "Hours": 0.09527777777777778,
+   "Cost": 0
+  },
+  "Hypermesh": {
+   "Hours": 0.08472222222222223,
+   "Cost": 0.42361111111111116
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.09527777777777778,
+   "Mem_GB_Hours": 0.043602347903781466,
+   "GPU_Hours": 0.09527777777777778,
+   "Runtime": 0.09527777777777778,
+   "App_Hours": 0.09527777777777778,
+   "JobId": "14791",
+   "Queue": "local",
+   "User": "wangzf",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.04763888888888889,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.04763888888888889,
+   "App_Cost": 0,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.09694444444444444,
+   "Mem_GB_Hours": 0.0098292785220676,
+   "GPU_Hours": 0,
+   "Runtime": 0.09694444444444444,
+   "App_Hours": 0.09694444444444444,
+   "JobId": "14790",
+   "Queue": "q_x86_expr",
+   "User": "wangzf",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.04847222222222222,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.4847222222222222,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.08472222222222223,
+   "Mem_GB_Hours": 0.09732144673665365,
+   "GPU_Hours": 0.08472222222222223,
+   "Runtime": 0.08472222222222223,
+   "App_Hours": 0.08472222222222223,
+   "JobId": "14792",
+   "Queue": "local",
+   "User": "wangzf",
+   "App": "Hypermesh",
+   "JobDescription": "Hypermesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.04236111111111111,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.04236111111111111,
+   "App_Cost": 0.42361111111111116,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "User": "wanghong",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-12",
+ "CPU_Hours": 0.8750181311072223,
+ "Mem_GB_Hours": 0.015155263109826117,
+ "GPU_Hours": 0.02388888888888889,
+ "App_Cost": 0,
+ "CPU_Cost": 0.17500362622144444,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.004777777777777778,
+ "Total_Cost": 0.19833837696022222,
+ "App_Hours": {
+  "LS-DYNA": {
+   "Hours": 0.8511292422183334,
+   "Cost": 0
+  },
+  "LSPrePost": {
+   "Hours": 0.02388888888888889,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.8511292422183334,
+   "Mem_GB_Hours": 0.004858155413292913,
+   "GPU_Hours": 0,
+   "Runtime": 0.4255646211091667,
+   "App_Hours": 0.8511292422183334,
+   "JobId": "19117",
+   "Queue": "q_x86_expr",
+   "User": "wanghong",
+   "App": "LS-DYNA",
+   "JobDescription": "0_degree.key",
+   "JobName": "/home/export/base/nsccwuxi_amd/wanghong/WORK/0_degree_340kpa_80mm/0_degree_340kpa/0_degree.key",
+   "Cluster": "aip",
+   "CPU_Cost": 0.17022584844366667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/12/01",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.02388888888888889,
+   "Mem_GB_Hours": 0.010297107696533204,
+   "GPU_Hours": 0.02388888888888889,
+   "Runtime": 0.02388888888888889,
+   "App_Hours": 0.02388888888888889,
+   "JobId": "19116",
+   "Queue": "local",
+   "User": "wanghong",
+   "App": "LSPrePost",
+   "JobDescription": "LSPrePost",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.004777777777777778,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.004777777777777778,
+   "App_Cost": 0,
+   "StartDate": "2020/12/01",
+   "Project": "default"
+  }
+ ]
+}

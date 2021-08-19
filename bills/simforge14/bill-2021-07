@@ -1,0 +1,44 @@
+{
+ "User": "simforge14",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-07",
+ "CPU_Hours": 819.930290702954,
+ "Mem_GB_Hours": 125.66070450068993,
+ "GPU_Hours": 0,
+ "App_Cost": 4099.651453514766,
+ "CPU_Cost": 409.965145351477,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 4509.616598866251,
+ "App_Hours": {
+  "StarCCM": {
+   "Hours": 819.930290702954,
+   "Cost": 4099.651453514766
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 819.930290702954,
+   "Mem_GB_Hours": 125.66070450068993,
+   "GPU_Hours": 0,
+   "Runtime": 163.9860581405909,
+   "App_Hours": 819.930290702954,
+   "JobId": "48464",
+   "Queue": "q_x86_cn_sim_plus",
+   "User": "simforge14",
+   "App": "StarCCM",
+   "JobDescription": "StarCCM",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 409.965145351477,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 4099.651453514766,
+   "StartDate": "2021/06/21",
+   "Project": "default"
+  }
+ ]
+}

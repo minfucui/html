@@ -1,0 +1,44 @@
+{
+ "User": "wangljun",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.5241666666666667,
+ "Mem_GB_Hours": 0.02067050933837891,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.10483333333333333,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.10483333333333333,
+ "App_Hours": {
+  "StarCCM": {
+   "Hours": 0.5241666666666667,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.5241666666666667,
+   "Mem_GB_Hours": 0.02067050933837891,
+   "GPU_Hours": 0,
+   "Runtime": 0.030833333333333334,
+   "App_Hours": 0.5241666666666667,
+   "JobId": "14812",
+   "Queue": "q_x86_expr_plus",
+   "User": "wangljun",
+   "App": "StarCCM",
+   "JobDescription": "cylinder",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.10483333333333333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  }
+ ]
+}

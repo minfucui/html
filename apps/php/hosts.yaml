@@ -1,0 +1,69 @@
+  page_title: HOSTS
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: CLOSE
+      attr: warning
+      modal: b1-modal
+    - label: OPEN
+      attr: info
+      modal: b2-modal
+    table:
+      id: hosts
+      thead:
+      - HOST
+      - STATUS
+      - UTILIZATION
+      - MAX_JOB_SLOTS
+      - NUM_RUNNING_JOBS
+      - NUM_SUSP_JOBS
+      - NUM_RESERVED_JOB_SLOTS
+      - UT
+      - MEMUT
+      - NETIO
+      - GPUUT
+      tbody:
+      - name
+      - status
+      - utilization
+      - maxjobs
+      - nrun
+      - nstop
+      - nrsv
+      - ut
+      - memut
+      - netio
+      - gpu
+      update:
+        interval: 30
+        url: php/hosts.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      lengthMenu: '[30, 100, 500]'
+      idkey: none
+  modals:
+  - modal: b1-modal
+    title: CLOSE
+    buttons:
+    - label: CLOSE
+      attr: warning
+      url: php/hosts.php
+      post: '{"action":"close"}'
+      confirm:
+      - name
+      - status
+      - nrun
+    - label: CANCEL
+      attr: success
+  - modal: b2-modal
+    title: OPEN
+    buttons:
+    - label: OPEN
+      attr: info
+      url: php/hosts.php
+      post: '{"action":"open"}'
+      confirm:
+      - name
+      - status
+    - label: CANCEL
+      attr: secondary

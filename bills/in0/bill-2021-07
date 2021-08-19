@@ -1,0 +1,73 @@
+{
+ "User": "in0",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-07",
+ "CPU_Hours": 50.668262556228854,
+ "Mem_GB_Hours": 27.85451547097605,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 15.200478766868663,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 15.212314906402497,
+ "App_Hours": {},
+ "Details": [
+  {
+   "CPU_Hours": 48.46234982505081,
+   "Mem_GB_Hours": 27.153575686743597,
+   "GPU_Hours": 0,
+   "Runtime": 48.46234982505081,
+   "App_Hours": 48.46234982505081,
+   "JobId": "52380",
+   "Queue": "intesim",
+   "User": "in0",
+   "JobName": "/home/export/online3/intesim_share/script/AnsysEM/AnsysEM04 /home/export/base/nsccwuxi_intesim/in0/online3/in0/anli20/hujinming/Maxwell20210714195006/Project2.aedt",
+   "Cluster": "aip",
+   "CPU_Cost": 14.53870494751525,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/07/17",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 2.191468286733611,
+   "Mem_GB_Hours": 0.6946423802610981,
+   "GPU_Hours": 0,
+   "Runtime": 2.191468286733611,
+   "App_Hours": 2.191468286733611,
+   "JobId": "51970",
+   "Queue": "intesim",
+   "User": "in0",
+   "JobName": "/home/export/online3/intesim_share/script/AnsysEM/AnsysEM04 /home/export/base/nsccwuxi_intesim/in0/online3/in0/anli4/hujinming/Maxwell20210624122214/Project2.aedt",
+   "Cluster": "aip",
+   "CPU_Cost": 0.6574404860200834,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/07/14",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.014444444444444444,
+   "Mem_GB_Hours": 0.006297403971354166,
+   "GPU_Hours": 0,
+   "Runtime": 0.014444444444444444,
+   "App_Hours": 0.014444444444444444,
+   "JobId": "52379",
+   "Queue": "intesim",
+   "User": "in0",
+   "JobName": "/home/export/online3/intesim_share/script/AnsysEM/AnsysEM04 /home/export/base/nsccwuxi_intesim/in0/online3/in0/anli20/hujinming/Maxwell20210714195006/Project2.aedt.q.completed",
+   "Cluster": "aip",
+   "CPU_Cost": 0.004333333333333333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/07/17",
+   "Project": "default"
+  }
+ ]
+}

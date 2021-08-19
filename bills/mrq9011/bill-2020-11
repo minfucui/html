@@ -1,0 +1,44 @@
+{
+ "User": "mrq9011",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 0.019166666666666665,
+ "Mem_GB_Hours": 0.005748815536499023,
+ "GPU_Hours": 0.019166666666666665,
+ "App_Cost": 0,
+ "CPU_Cost": 0.003833333333333333,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.003833333333333333,
+ "Total_Cost": 0.007666666666666666,
+ "App_Hours": {
+  "CFD-POST": {
+   "Hours": 0.019166666666666665,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.019166666666666665,
+   "Mem_GB_Hours": 0.005748815536499023,
+   "GPU_Hours": 0.019166666666666665,
+   "Runtime": 0.019166666666666665,
+   "App_Hours": 0.019166666666666665,
+   "JobId": "18579",
+   "Queue": "local",
+   "User": "mrq9011",
+   "App": "CFD-POST",
+   "JobDescription": "CFX-Text",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.003833333333333333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.003833333333333333,
+   "App_Cost": 0,
+   "StartDate": "2020/11/27",
+   "Project": "default"
+  }
+ ]
+}

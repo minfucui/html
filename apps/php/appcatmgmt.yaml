@@ -1,0 +1,80 @@
+  page_title: APPCAT_MGMT
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: add
+      modal: add-modal
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    table:
+      id: appcats
+      thead:
+      - CATEGORY
+      - DESCRIPTION
+      - NUM_APPS
+      - LAST_MODIFIED
+      tbody:
+      - catname
+      - description
+      - numapps
+      - last_update
+      update:
+        url: php/appcatmgmt.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      idkey: catname
+  modals:
+  - modal: add-modal
+    title: NEW
+    body:
+    - label: CATEGORY
+      type: text
+      id: catname
+    - label: DESCRIPTION
+      id: description
+      type: textarea
+      rows: 3
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/appcatmgmt.php
+      post: '{"action":"new_appcat"}'
+      data: all
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/appcatmgmt.php
+      post: '{"action": "delete_appcats"}'
+      confirm: 
+        - catname
+        - numapps
+    - label: CANCEL
+      attr: success
+      action: cancel
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: CATEGORY
+      type: fixed_text
+      id: catname
+    - label: DESCRIPTION
+      id: description
+      type: textarea
+      rows: 3
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/appcatmgmt.php
+      post: '{"action":"modify_appcat"}'
+    - label: CANCEL
+      attr: success
+      action: cancel

@@ -1,0 +1,73 @@
+{
+ "User": "in0",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-05",
+ "CPU_Hours": 0.31334009219388886,
+ "Mem_GB_Hours": 0.2445314262185924,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.09400202765816668,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.11208738864966666,
+ "App_Hours": {},
+ "Details": [
+  {
+   "CPU_Hours": 0.064451203305,
+   "Mem_GB_Hours": 0.03220130104565948,
+   "GPU_Hours": 0,
+   "Runtime": 0.064451203305,
+   "App_Hours": 0.064451203305,
+   "JobId": "44286",
+   "Queue": "intesim",
+   "User": "in0",
+   "JobName": "/home/export/online3/intesim_share/script/Workbench/workbench04 /home/export/base/nsccwuxi_intesim/in0/online3/in0/try/liupingchao/WorkBench20210514092834/try.wbpj",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0193353609915,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/14",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.12305555555555556,
+   "Mem_GB_Hours": 0.10254660924275716,
+   "GPU_Hours": 0,
+   "Runtime": 0.12305555555555556,
+   "App_Hours": 0.12305555555555556,
+   "JobId": "44262",
+   "Queue": "intesim",
+   "User": "in0",
+   "JobName": "/home/export/online3/intesim_share/script/Workbench/workbench04 /home/export/base/nsccwuxi_intesim/in0/online3/in0/try/liupingchao/WorkBench20210514092834/try.wbpj",
+   "Cluster": "aip",
+   "CPU_Cost": 0.03691666666666667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/14",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.12583333333333332,
+   "Mem_GB_Hours": 0.10978351593017577,
+   "GPU_Hours": 0,
+   "Runtime": 0.12583333333333332,
+   "App_Hours": 0.12583333333333332,
+   "JobId": "44261",
+   "Queue": "intesim",
+   "User": "in0",
+   "JobName": "/home/export/online3/intesim_share/script/Workbench/workbench04 /home/export/base/nsccwuxi_intesim/in0/online3/in0/try/liupingchao/Workbench20210514091814/try.wbpj",
+   "Cluster": "aip",
+   "CPU_Cost": 0.03775,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/14",
+   "Project": "default"
+  }
+ ]
+}

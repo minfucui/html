@@ -1,0 +1,31 @@
+  page_title: MYACCOUNT
+  rows:
+  - width: 12
+    form:
+    - title: UPDATE_ACCOUNT
+      items:
+      - label: USERNAME
+        type: fixed_text
+        id: username
+      - label: ROLES
+        id: roles
+        type: fixed_text
+      - label: DEPT_NAME 
+        id: groupname
+        type: fixed_text
+      - label: NAME
+        id: name
+        type: text
+      - label: PHONE
+        id: phone
+        type: text
+      - label: EMAIL
+        type: text
+        id: email
+    buttons:
+    - label: UPDATE
+      attr: primary
+      action: "updateaccount()"
+    - label: LOGOUT
+      attr: warning
+      modal: logout

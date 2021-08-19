@@ -1,0 +1,108 @@
+{
+ "User": "xueyong",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-07",
+ "CPU_Hours": 0.815,
+ "Mem_GB_Hours": 0.0073420132531060115,
+ "GPU_Hours": 0.013888888888888888,
+ "App_Cost": 4.074999999999999,
+ "CPU_Cost": 0.4075,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.006944444444444444,
+ "Total_Cost": 6.249444444444444,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 0.801111111111111,
+   "Cost": 4.0055555555555555
+  },
+  "Hypermesh": {
+   "Hours": 0.013888888888888888,
+   "Cost": 0.06944444444444445
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.32,
+   "Mem_GB_Hours": 0.0003641764322916667,
+   "GPU_Hours": 0,
+   "Runtime": 0.02666666666666667,
+   "App_Hours": 0.32,
+   "JobId": "50302",
+   "Queue": "q_x86_expr",
+   "User": "xueyong",
+   "App": "Abaqus",
+   "JobDescription": "Batch-Abaqus",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/abaqus614 /home/export/base/nsccwuxi_avicgeneral/xueyong/WORK/GFPS8p/wing/jy/vf40_rt0_gz/VF43RT0_DIS1.inp",
+   "Cluster": "aip",
+   "CPU_Cost": 0.16,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 1.6,
+   "StartDate": "2021/07/05",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.2633333333333333,
+   "Mem_GB_Hours": 0.0002991008758544922,
+   "GPU_Hours": 0,
+   "Runtime": 0.021944444444444444,
+   "App_Hours": 0.2633333333333333,
+   "JobId": "50303",
+   "Queue": "q_x86_expr",
+   "User": "xueyong",
+   "App": "Abaqus",
+   "JobDescription": "Batch-Abaqus",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/abaqus614 /home/export/base/nsccwuxi_avicgeneral/xueyong/WORK/GFPS8p/wing/jy/vf40_rt0_gz/VF43RT0_DIS1.inp",
+   "Cluster": "aip",
+   "CPU_Cost": 0.13166666666666665,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 1.3166666666666664,
+   "StartDate": "2021/07/05",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.21777777777777776,
+   "Mem_GB_Hours": 0.0007426961263020833,
+   "GPU_Hours": 0,
+   "Runtime": 0.05444444444444444,
+   "App_Hours": 0.21777777777777776,
+   "JobId": "49947",
+   "Queue": "q_x86_expr",
+   "User": "xueyong",
+   "App": "Abaqus",
+   "JobDescription": "Batch-Abaqus",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/abaqus614 /home/export/base/nsccwuxi_avicgeneral/xueyong/WORK/GFPS8p/DCT/Abaqus_T/AA.inp",
+   "Cluster": "aip",
+   "CPU_Cost": 0.10888888888888888,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 1.0888888888888888,
+   "StartDate": "2021/07/02",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.013888888888888888,
+   "Mem_GB_Hours": 0.005936039818657769,
+   "GPU_Hours": 0.013888888888888888,
+   "Runtime": 0.013888888888888888,
+   "App_Hours": 0.013888888888888888,
+   "JobId": "49949",
+   "Queue": "local",
+   "User": "xueyong",
+   "App": "Hypermesh",
+   "JobDescription": "Hypermesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.006944444444444444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.006944444444444444,
+   "App_Cost": 0.06944444444444445,
+   "StartDate": "2021/07/02",
+   "Project": "default"
+  }
+ ]
+}

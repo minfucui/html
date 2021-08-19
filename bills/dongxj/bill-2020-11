@@ -1,0 +1,108 @@
+{
+ "User": "dongxj",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 5.381135908157779,
+ "Mem_GB_Hours": 0.013148996449383363,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 1.0762271816315558,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 1.5826160705204448,
+ "App_Hours": {
+  "AnsysAPDL": {
+   "Hours": 0.011944444444444445,
+   "Cost": 0
+  },
+  "Fluent": {
+   "Hours": 5.369191463713333,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.04611111111111111,
+   "Mem_GB_Hours": 0.003943148718939887,
+   "GPU_Hours": 0,
+   "Runtime": 0.04611111111111111,
+   "App_Hours": 0.04611111111111111,
+   "JobId": "18637",
+   "Queue": "q_x86_cn_sim",
+   "User": "dongxj",
+   "App": "Fluent",
+   "JobDescription": "11",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.009222222222222222,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/28",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 5.30085813038,
+   "Mem_GB_Hours": 0.006301727179228198,
+   "GPU_Hours": 0,
+   "Runtime": 0.07362302958861111,
+   "App_Hours": 5.30085813038,
+   "JobId": "18590",
+   "Queue": "q_x86_cn_sim",
+   "User": "dongxj",
+   "App": "Fluent",
+   "JobDescription": "114k",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 1.0601716260760001,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.011944444444444445,
+   "Mem_GB_Hours": 0.0008704630533854167,
+   "GPU_Hours": 0,
+   "Runtime": 0.011944444444444445,
+   "App_Hours": 0.011944444444444445,
+   "JobId": "18592",
+   "Queue": "q_x86_expr",
+   "User": "dongxj",
+   "App": "AnsysAPDL",
+   "JobDescription": "114k",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.002388888888888889,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.022222222222222223,
+   "Mem_GB_Hours": 0.002033657497829861,
+   "GPU_Hours": 0,
+   "Runtime": 0.022222222222222223,
+   "App_Hours": 0.022222222222222223,
+   "JobId": "18593",
+   "Queue": "q_x86_cn_sim",
+   "User": "dongxj",
+   "App": "Fluent",
+   "JobDescription": "114k",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0044444444444444444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/27",
+   "Project": "default"
+  }
+ ]
+}

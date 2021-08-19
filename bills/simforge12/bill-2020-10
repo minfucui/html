@@ -1,0 +1,112 @@
+{
+ "User": "simforge12",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.48863821921416667,
+ "Mem_GB_Hours": 0.18123260522056214,
+ "GPU_Hours": 0.4778048858808333,
+ "App_Cost": 1.8294010338020834,
+ "CPU_Cost": 0.24431910960708333,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.23890244294041665,
+ "Total_Cost": 3.0877027108870836,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 0.010833333333333334,
+   "Cost": 0.05416666666666667
+  },
+  "ParaView": {
+   "Hours": 0.13639779161527776,
+   "Cost": 0.06819889580763888
+  },
+  "PointWise": {
+   "Hours": 0.34140709426555554,
+   "Cost": 1.707035471327778
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.2311204137613889,
+   "Mem_GB_Hours": 0.08209325946140965,
+   "GPU_Hours": 0.2311204137613889,
+   "Runtime": 0.2311204137613889,
+   "App_Hours": 0.2311204137613889,
+   "JobId": "13137",
+   "Queue": "local",
+   "User": "simforge12",
+   "App": "PointWise",
+   "JobDescription": "test23",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.11556020688069445,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.11556020688069445,
+   "App_Cost": 1.1556020688069446,
+   "StartDate": "2020/10/09",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.11028668050416666,
+   "Mem_GB_Hours": 0.0411302182137379,
+   "GPU_Hours": 0.11028668050416666,
+   "Runtime": 0.11028668050416666,
+   "App_Hours": 0.11028668050416666,
+   "JobId": "13134",
+   "Queue": "local",
+   "User": "simforge12",
+   "App": "PointWise",
+   "JobDescription": "test23",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.05514334025208333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.05514334025208333,
+   "App_Cost": 0.5514334025208333,
+   "StartDate": "2020/10/09",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.13639779161527776,
+   "Mem_GB_Hours": 0.057229597338098535,
+   "GPU_Hours": 0.13639779161527776,
+   "Runtime": 0.13639779161527776,
+   "App_Hours": 0.13639779161527776,
+   "JobId": "13133",
+   "Queue": "local",
+   "User": "simforge12",
+   "App": "ParaView",
+   "JobDescription": "pv1",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.06819889580763888,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.06819889580763888,
+   "App_Cost": 0.06819889580763888,
+   "StartDate": "2020/10/09",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.010833333333333334,
+   "Mem_GB_Hours": 0.0007795302073160807,
+   "GPU_Hours": 0,
+   "Runtime": 0.010833333333333334,
+   "App_Hours": 0.010833333333333334,
+   "JobId": "13132",
+   "Queue": "q_x86_expr",
+   "User": "simforge12",
+   "App": "Fluent",
+   "JobDescription": "fluent_test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.005416666666666667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.05416666666666667,
+   "StartDate": "2020/10/09",
+   "Project": "default"
+  }
+ ]
+}

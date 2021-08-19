@@ -1,0 +1,150 @@
+  page_title: USER_MGMT
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: add
+      modal: add-modal
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    - label: APPLY_PRICE
+      attr: success
+      action: "apply_price()"
+    table:
+      id: usermgmt
+      thead:
+      - USERNAME
+      - DEPT_NAME
+      - ROLES
+      - NAME
+      - PHONE
+      - EMAIL
+      - STATUS
+      - ACTIVEJOBS
+      - BALANCE
+      - LAST_PAY
+      - LAST_PAY_TIME
+      - DISCOUNT
+      tbody:
+      - username
+      - groupname
+      - roles
+      - name
+      - phone
+      - email
+      - acctstatus
+      - activejobs
+      - balance
+      - last_pay
+      - last_pay_time
+      - discount
+      update:
+        url: php/usermgmt.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      idkey: username
+  modals:
+  - modal: add-modal
+    title: NEW
+    body:
+    - label: USERNAME
+      type: text
+      id: username
+    - label: DEPT_NAME
+      id: groupname
+      type: select
+      options: groupname
+    - label: ROLES
+      id: roles
+      type: select
+      options: roles
+    - label: NAME
+      type: text
+      id: name
+    - label: PHONE
+      type: text
+      id: phone
+    - label: EMAIL
+      type: text
+      id: email
+    - label: STATUS
+      id: acctstatus
+      type: select
+      options:
+      - normal
+      - inactivated
+      - suspended
+    - label: CHARGE
+      id: last_pay
+      type: text
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/usermgmt.php
+      post: '{"action":"new_user"}'
+      data: all
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/usermgmt.php
+      post: '{"action": "delete_users"}'
+      confirm: 
+        - username
+        - name
+        - groupname
+        - balance
+    - label: CANCEL
+      attr: success
+      action: cancel
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: USERNAME
+      type: fixed_text
+      id: username
+    - label: BALANCE
+      type: fixed_text
+      id: balance
+    - label: DEPT_NAME
+      id: groupname
+      type: select
+      options: groupname
+    - label: ROLES
+      id: roles
+      type: select
+      options: roles
+    - label: NAME
+      type: text
+      id: name
+    - label: PHONE
+      type: text
+      id: phone
+    - label: EMAIL
+      type: text
+      id: email
+    - label: STATUS
+      id: acctstatus
+      type: select
+      options:
+      - normal
+      - inactivated
+      - suspended
+    - label: CHARGE
+      id: this_pay
+      type: text
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/usermgmt.php
+      post: '{"action":"modify_user"}'
+    - label: CANCEL
+      attr: success
+      action: cancel

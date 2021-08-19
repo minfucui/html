@@ -1,0 +1,92 @@
+{
+ "User": "nirf",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-07",
+ "CPU_Hours": 81.51191990109528,
+ "Mem_GB_Hours": 1.7139792561238032,
+ "GPU_Hours": 0.008888888888888889,
+ "App_Cost": 235.9317958992889,
+ "CPU_Cost": 40.75595995054764,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.0044444444444444444,
+ "Total_Cost": 276.692200294281,
+ "App_Hours": {
+  "Hypermesh": {
+   "Hours": 0.008888888888888889,
+   "Cost": 0.044444444444444446
+  },
+  "StarCCM": {
+   "Hours": 47.177470290968884,
+   "Cost": 235.88735145484443
+  },
+  "StarCCM1404": {
+   "Hours": 34.32556072123751,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.008888888888888889,
+   "Mem_GB_Hours": 0.0038379584418402777,
+   "GPU_Hours": 0.008888888888888889,
+   "Runtime": 0.008888888888888889,
+   "App_Hours": 0.008888888888888889,
+   "JobId": "52641",
+   "Queue": "local",
+   "User": "nirf",
+   "App": "Hypermesh",
+   "JobDescription": "Hypermesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0044444444444444444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0044444444444444444,
+   "App_Cost": 0.044444444444444446,
+   "StartDate": "2021/07/19",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 47.177470290968884,
+   "Mem_GB_Hours": 1.155170360354606,
+   "GPU_Hours": 0,
+   "Runtime": 0.9628055161422221,
+   "App_Hours": 47.177470290968884,
+   "JobId": "51579",
+   "Queue": "q_x86_cn_sim_plus",
+   "User": "nirf",
+   "App": "StarCCM",
+   "JobDescription": "jv02",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 23.588735145484442,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 235.88735145484443,
+   "StartDate": "2021/07/10",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 34.32556072123751,
+   "Mem_GB_Hours": 0.5549709373273572,
+   "GPU_Hours": 0,
+   "Runtime": 0.5280855495575001,
+   "App_Hours": 34.32556072123751,
+   "JobId": "50624",
+   "Queue": "q_x86_cn_sim_plus",
+   "User": "nirf",
+   "App": "StarCCM1404",
+   "JobDescription": "A0-Acoustic-0518-un_renewM_0707",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 17.162780360618754,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/07/07",
+   "Project": "default"
+  }
+ ]
+}

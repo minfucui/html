@@ -1,0 +1,44 @@
+{
+ "User": "yanghc",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.009444444444444445,
+ "Mem_GB_Hours": 0.00316852781507704,
+ "GPU_Hours": 0.009444444444444445,
+ "App_Cost": 0,
+ "CPU_Cost": 0.001888888888888889,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.001888888888888889,
+ "Total_Cost": 0.003777777777777778,
+ "App_Hours": {
+  "LSPrePost": {
+   "Hours": 0.009444444444444445,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.009444444444444445,
+   "Mem_GB_Hours": 0.00316852781507704,
+   "GPU_Hours": 0.009444444444444445,
+   "Runtime": 0.009444444444444445,
+   "App_Hours": 0.009444444444444445,
+   "JobId": "14992",
+   "Queue": "local",
+   "User": "yanghc",
+   "App": "LSPrePost",
+   "JobDescription": "LSPrePost",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.001888888888888889,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.001888888888888889,
+   "App_Cost": 0,
+   "StartDate": "2020/10/28",
+   "Project": "default"
+  }
+ ]
+}

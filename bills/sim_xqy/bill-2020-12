@@ -1,0 +1,44 @@
+{
+ "User": "sim_xqy",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-12",
+ "CPU_Hours": 165.46563230590786,
+ "Mem_GB_Hours": 29.73112913930047,
+ "GPU_Hours": 165.46563230590786,
+ "App_Cost": 0,
+ "CPU_Cost": 33.09312646118163,
+ "Mem_Cost": 0,
+ "GPU_Cost": 33.09312646118163,
+ "Total_Cost": 66.18625292236327,
+ "App_Hours": {
+  "TankSim": {
+   "Hours": 165.46563230590786,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 165.46563230590786,
+   "Mem_GB_Hours": 29.73112913930047,
+   "GPU_Hours": 165.46563230590786,
+   "Runtime": 165.46563230590786,
+   "App_Hours": 165.46563230590786,
+   "JobId": "18233",
+   "Queue": "local",
+   "User": "sim_xqy",
+   "App": "TankSim",
+   "JobDescription": "TankSim",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 33.09312646118163,
+   "Mem_Cost": 0,
+   "GPU_Cost": 33.09312646118163,
+   "App_Cost": 0,
+   "StartDate": "2020/11/25",
+   "Project": "default"
+  }
+ ]
+}

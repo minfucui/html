@@ -1,0 +1,44 @@
+  page_title: CHARGE_ORDERS
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: ACCEPT
+      attr: primary
+      action: accept
+      modal: b1-modal
+    table:
+      id: chargeorders
+      thead:
+      - REQID
+      - USERNAME
+      - PAY
+      - REQ_TIME
+      - APPROVED_BY
+      - APPROVED_TIME
+      tbody:
+      - orderid
+      - username
+      - pay
+      - req_time
+      - approvedby
+      - approvedat
+      update:
+        url: php/chargeorders.php
+        post: '{"action":"update"}'
+      order: '[[4, "asc"]]'
+      idkey: none
+  modals:
+  - modal: b1-modal
+    title: ACCEPT
+    all: yes
+    buttons:
+    - label: ACCEPT
+      attr: primary
+      url: php/chargeorders.php
+      post: '{"action":"accept"}'
+      confirm:
+      - orderid
+      - username
+      - pay
+    - label: CANCEL
+      attr: secondary

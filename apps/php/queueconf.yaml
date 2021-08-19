@@ -1,0 +1,134 @@
+  page_title: QUEUE_CONF
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      modal: add-modal
+    - label: DELETE
+      attr: danger
+      modal: del-modal
+    table:
+      id: queue_conf
+      thead:
+      - QUEUE_NAME
+      - STATUS
+      - PRIORITY
+      - MAX_JOB_SLOTS
+      - JOB_SLOT_LIMIT_PER_USER
+      - FAIRSHARE
+      - RESOURCE_REQUIREMENT
+      - HOSTS
+      - USERS
+      - JOB_STARTER
+      tbody:
+      - name
+      - status
+      - priority
+      - maxj
+      - userjlimit
+      - fairshare
+      - resreq
+      - hosts
+      - users
+      - jobstarter
+      update:
+        interval: 30
+        url: php/queueconf.php
+        post: '{"action":"update"}'
+      order: '[[3, "desc"]]'
+      lengthMenu: '[20, 50]'
+  modals:
+  - modal: add-modal
+    title: ADD
+    body:
+    - label: QUEUE_NAME
+      type: text
+      id: name
+    - label: PRIORITY
+      type: text
+      id: priority
+    - label: MAX_JOB_SLOTS
+      type: text
+      id: maxj
+    - label: JOB_SLOT_LIMIT_PER_USER
+      type: text
+      id: userjlimit
+    - label: FAIRSHARE
+      type: select
+      id: fairshare
+      options:
+      - 无
+      - 均匀分享
+    - label: RESOURCE_REQUIREMENT
+      id: resreq
+      type: text
+    - label: HOSTS
+      id: hosts
+      type: text
+    - label: USERS
+      id: users
+      type: text
+    - label: JOB_STARTER
+      id: job_starter
+      type: text
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/queues.php
+      post: '{"action":"new"}'
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: QUEUE_NAME
+      type: fixed_text
+      id: name
+    - label: PRIORITY
+      type: text
+      id: priority
+    - label: MAX_JOB_SLOTS
+      type: text
+      id: maxj
+    - label: JOB_SLOT_LIMIT_PER_USER
+      type: text
+      id: userjlimit
+    - label: FAIRSHARE
+      type: select
+      id: fairshare
+      options:
+      - 不用
+      - 均匀分享
+    - label: RESOURCE_REQUIREMENT
+      id: resreq
+      type: text
+    - label: HOSTS
+      id: hosts
+      type: text
+    - label: USERS
+      id: users
+      type: text
+    - label: JOB_STARTER
+      id: job_starter
+      type: text
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/queues.php
+      post: '{"action":"modify"}'
+    - label: CANCEL
+      attr: success
+  - modal: del-modal
+    title: REMOVE
+    buttons:
+    - label: REMOVE
+      attr: danger
+      url: php/queues.php
+      post: '{"action":"remove"}'
+      confirm:
+      - name
+      - status
+    - label: CANCEL
+      attr: success

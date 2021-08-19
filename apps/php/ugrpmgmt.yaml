@@ -1,0 +1,102 @@
+  page_title: DEPT_MGMT
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: add
+      modal: add-modal
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    table:
+      id: ugrpmgmt
+      thead:
+      - DEPT_NAME
+      - ORGANIZATION
+      - CONTACTNAME
+      - DEPT_ADMIN
+      - NUM_USERS
+      - ADDRESS
+      - LAST_MODIFIED
+      tbody:
+      - groupname
+      - organization
+      - contactname
+      - groupadmin
+      - num_users
+      - address
+      - last_update
+      update:
+        url: php/ugrpmgmt.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      idkey: groupname
+  modals:
+  - modal: add-modal
+    title: NEW
+    body:
+    - label: DEPT_NAME
+      type: text
+      id: groupname
+    - label: ORGANIZATION
+      id: organization
+      type: text
+    - label: CONTACTNAME
+      id: contactname
+      type: text
+    - label: DEPT_ADMIN
+      type: text
+      id: groupadmin
+    - label: ADDRESS
+      type: text
+      id: address
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/ugrpmgmt.php
+      post: '{"action":"new_ugrp"}'
+      data: all
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/ugrpmgmt.php
+      post: '{"action": "delete_ugrps"}'
+      confirm: 
+        - groupname
+        - num_users
+    - label: CANCEL
+      attr: success
+      action: cancel
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: DEPT_NAME
+      type: fixed_text
+      id: groupname
+    - label: ORGANIZATION
+      id: organization
+      type: text
+    - label: CONTACTNAME
+      id: contactname
+      type: text
+    - label: DEPT_ADMIN
+      type: text
+      id: groupadmin
+    - label: ADDRESS
+      type: text
+      id: address
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/ugrpmgmt.php
+      post: '{"action":"modify_ugrp"}'
+    - label: CANCEL
+      attr: success
+      action: cancel

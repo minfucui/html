@@ -1,0 +1,9 @@
+#registration: yes
+#forum: yes
+#admin_only: yes
+#app_sec_control: no
+confidentials:
+- 绝密
+- 机密
+- 秘密
+- 公开

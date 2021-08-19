@@ -1,0 +1,68 @@
+{
+ "User": "chuxsamd",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-02",
+ "CPU_Hours": 886.7133776483644,
+ "Mem_GB_Hours": 997.7812253853457,
+ "GPU_Hours": 886.7133776483644,
+ "App_Cost": 0,
+ "CPU_Cost": 177.34267552967302,
+ "Mem_Cost": 0,
+ "GPU_Cost": 177.34267552967302,
+ "Total_Cost": 532.0280821445746,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 443.3568277130711,
+   "Cost": 0
+  },
+  "FluentMeshing": {
+   "Hours": 443.35654993529334,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 443.3568277130711,
+   "Mem_GB_Hours": 807.9552515126314,
+   "GPU_Hours": 443.3568277130711,
+   "Runtime": 443.3568277130711,
+   "App_Hours": 443.3568277130711,
+   "JobId": "25618",
+   "Queue": "local",
+   "User": "chuxsamd",
+   "App": "Abaqus",
+   "JobDescription": "Abaqus",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 88.6713655426143,
+   "Mem_Cost": 0,
+   "GPU_Cost": 88.6713655426143,
+   "App_Cost": 0,
+   "StartDate": "2021/01/06",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 443.35654993529334,
+   "Mem_GB_Hours": 189.8259738727143,
+   "GPU_Hours": 443.35654993529334,
+   "Runtime": 443.35654993529334,
+   "App_Hours": 443.35654993529334,
+   "JobId": "25623",
+   "Queue": "local",
+   "User": "chuxsamd",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 88.67130998705873,
+   "Mem_Cost": 0,
+   "GPU_Cost": 88.67130998705873,
+   "App_Cost": 0,
+   "StartDate": "2021/01/06",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "User": "simforge1",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-03",
+ "CPU_Hours": 302.1767089611023,
+ "Mem_GB_Hours": 0.03476102475533509,
+ "GPU_Hours": 0,
+ "App_Cost": 1510.8835448055108,
+ "CPU_Cost": 151.08835448055115,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 1719.7621934379822,
+ "App_Hours": {
+  "LS-DYNA": {
+   "Hours": 302.1767089611023,
+   "Cost": 1510.8835448055108
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 93.33575981763556,
+   "Mem_GB_Hours": 0.010769457481090506,
+   "GPU_Hours": 0,
+   "Runtime": 1.4583712471505557,
+   "App_Hours": 93.33575981763556,
+   "JobId": "33819",
+   "Queue": "q_x86_cn_sim",
+   "User": "simforge1",
+   "App": "LS-DYNA",
+   "JobDescription": "Batch-LS-DYNA",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/dynayaml /home/export/base/nsccwuxi_amd/simforge1/WORK/JOB-OK/test_4/test_3.k single",
+   "Cluster": "aip",
+   "CPU_Cost": 46.66787990881778,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 466.67879908817775,
+   "StartDate": "2021/03/01",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 33.86743971448889,
+   "Mem_GB_Hours": 0.0042764523748814055,
+   "GPU_Hours": 0,
+   "Runtime": 0.5291787455388889,
+   "App_Hours": 33.86743971448889,
+   "JobId": "33789",
+   "Queue": "q_x86_cn_sim",
+   "User": "simforge1",
+   "App": "LS-DYNA",
+   "JobDescription": "Batch-LS-DYNA",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/dynayaml /home/export/base/nsccwuxi_amd/simforge1/WORK/JOB-OK/test_1.k single",
+   "Cluster": "aip",
+   "CPU_Cost": 16.933719857244444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 169.33719857244444,
+   "StartDate": "2021/03/01",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 174.9735094289778,
+   "Mem_GB_Hours": 0.01971511489936318,
+   "GPU_Hours": 0,
+   "Runtime": 2.733961084827778,
+   "App_Hours": 174.9735094289778,
+   "JobId": "33792",
+   "Queue": "q_x86_cn_sim",
+   "User": "simforge1",
+   "App": "LS-DYNA",
+   "JobDescription": "Batch-LS-DYNA",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/dynayaml /home/export/base/nsccwuxi_amd/simforge1/WORK/JOB-OK/test_2.k single",
+   "Cluster": "aip",
+   "CPU_Cost": 87.4867547144889,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 874.8675471448889,
+   "StartDate": "2021/03/01",
+   "Project": "default"
+  }
+ ]
+}

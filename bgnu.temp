@@ -1,0 +1,25 @@
+set title "$TITLE" font '/usr/share/fonts/gnu-free/FreeSans.ttf,20'
+set xdata time
+set xtics rotate by 40 offset $OFFSET
+set bmargin $MARGIN
+set timefmt "$TIMEFORMAT"
+set datafile separator ","
+set terminal png size 1280,800 enhanced truecolor font '/usr/share/fonts/gnu-free/FreeSans.ttf,11'
+set output "$OUTPUT"
+set ylabel "$YLABEL"
+set xrange [$XRANGE]
+set yrange [$YRANGE]
+set pointsize 0.8
+set format x "$XFORMAT"
+set border 11
+set xtics out
+set tics front
+set key below
+
+set style fill solid 1.0
+plot \
+  for [i=2:$COLUMN:1] \
+  "$DATAFILE" using 1:(sum [col=i:$COLUMN] column(col)) \
+    title columnheader(i) with boxes
+# with filledcurves x1
+# with boxes

@@ -1,0 +1,37 @@
+{
+ "User": "intesim",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-09",
+ "CPU_Hours": 0.0002777777777777778,
+ "Mem_GB_Hours": 0.0000029839409722222224,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.0001388888888888889,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.0001388888888888889,
+ "App_Hours": {},
+ "Details": [
+  {
+   "CPU_Hours": 0.0002777777777777778,
+   "Mem_GB_Hours": 0.0000029839409722222224,
+   "GPU_Hours": 0,
+   "Runtime": 0.0002777777777777778,
+   "App_Hours": 0.0002777777777777778,
+   "JobId": "13066",
+   "Queue": "local",
+   "User": "intesim",
+   "JobName": "sleep 1s",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0001388888888888889,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/09/30",
+   "Project": "default"
+  }
+ ]
+}

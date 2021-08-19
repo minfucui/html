@@ -1,0 +1,52 @@
+{
+  # Mandatory.
+  "Name": "15min charge",
+
+  # Mandatory. A valid cron command with time and date fields.
+  "Schedule": "1,16,31,46 * * * *",
+
+  # Mandatory. The job specification. The value can be the path to a valid JSON
+  # job specification file, or a JSON object that describes the job.
+  "JobSpec": {
+        "Command": "/usr/bin/php charge.php",
+        "MinNumSlots": 1,
+        "OutFile": {
+          "Name": "/var/www/html/apps/php/jobout/%J.txt",
+          "Overwrite": false
+        },
+        "Cwd": "/var/www/html/apps/php",
+        "Interactive": false,
+        "Queue": "admin"
+      },
+
+  # Optional. The deadline in minutes to start an instance of a cron job if it
+  # misses its scheduled run for any reason.
+  # Default: unlimited.
+  # "StartDeadline": 5,
+
+  # Optional. The policy to start a new instance of a cron job if a previous
+  # instance of the job is still running. Valid values are skip, run and replace.
+  # Default: skip.
+  # "Overlap": "skip",
+
+  # Optional. The maximum allowed number of concurrent running instances of a
+  # cron job. This parameter only takes effect when Overlap is set to run.
+  # Default: unlimited.
+  # "MaxConcurrentRuns": 2,
+
+  # Optional.
+  # The maximum number of consecutive failures of a cron job (exits 
+  # with non-zero exit code) before it is disabled.
+  # "MaxFails": 2,
+
+  # Optional.
+  # The number of finished instances of a cron job stored inside the cron
+  # job daemon.
+  # Default: 5.
+  # "HistoryLimist": 5,
+
+  # Optional.
+  # Enable debug.
+  # Default: false.
+  "Debug": false
+}

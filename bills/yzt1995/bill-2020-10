@@ -1,0 +1,116 @@
+{
+ "User": "yzt1995",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.09083333333333334,
+ "Mem_GB_Hours": 0.045381586286756724,
+ "GPU_Hours": 0.04694444444444444,
+ "App_Cost": 0.3486111111111111,
+ "CPU_Cost": 0.04541666666666667,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.02347222222222222,
+ "Total_Cost": 0.5697222222222222,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 0.02,
+   "Cost": 0.1
+  },
+  "FluentMeshing": {
+   "Hours": 0.021111111111111112,
+   "Cost": 0
+  },
+  "Hypermesh": {
+   "Hours": 0.025833333333333333,
+   "Cost": 0.12916666666666665
+  },
+  "StarCCM": {
+   "Hours": 0.02388888888888889,
+   "Cost": 0.11944444444444445
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.02388888888888889,
+   "Mem_GB_Hours": 0.004663292566935221,
+   "GPU_Hours": 0,
+   "Runtime": 0.011944444444444445,
+   "App_Hours": 0.02388888888888889,
+   "JobId": "14929",
+   "Queue": "q_x86_expr_plus",
+   "User": "yzt1995",
+   "App": "StarCCM",
+   "JobDescription": "test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.011944444444444445,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.11944444444444445,
+   "StartDate": "2020/10/28",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.021111111111111112,
+   "Mem_GB_Hours": 0.009466192457411024,
+   "GPU_Hours": 0.021111111111111112,
+   "Runtime": 0.021111111111111112,
+   "App_Hours": 0.021111111111111112,
+   "JobId": "14795",
+   "Queue": "local",
+   "User": "yzt1995",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.010555555555555556,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.010555555555555556,
+   "App_Cost": 0,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.02,
+   "Mem_GB_Hours": 0.001953582763671875,
+   "GPU_Hours": 0,
+   "Runtime": 0.02,
+   "App_Hours": 0.02,
+   "JobId": "14796",
+   "Queue": "q_x86_expr",
+   "User": "yzt1995",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.01,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.1,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.025833333333333333,
+   "Mem_GB_Hours": 0.029298518498738605,
+   "GPU_Hours": 0.025833333333333333,
+   "Runtime": 0.025833333333333333,
+   "App_Hours": 0.025833333333333333,
+   "JobId": "14794",
+   "Queue": "local",
+   "User": "yzt1995",
+   "App": "Hypermesh",
+   "JobDescription": "Hypermesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.012916666666666667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.012916666666666667,
+   "App_Cost": 0.12916666666666665,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "User": "songxh",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-12",
+ "CPU_Hours": 22.71469176888861,
+ "Mem_GB_Hours": 1.0074248934855534,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 4.542938353777723,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 4.799857999343334,
+ "App_Hours": {
+  "StarCCM": {
+   "Hours": 22.71469176888861,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 2.790987116716945,
+   "Mem_GB_Hours": 0.12739775469369252,
+   "GPU_Hours": 0,
+   "Runtime": 0.16417571274805556,
+   "App_Hours": 2.790987116716945,
+   "JobId": "23389",
+   "Queue": "q_x86_expr_plus",
+   "User": "songxh",
+   "App": "StarCCM",
+   "JobDescription": "LT-cellmesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.558197423343389,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/12/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 1.4922222222222221,
+   "Mem_GB_Hours": 0.06872037251790364,
+   "GPU_Hours": 0,
+   "Runtime": 0.08777777777777777,
+   "App_Hours": 1.4922222222222221,
+   "JobId": "23388",
+   "Queue": "q_x86_expr_plus",
+   "User": "songxh",
+   "App": "StarCCM",
+   "JobDescription": "LT-cellmesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.29844444444444446,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/12/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 18.431482429949444,
+   "Mem_GB_Hours": 0.8113067662739573,
+   "GPU_Hours": 0,
+   "Runtime": 1.0842048488205553,
+   "App_Hours": 18.431482429949444,
+   "JobId": "23374",
+   "Queue": "q_x86_expr_plus",
+   "User": "songxh",
+   "App": "StarCCM",
+   "JobDescription": "LT-cellmesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 3.6862964859898892,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/12/27",
+   "Project": "default"
+  }
+ ]
+}

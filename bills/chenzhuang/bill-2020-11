@@ -1,0 +1,88 @@
+{
+ "User": "chenzhuang",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 0.07166666666666667,
+ "Mem_GB_Hours": 0.03248730977376302,
+ "GPU_Hours": 0.06305555555555556,
+ "App_Cost": 0,
+ "CPU_Cost": 0.014333333333333333,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.012611111111111111,
+ "Total_Cost": 0.0295,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 0.06305555555555556,
+   "Cost": 0
+  },
+  "Fluent": {
+   "Hours": 0.008611111111111111,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.008611111111111111,
+   "Mem_GB_Hours": 0.0005603345235188802,
+   "GPU_Hours": 0,
+   "Runtime": 0.008611111111111111,
+   "App_Hours": 0.008611111111111111,
+   "JobId": "18974",
+   "Queue": "q_x86_expr",
+   "User": "chenzhuang",
+   "App": "Fluent",
+   "JobDescription": "as123",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0017222222222222222,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/30",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.006388888888888889,
+   "Mem_GB_Hours": 0.0031636873881022137,
+   "GPU_Hours": 0.006388888888888889,
+   "Runtime": 0.006388888888888889,
+   "App_Hours": 0.006388888888888889,
+   "JobId": "18921",
+   "Queue": "local",
+   "User": "chenzhuang",
+   "App": "Abaqus",
+   "JobDescription": "DAY30",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0012777777777777779,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0012777777777777779,
+   "App_Cost": 0,
+   "StartDate": "2020/11/30",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.056666666666666664,
+   "Mem_GB_Hours": 0.028763287862141926,
+   "GPU_Hours": 0.056666666666666664,
+   "Runtime": 0.056666666666666664,
+   "App_Hours": 0.056666666666666664,
+   "JobId": "18922",
+   "Queue": "local",
+   "User": "chenzhuang",
+   "App": "Abaqus",
+   "JobDescription": "new_1.cae",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.011333333333333334,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.011333333333333334,
+   "App_Cost": 0,
+   "StartDate": "2020/11/30",
+   "Project": "default"
+  }
+ ]
+}

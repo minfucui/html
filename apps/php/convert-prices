@@ -1,0 +1,91 @@
+#!/usr/bin/php
+<?php
+include 'db.php';
+
+$aipenv = getenv('CB_ENVDIR');
+$crondconf = $aipenv.'/cbcrond.yaml';
+
+/* if (!file_exists($crondconf))
+    die("cbcrond.yaml does not exist.\n");
+
+$conf = yaml_parse_file($crondconf);
+if ($conf === FALSE)
+    die("Invalid cbcrond.yaml.\n");
+*/
+$users = searchRows('users');
+$apps = searchRows('applications');
+$p = searchRowsOrder('prices', ['last_update'=>'DESC'], ['chargename'=>'CPU']);
+if (sizeof($p) > 0 && !isset($p['error']))
+    $cpu = floatval($p[0]['unitprice']);
+else
+    $cpu = 0;
+$p = searchRowsOrder('prices', ['last_update'=>'DESC'], ['chargename'=>'内存']);
+if (sizeof($p) > 0 && !isset($p['error']))
+    $mem = floatval($p[0]['unitprice']);
+else
+    $mem = 0;
+$p = searchRowsOrder('prices', ['last_update'=>'DESC'], ['chargename'=>'GPU']);
+if (sizeof($p) > 0 && !isset($p['error']))
+    $gpu = floatval($p[0]['unitprice']);
+else
+    $gpu = 0;
+
+$cout = shell_exec('source /var/www/html/env.sh;aip q i -l');
+if(($qdata = json_decode($cout, TRUE)) === FALSE)
+    die("AIP is down\n");
+
+$queues = [];
+foreach ($qdata as $q)
+    $queues[] = $q['Name'];
+
+$conf['usage'] = ['enabled'=>true,
+                  'outputperiod'=>15,
+                  'usagefilepath'=>dirname($aipenv).'/work/usages'];
+$conf['bill'] = ['enabled'=>true,
+                 'billpath'=>'/var/www/html/bills'];
+
+$conf['charge']['enabled'] = true;
+$conf['charge']['standard'] = ['cpuperhour'=>[],
+                               'mempergbhour'=>[],
+                               'gpuperhour'=>[],
+                               'appperhour'=>[]];
+$conf['charge']['standard']['cpuperhour'][] = ['queue'=>'all','price'=>$cpu];
+$conf['charge']['standard']['mempergbhour'][] = ['queue'=>'all','price'=>$mem];
+$conf['charge']['standard']['gpuperhour'][] = ['queue'=>'all','price'=>$gpu];
+
+foreach ($queues as $q) {
+    $p = searchRowsOrder('prices', ['last_update'=>'DESC'],
+                         ['chargename'=>'queue-'.$q]);
+    if (sizeof($p) > 0 && !isset($p['error'])) {
+        $qprice = $cpu + floatval($p[0]['unitprice']);
+        $conf['charge']['standard']['cpuperhour'][] =
+             ['queue'=>$q, 'price'=>$qprice];
+    }
+}
+
+foreach ($apps as $a) {
+    $p = searchRowsOrder('prices', ['last_update'=>'DESC'],
+                         ['chargename'=>$a['appname']]);
+    if (sizeof($p) > 0 && !isset($p['error'])) {
+        $conf['charge']['standard']['appperhour'][] =
+             ['app'=>$a['appname'], 'price'=>floatval($p[0]['unitprice'])];
+    }
+}
+
+$conf['charge']['userdiscounts'] = [];
+foreach ($users as $u) {
+    if ($u['discount'] != '' && ($fd = floatval($u['discount'])) < 1) {
+        $d = [];
+        $d['user'] = $u['username'];
+        $d['cpu'] = $d['mem'] = $d['gpu'] = $fd;
+        $d['apps'] = [];
+        foreach ($apps as $a)
+            $d['apps'][] = ['app'=>$a['appname'], 'rate'=>$fd];
+        $conf['charge']['userdiscounts'][] = $d;
+    }
+}
+ 
+$st = yaml_emit($conf, YAML_UTF8_ENCODING);
+if (file_put_contents($crondconf, $st) === FALSE)
+    die('Failed to write to '.$crondconf."\n");
+?>

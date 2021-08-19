@@ -1,0 +1,44 @@
+{
+ "User": "lixy",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 1.6500000000000001,
+ "Mem_GB_Hours": 0.0375335693359375,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.33000000000000007,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.33000000000000007,
+ "App_Hours": {
+  "StarCCM": {
+   "Hours": 1.6500000000000001,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 1.6500000000000001,
+   "Mem_GB_Hours": 0.0375335693359375,
+   "GPU_Hours": 0,
+   "Runtime": 0.05,
+   "App_Hours": 1.6500000000000001,
+   "JobId": "17333",
+   "Queue": "q_x86_cn_sim_plus",
+   "User": "lixy",
+   "App": "StarCCM",
+   "JobDescription": "11",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.33000000000000007,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/19",
+   "Project": "default"
+  }
+ ]
+}

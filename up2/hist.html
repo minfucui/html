@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>作业历史</title>
+
+    <link href="./css/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="./js/child.js"></script>
+    <script type="text/javascript" src="./js/jobs.js"></script>
+</head>
+
+<body>
+    <div class="tab-head">
+        <h3 class="selected">作业号: <span class="jobid"></span> 
+        <span class="jobstatus"></span>
+        </h3>
+    </div>
+    <div class="tab-content">
+        <div class="show">
+            <section class="operation details">
+            </section>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.alert = function() {
+            return false;
+        }
+
+        var jobid = Win10_child.GetQueryString('id');
+        $(".jobid").html(jobid)
+
+        var data = {
+            "username": "cadmin",
+            "jobId": jobid
+        }
+
+        if (!isNaN(jobid)) {
+            requestajax('queryJobHist')
+        }
+
+        var str = "";
+
+        function create(dt) {
+            $(".jobstatus").html('状态: ' + statusStrZh(dt.statusString));
+            $(".jobstatus").css('color', statusClass(dt.statusString));
+        }
+
+        function details(dt) {
+            var n = " - "
+            str = '<p></p><p>作业详细信息</p>' +
+                '<span>作业号: </span><span>' + (dt.jobID.jobID ? dt.jobID.jobID : n) + '</span>' +
+                '<span>递交时间: </span><span>' + (dt.submitTime ? Win10_child.timestampToTime(dt.submitTime) : n) + '</span>' +
+                '<span>应用名: </span><span>' + (dt.jobSpec.application ? dt.jobSpec.application : n) + '</span>' +
+                '<span>开始运行: </span><span>' + (dt.startTime ? Win10_child.timestampToTime(dt.startTime) : n) + '</span>' +
+                '<span>应用实例名: </span><span>' + (dt.jobSpec.jobDescription ? dt.jobSpec.jobDescription : n) + '</span>' +
+                '<span>运行路径: </span><span>' + (dt.jobSpec.cwd ? dt.jobSpec.cwd : n) + '</span>' +
+                '<p></p><p>递交参数</p>' +
+                '<span>命令行: </span><span>' + (dt.jobSpec.command ? jobCmd(dt) : n) + '</span>' +
+                '<span>队列: </span><span>' + (dt.jobSpec.queue ? dt.jobSpec.queue : n) + '</span>' +
+                '<span>递交用户: </span><span>' + (dt.user ? dt.user : n) + '</span>' +
+                '<span>请求的资源: </span><span>' + n + '</span>' +
+                '<span>请求的cpu数: </span><span>' + (dt.jobSpec.minNumSlots ? dt.jobSpec.minNumSlots : n) + '</span>' +
+                '<span>输入文件: </span><span>' + (dt.jobSpec.inFile ? dt.jobSpec.inFile : n) + '</span>' +
+                '<span>输出文件: </span><span>' + 
+                    ((dt.jobSpec.outFile && dt.jobSpec.outFile.name != '/dev/null') ?
+                    dt.jobSpec.outFile.name : n) + '</span>' +
+                '<span>项目: </span><span>' + dt.jobSpec.project + '</span>' +
+                '<p></p><p>状态</p>' +
+                '<span>请求的主机: </span><span>' + (dt.submitHost ? dt.submitHost : n) + '</span>' +
+                '<span>运行主机: </span><span>' + (dt.execHosts ? dt.execHosts : n) + '</span>' +
+                '<span>资源使用: </span><span>' + ((dt.resource && dt.resource.mem > 0) ? resUsage(dt) : n) + '</span>' +
+                '<span>结束时间: </span><span>' + (dt.endTime ? Win10_child.timestampToTime(dt.endTime) : n) + '</span>' +
+                '<span>结束状态码: </span><span>' + (dt.exitCode ? exitStr(dt) : n) + '</span>';
+            $(".details").html(str)
+
+        }
+
+        function exitStr(dt) {
+            var str = "";
+            if (dt.endTime && dt.endTime > 0) {
+                var code = (dt.exitCode >> 8);
+                if (code > 128) {
+                    str = 'By Signal ' + (code & 0x7F);
+                } else if (dt.execHosts) {
+                    str = 'Exit Code ' + code;
+                } else {
+                    str = 'Killed While Pending';
+                }
+            }
+            return str;
+        }
+
+        function jobCmd(dt) {
+            var cn = dt.jobSpec.jobName;
+            if (cn == 'cubevnc' || cn == 'dcv' || cn == 'jupyter') {
+                return dt.jobSpec.jobName;
+            } else {
+                return dt.jobSpec.command;
+            }
+        }
+
+        function resUsage(dt) {
+            var mem = dt.resource.mem;
+            var swap = dt.resource.swap;
+            var str = "";
+
+            if (mem > 1024 * 1024) {
+                str = 'MEM: ' + String((mem / (1024 * 1024)).toFixed(1) + 'GBytes');
+            } else if (mem > 1024) {
+                str = 'MEM: ' + String((mem / (1024)).toFixed(1) + 'MBytes');
+            } else {
+                str = 'MEM: ' + String((mem).toFixed(1) + 'KBytes');
+            }
+            return str;
+        }
+
+        function requestajax(url) {
+            $.ajax({
+                type: "post",
+                url: "php/aip.php?action=" + url,
+                contentType: "application/json",
+                data: JSON.stringify({
+                    "jobId": jobid
+                }),
+                dataType: "json",
+                success: function(d) {
+                    if (url == 'queryJobHist') {
+                        var status = d.data.statusString;
+                        create(d.data);
+                        details(d.data);
+                    } else {
+                        location.href = location.href;
+                    }
+                },
+                error: function(e) {
+                    Win10_child.close()
+                    Win10_child.toLogin(e)
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

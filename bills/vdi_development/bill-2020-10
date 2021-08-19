@@ -1,0 +1,64 @@
+{
+ "User": "vdi_development",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 197.33852776838526,
+ "Mem_GB_Hours": 83.83332612039169,
+ "GPU_Hours": 197.33852776838526,
+ "App_Cost": 98.66926388419263,
+ "CPU_Cost": 98.66926388419263,
+ "Mem_Cost": 0,
+ "GPU_Cost": 98.66926388419263,
+ "Total_Cost": 296.16739356666795,
+ "App_Hours": {
+  "ParaView": {
+   "Hours": 197.33852776838526,
+   "Cost": 98.66926388419263
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 197.3218611017186,
+   "Mem_GB_Hours": 83.8265296014301,
+   "GPU_Hours": 197.3218611017186,
+   "Runtime": 197.3218611017186,
+   "App_Hours": 197.3218611017186,
+   "JobId": "13965",
+   "Queue": "local",
+   "User": "vdi_development",
+   "App": "ParaView",
+   "JobDescription": "ceshi",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 98.6609305508593,
+   "Mem_Cost": 0,
+   "GPU_Cost": 98.6609305508593,
+   "App_Cost": 98.6609305508593,
+   "StartDate": "2020/10/21",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.016666666666666666,
+   "Mem_GB_Hours": 0.006796518961588542,
+   "GPU_Hours": 0.016666666666666666,
+   "Runtime": 0.016666666666666666,
+   "App_Hours": 0.016666666666666666,
+   "JobId": "13966",
+   "Queue": "local",
+   "User": "vdi_development",
+   "App": "ParaView",
+   "JobDescription": "ceshi",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.008333333333333333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.008333333333333333,
+   "App_Cost": 0.008333333333333333,
+   "StartDate": "2020/10/21",
+   "Project": "default"
+  }
+ ]
+}

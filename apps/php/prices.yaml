@@ -1,0 +1,67 @@
+  page_title: PRICES
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      modal: add-modal
+    - label: APPLY_PRICE
+      attr: success
+      action: "apply_price()"
+    table:
+      id: prices
+      thead:
+      - PRODUCT
+      - UNIT
+      - PRICE
+      - LAST_MODIFIED
+      tbody:
+      - chargename
+      - unit
+      - unitprice
+      - last_update
+      update:
+        url: php/prices.php
+        post: '{"action":"update"}'
+      idkey: chargename
+      lengthMenu: '[50,100]'
+  modals:
+  - modal: add-modal
+    title: NEW
+    body:
+    - label: PRODUCT
+      type: text
+      id: chargename
+    - label: UNIT
+      type: text
+      id: unit
+    - label: PRICE
+      type: text
+      id: unitprice
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/prices.php
+      post: '{"action":"new"}'
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: PRODUCT
+      type: fixed_text
+      id: chargename
+    - label: UNIT
+      type: text
+      id: unit
+    - label: PRICE
+      type: text
+      id: unitprice
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/prices.php
+      post: '{"action":"modify"}'
+    - label: CANCEL
+      attr: success

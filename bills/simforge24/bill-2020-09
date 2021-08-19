@@ -1,0 +1,44 @@
+{
+ "User": "simforge24",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-09",
+ "CPU_Hours": 0.01972222222222222,
+ "Mem_GB_Hours": 0.015916946199205185,
+ "GPU_Hours": 0.01972222222222222,
+ "App_Cost": 0,
+ "CPU_Cost": 0.00986111111111111,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.00986111111111111,
+ "Total_Cost": 0.01972222222222222,
+ "App_Hours": {
+  "LSPrePost": {
+   "Hours": 0.01972222222222222,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.01972222222222222,
+   "Mem_GB_Hours": 0.015916946199205185,
+   "GPU_Hours": 0.01972222222222222,
+   "Runtime": 0.01972222222222222,
+   "App_Hours": 0.01972222222222222,
+   "JobId": "12720",
+   "Queue": "local",
+   "User": "simforge24",
+   "App": "LSPrePost",
+   "JobDescription": "LSPrePost",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.00986111111111111,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.00986111111111111,
+   "App_Cost": 0,
+   "StartDate": "2020/09/25",
+   "Project": "default"
+  }
+ ]
+}

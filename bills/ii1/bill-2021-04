@@ -1,0 +1,37 @@
+{
+ "User": "ii1",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-04",
+ "CPU_Hours": 2.6934087912466667,
+ "Mem_GB_Hours": 1.5334541757428297,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.808022637374,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.808022637374,
+ "App_Hours": {},
+ "Details": [
+  {
+   "CPU_Hours": 2.6934087912466667,
+   "Mem_GB_Hours": 1.5334541757428297,
+   "GPU_Hours": 0,
+   "Runtime": 2.6934087912466667,
+   "App_Hours": 2.6934087912466667,
+   "JobId": "41836",
+   "Queue": "intesim",
+   "User": "ii1",
+   "JobName": "/home/export/online3/intesim_share/script/AnsysEM/AnsysEM04 /home/export/base/nsccwuxi_intesim/ii1/online3/ii1/Linear/wangweinan/Maxwell20210402162447/linear.aedt",
+   "Cluster": "aip",
+   "CPU_Cost": 0.808022637374,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/04/22",
+   "Project": "default"
+  }
+ ]
+}

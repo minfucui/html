@@ -1,0 +1,1486 @@
+[
+  {
+    "jobSpec": {
+      "jobName": "/home/export/online3/intesim_share/script/Workbench/workbench01",
+      "command": "/home/export/online3/intesim_share/script/Workbench/workbench01",
+      "resourceStr": "",
+      "queue": "intesim",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "/dev/null",
+        "overwrite": false
+      },
+      "project": "default",
+      "cwd": "online3/io2/tt/admin/Workbench20210223110449"
+    },
+    "jobID": {
+      "jobID": 46998
+    },
+    "cluster": "aip",
+    "user": "io2",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn037"
+    ],
+    "submitTime": 1622877073,
+    "startTime": 1622877073,
+    "submitHost": "ip-173-0-31-63",
+    "cPUTime": 665,
+    "resource": {
+      "utime": 217,
+      "stime": 448,
+      "cpu": 665,
+      "mem": 25560,
+      "swap": 988940,
+      "nthreads": 11,
+      "pids": [
+        {
+          "pid": [
+            46973
+          ],
+          "pgid": 46822
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn037\",\"Port\":16331}]}]",
+    "runTime": 3785813,
+    "cPUUsage": 0.00017565579705072597
+  },
+  {
+    "jobSpec": {
+      "jobName": "/home/export/base/nsccwuxi_intesim/intesim/online3/script/AnsysEM/AnsysEM02 /home/export/online3/intesim/intesimrun/panhailang//siap/20210628/id_5368_taskType_CT/spm.py",
+      "command": "/home/export/base/nsccwuxi_intesim/intesim/online3/script/AnsysEM/AnsysEM02 /home/export/online3/intesim/intesimrun/panhailang//siap/20210628/id_5368_taskType_CT/spm.py",
+      "resourceStr": "",
+      "queue": "intesim",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "/home/export/online3/intesim/intesimrun/panhailang//siap/20210628/id_5368_taskType_CT/log.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "cwd": "/home/export/online3/intesim/intesimrun/panhailang/siap/20210628/id_5368_taskType_CT"
+    },
+    "jobID": {
+      "jobID": 49506
+    },
+    "cluster": "aip",
+    "user": "intesim",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn037"
+    ],
+    "submitTime": 1624867333,
+    "startTime": 1624867333,
+    "submitHost": "ip-173-0-31-63",
+    "cPUTime": 1387,
+    "resource": {
+      "utime": 1295,
+      "stime": 92,
+      "cpu": 1387,
+      "mem": 230832,
+      "swap": 828968,
+      "nthreads": 4,
+      "pids": [
+        {
+          "pid": [
+            11271
+          ],
+          "pgid": 11271
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn037\",\"Port\":16332}]}]",
+    "runTime": 1795553,
+    "cPUUsage": 0.0007724639707098593
+  },
+  {
+    "jobSpec": {
+      "jobName": "/home/export/base/nsccwuxi_intesim/intesim/online3/script/AnsysEM/AnsysEM02 /home/export/online3/intesim/intesimrun/panhailang//siap/20210628/id_5369_taskType_CT/spm.py",
+      "command": "/home/export/base/nsccwuxi_intesim/intesim/online3/script/AnsysEM/AnsysEM02 /home/export/online3/intesim/intesimrun/panhailang//siap/20210628/id_5369_taskType_CT/spm.py",
+      "resourceStr": "",
+      "queue": "intesim",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "/home/export/online3/intesim/intesimrun/panhailang//siap/20210628/id_5369_taskType_CT/log.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "cwd": "/home/export/online3/intesim/intesimrun/panhailang/siap/20210628/id_5369_taskType_CT"
+    },
+    "jobID": {
+      "jobID": 49517
+    },
+    "cluster": "aip",
+    "user": "intesim",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn037"
+    ],
+    "submitTime": 1624869996,
+    "startTime": 1624869996,
+    "submitHost": "ip-173-0-31-63",
+    "cPUTime": 681,
+    "resource": {
+      "utime": 604,
+      "stime": 77,
+      "cpu": 681,
+      "mem": 54960,
+      "swap": 828804,
+      "nthreads": 4,
+      "pids": [
+        {
+          "pid": [
+            19063
+          ],
+          "pgid": 19063
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn037\",\"Port\":16335}]}]",
+    "runTime": 1792890,
+    "cPUUsage": 0.0003798336763549353
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'ysFrjJdi;ysFrjJdj;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo paraview_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "ParaView",
+      "cwd": "WORK/jobdata/default/ParaView",
+      "application": "ParaView"
+    },
+    "jobID": {
+      "jobID": 49977
+    },
+    "cluster": "aip",
+    "user": "amd_train",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1625209620,
+    "startTime": 1625209620,
+    "submitHost": "gsn018",
+    "cPUTime": 1651,
+    "resource": {
+      "utime": 1200,
+      "stime": 451,
+      "cpu": 1651,
+      "mem": 401560,
+      "swap": 17337612,
+      "nthreads": 128,
+      "pids": [
+        {
+          "pid": [
+            688,
+            15117,
+            15272,
+            15275,
+            15297,
+            15362,
+            15363,
+            15368,
+            15369,
+            15390,
+            15433,
+            15435,
+            15498
+          ],
+          "pgid": 15117
+        }
+      ],
+      "gPUMem": 49
+    },
+    "msg": {
+      "time": 1625209620,
+      "content": "ysFrjJdiu9B45pRgMPfG6v1xZTa7EXqz"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16331,\"Assigned Resource Units\":[{\"gpu\":[4]}]}]}]",
+    "runTime": 1453266,
+    "cPUUsage": 0.0011360618083681858
+  },
+  {
+    "jobSpec": {
+      "jobName": "/home/export/online3/intesim_share/dp/intesim_rpm/run_intesim /home/export/base/nsccwuxi_intesim/in1/online3/in1/aa/djz/INTESIM20210712113157/Motor3D.py",
+      "command": "/home/export/online3/intesim_share/dp/intesim_rpm/run_intesim /home/export/base/nsccwuxi_intesim/in1/online3/in1/aa/djz/INTESIM20210712113157/Motor3D.py",
+      "resourceStr": "",
+      "queue": "intesim",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "/dev/null",
+        "overwrite": false
+      },
+      "project": "default",
+      "cwd": "online3/in1/aa/djz/INTESIM20210712113157"
+    },
+    "jobID": {
+      "jobID": 51743
+    },
+    "cluster": "aip",
+    "user": "in1",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626060773,
+    "startTime": 1626060773,
+    "submitHost": "ip-173-0-31-63",
+    "cPUTime": 277,
+    "resource": {
+      "utime": 148,
+      "stime": 129,
+      "cpu": 277,
+      "mem": 35376,
+      "swap": 1189428,
+      "nthreads": 1,
+      "pids": [
+        {
+          "pid": [
+            19475,
+            19492,
+            19539
+          ],
+          "pgid": 19475
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16334}]}]",
+    "runTime": 602113,
+    "cPUUsage": 0.0004600465361153139
+  },
+  {
+    "jobSpec": {
+      "jobName": "/home/export/online3/intesim_share/dp/intesim_rpm/run_intesim saveasxml.py",
+      "command": "/home/export/online3/intesim_share/dp/intesim_rpm/run_intesim saveasxml.py",
+      "resourceStr": "",
+      "queue": "intesim",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "struct.log",
+        "overwrite": false
+      },
+      "project": "default",
+      "cwd": "/home/export/online3/intesim/intesimrun/mwang/siap/20210709/id_5419_taskType_CT"
+    },
+    "jobID": {
+      "jobID": 51862
+    },
+    "cluster": "aip",
+    "user": "intesim",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626138021,
+    "startTime": 1626138021,
+    "submitHost": "ip-173-0-31-63",
+    "cPUTime": 1,
+    "resource": {
+      "stime": 1,
+      "cpu": 1,
+      "mem": 29732,
+      "swap": 1071440,
+      "nthreads": 2,
+      "pids": [
+        {
+          "pid": [
+            30117
+          ],
+          "pgid": 30117
+        },
+        {
+          "pid": [
+            30144,
+            30149,
+            30150
+          ],
+          "pgid": 30144
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16339}]}]",
+    "runTime": 524865,
+    "cPUUsage": 0.0000019052518266601889
+  },
+  {
+    "jobSpec": {
+      "jobName": "/home/export/online3/intesim_share/dp/intesim_rpm/run_intesim saveasxml.py",
+      "command": "/home/export/online3/intesim_share/dp/intesim_rpm/run_intesim saveasxml.py",
+      "resourceStr": "",
+      "queue": "intesim",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "struct.log",
+        "overwrite": false
+      },
+      "project": "default",
+      "cwd": "/home/export/online3/intesim/intesimrun/mwang/siap/20210709/id_5419_taskType_CT"
+    },
+    "jobID": {
+      "jobID": 51863
+    },
+    "cluster": "aip",
+    "user": "intesim",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626138053,
+    "startTime": 1626138053,
+    "submitHost": "ip-173-0-31-63",
+    "cPUTime": 1,
+    "resource": {
+      "stime": 1,
+      "cpu": 1,
+      "mem": 29732,
+      "swap": 1071432,
+      "nthreads": 2,
+      "pids": [
+        {
+          "pid": [
+            3980
+          ],
+          "pgid": 3980
+        },
+        {
+          "pid": [
+            4122,
+            4135,
+            4138
+          ],
+          "pgid": 4122
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16340}]}]",
+    "runTime": 524833,
+    "cPUUsage": 0.0000019053679932473758
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'kwvyFcTW;kwvyFcTX;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo AnsysEM-job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "AnsysEM",
+      "cwd": "WORK/jobdata/default/AnsysEM",
+      "application": "AnsysEM"
+    },
+    "jobID": {
+      "jobID": 52215
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626341062,
+    "startTime": 1626341062,
+    "submitHost": "gsn018",
+    "cPUTime": 15947,
+    "resource": {
+      "utime": 5662,
+      "stime": 10285,
+      "cpu": 15947,
+      "mem": 800596,
+      "swap": 7883640,
+      "nthreads": 127,
+      "pids": [
+        {
+          "pid": [
+            1497,
+            23310,
+            23411,
+            23414,
+            23443,
+            23465,
+            23466,
+            23467,
+            23473,
+            23481,
+            23568,
+            23570,
+            23584,
+            24478,
+            24648,
+            28705,
+            28850
+          ],
+          "pgid": 23310
+        },
+        {
+          "pid": [
+            28868
+          ],
+          "pgid": 28868
+        }
+      ],
+      "diskIO": 1,
+      "gPUMem": 1
+    },
+    "msg": {
+      "time": 1626341062,
+      "content": "kwvyFcTWGQumgxr2l3MDIKE4zPfnqp8X"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16341,\"Assigned Resource Units\":[{\"gpu\":[2]}]}]}]",
+    "runTime": 321824,
+    "cPUUsage": 0.04955192900467336
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'hLmMpwvU;hLmMpwvV;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo paraview_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "ParaView",
+      "cwd": "WORK/jobdata/default/ParaView",
+      "application": "ParaView"
+    },
+    "jobID": {
+      "jobID": 52502
+    },
+    "cluster": "aip",
+    "user": "amd_dev2",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626571427,
+    "startTime": 1626571427,
+    "submitHost": "gsn018",
+    "cPUTime": 646,
+    "resource": {
+      "utime": 448,
+      "stime": 198,
+      "cpu": 646,
+      "mem": 6028576,
+      "swap": 23243080,
+      "nthreads": 132,
+      "pids": [
+        {
+          "pid": [
+            1017,
+            31755,
+            31864,
+            31869,
+            31914,
+            31967,
+            31968,
+            31973,
+            31974,
+            31986,
+            32029,
+            32031,
+            32043
+          ],
+          "pgid": 31755
+        }
+      ],
+      "gPUMem": 261
+    },
+    "msg": {
+      "time": 1626571427,
+      "content": "hLmMpwvUKzxA3Ry4OCGsajTXdSDFHQ2P"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16335,\"Assigned Resource Units\":[{\"gpu\":[3]}]}]}]",
+    "runTime": 91459,
+    "cPUUsage": 0.007063274254037328
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'bBJeaRvP;bBJeaRvQ;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo paraview_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "maxRunTime": "1440",
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "ParaView",
+      "cwd": "WORK/jobdata/default/ParaView",
+      "application": "ParaView"
+    },
+    "jobID": {
+      "jobID": 52532
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626595151,
+    "startTime": 1626595151,
+    "submitHost": "gsn018",
+    "cPUTime": 549,
+    "resource": {
+      "utime": 449,
+      "stime": 100,
+      "cpu": 549,
+      "mem": 6470668,
+      "swap": 23398836,
+      "nthreads": 128,
+      "pids": [
+        {
+          "pid": [
+            10964,
+            11057,
+            11064,
+            11113,
+            11172,
+            11173,
+            11178,
+            11179,
+            11188,
+            11236,
+            11238,
+            11276,
+            32593
+          ],
+          "pgid": 10964
+        }
+      ],
+      "gPUMem": 81
+    },
+    "msg": {
+      "time": 1626595151,
+      "content": "bBJeaRvPwGYp6KELo0yIkjSDXsTc79nW"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16333,\"Assigned Resource Units\":[{\"gpu\":[4]}]}]}]",
+    "runTime": 67735,
+    "cPUUsage": 0.00810511552373219
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'xu0CP7TJ;xu0CP7TK;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo paraview_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "maxRunTime": "1440",
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "ParaView",
+      "cwd": "WORK/jobdata/default/ParaView",
+      "application": "ParaView"
+    },
+    "jobID": {
+      "jobID": 52613
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626661065,
+    "startTime": 1626661065,
+    "submitHost": "gsn018",
+    "cPUTime": 1,
+    "resource": {
+      "utime": 1,
+      "cpu": 1,
+      "mem": 334512,
+      "swap": 17245680,
+      "nthreads": 128,
+      "pids": [
+        {
+          "pid": [
+            1889,
+            28066,
+            28167,
+            28170,
+            28201,
+            28263,
+            28264,
+            28265,
+            28270,
+            28283,
+            28350,
+            28352,
+            28373
+          ],
+          "pgid": 28066
+        }
+      ],
+      "gPUMem": 29
+    },
+    "msg": {
+      "time": 1626661065,
+      "content": "xu0CP7TJdsnkyUVbRrNF8WD5KMcqmtZS"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16332,\"Assigned Resource Units\":[{\"gpu\":[4]}]}]}]",
+    "runTime": 1821,
+    "cPUUsage": 0.0005491488193300384
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=/usr/bin;printf 'hlHG4Co5;hlHG4Co6;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo fluent-job 3ddp >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep desktop | cut -d':' -f2 | cut -d' ' -f1`;sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "",
+      "queue": "q_x86_share",
+      "minNumSlots": 12,
+      "maxNumSlots": 12,
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "Fluent",
+      "cwd": "WORK/jobdata/default/Fluent",
+      "application": "Fluent"
+    },
+    "jobID": {
+      "jobID": 52614
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 4,
+    "statusString": "RUN",
+    "execHosts": [
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share",
+      "x86_share"
+    ],
+    "submitTime": 1626661097,
+    "startTime": 1626661097,
+    "submitHost": "gsn018",
+    "cPUTime": 3,
+    "resource": {
+      "utime": 3,
+      "cpu": 3,
+      "mem": 110408,
+      "swap": 2168116,
+      "nthreads": 31,
+      "pids": [
+        {
+          "pid": [
+            52458,
+            107142,
+            107273,
+            107276,
+            107592,
+            108121,
+            108122,
+            108123,
+            108126,
+            108128,
+            108163,
+            108165,
+            108176
+          ],
+          "pgid": 107142
+        }
+      ]
+    },
+    "msg": {
+      "time": 1626661097,
+      "content": "hlHG4Co5f6WYMeZxDIvqJsTa0zjK7Ft8"
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":12,\"MaxSlots\":12, \"Hosts\":[{\"Name\":\"x86_share\",\"Port\":16331},{\"Name\":\"x86_share\",\"Port\":16332},{\"Name\":\"x86_share\",\"Port\":16333},{\"Name\":\"x86_share\",\"Port\":16334},{\"Name\":\"x86_share\",\"Port\":16335},{\"Name\":\"x86_share\",\"Port\":16336},{\"Name\":\"x86_share\",\"Port\":16337},{\"Name\":\"x86_share\",\"Port\":16338},{\"Name\":\"x86_share\",\"Port\":16339},{\"Name\":\"x86_share\",\"Port\":16340},{\"Name\":\"x86_share\",\"Port\":16341},{\"Name\":\"x86_share\",\"Port\":16342}]}]",
+    "runTime": 1789,
+    "cPUUsage": 0.00013974287311347122
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'ce1QBbRf;ce1QBbRg;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo PFsalome_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "maxRunTime": "480",
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "PFsalome",
+      "cwd": "WORK/jobdata/default/PFsalome",
+      "application": "PFsalome"
+    },
+    "jobID": {
+      "jobID": 52605
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 32,
+    "statusString": "EXIT",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626656272,
+    "startTime": 1626656272,
+    "endTime": 1626656446,
+    "exitCode": 256,
+    "exitStatusString": "Exit Code 1",
+    "endReason": "Signaled by the job owner",
+    "submitHost": "gsn018",
+    "cPUTime": 7.12082576751709,
+    "resource": {
+      "utime": 2,
+      "stime": 1,
+      "cpu": 3,
+      "mem": 181812,
+      "swap": 4330324,
+      "nthreads": 56,
+      "pids": [
+        {
+          "pid": [
+            11587,
+            11765,
+            11768,
+            11970,
+            12222,
+            12223,
+            12229,
+            12230,
+            12278,
+            12316,
+            12319,
+            12556,
+            13954,
+            29448
+          ],
+          "pgid": 11587
+        }
+      ],
+      "diskIO": 12
+    },
+    "msg": {
+      "time": 1626656272,
+      "content": "ce1QBbRf95VIhmizgxGZvTnYowOSHWp3"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16338,\"Assigned Resource Units\":[{\"gpu\":[7]}]}]}]",
+    "runTime": 174,
+    "cPUUsage": 0.04092428602021316
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23698",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52606
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626656462,
+    "startTime": 1626656462,
+    "endTime": 1626656462,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.07175499945878983,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            11281
+          ],
+          "pgid": 11281
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 0,
+    "cPUUsage": 0
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'cI4C0wFj;cI4C0wFk;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo tanksim_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "maxRunTime": "240",
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "TankSim",
+      "cwd": "WORK/jobdata/default/TankSim",
+      "application": "TankSim"
+    },
+    "jobID": {
+      "jobID": 52604
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 32,
+    "statusString": "EXIT",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626656231,
+    "startTime": 1626656231,
+    "endTime": 1626657018,
+    "exitCode": 256,
+    "exitStatusString": "Exit Code 1",
+    "endReason": "Signaled by the job owner",
+    "submitHost": "gsn018",
+    "cPUTime": 33.691200256347656,
+    "resource": {
+      "utime": 5,
+      "stime": 24,
+      "cpu": 29,
+      "mem": 178024,
+      "swap": 3910736,
+      "nthreads": 56,
+      "pids": [
+        {
+          "pid": [
+            7977,
+            7978,
+            7984,
+            8861,
+            9828
+          ],
+          "pgid": 7571
+        }
+      ],
+      "diskIO": 1098
+    },
+    "msg": {
+      "time": 1626656231,
+      "content": "cI4C0wFjzYPNKx5EaniWSB1sRlgoGAyv"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16332,\"Assigned Resource Units\":[{\"gpu\":[6]}]}]}]",
+    "runTime": 787,
+    "cPUUsage": 0.042809657250759414
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23699",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52608
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626657362,
+    "startTime": 1626657362,
+    "endTime": 1626657363,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.0762849971652031,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            77444
+          ],
+          "pgid": 77444
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 1,
+    "cPUUsage": 0.0762849971652031
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23700",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52609
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626658262,
+    "startTime": 1626658262,
+    "endTime": 1626658262,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.06783600151538849,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            138498
+          ],
+          "pgid": 138498
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 0,
+    "cPUUsage": 0
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'vSFnWsxl;vSFnWsxm;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo PFsalome_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "maxRunTime": "480",
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "PFsalome",
+      "cwd": "WORK/jobdata/default/PFsalome",
+      "application": "PFsalome"
+    },
+    "jobID": {
+      "jobID": 52607
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 32,
+    "statusString": "EXIT",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626656986,
+    "startTime": 1626656986,
+    "endTime": 1626658733,
+    "exitCode": 256,
+    "exitStatusString": "Exit Code 1",
+    "endReason": "Signaled by the job owner",
+    "submitHost": "gsn018",
+    "cPUTime": 65.03630065917969,
+    "resource": {
+      "utime": 3,
+      "stime": 1,
+      "cpu": 4,
+      "mem": 157492,
+      "swap": 4309788,
+      "nthreads": 57,
+      "pids": [
+        {
+          "pid": [
+            10569,
+            10717,
+            10724,
+            10753,
+            10896,
+            10897,
+            10904,
+            10905,
+            10914,
+            10986,
+            11021,
+            12810,
+            31401
+          ],
+          "pgid": 10569
+        }
+      ],
+      "diskIO": 12
+    },
+    "msg": {
+      "time": 1626656986,
+      "content": "vSFnWsxl29wtPVfJmk7N0yjq1XGzgaHc"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16338,\"Assigned Resource Units\":[{\"gpu\":[7]}]}]}]",
+    "runTime": 1747,
+    "cPUUsage": 0.037227418808917966
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'p5veyMXB;p5veyMXC;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo paraview_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "maxRunTime": "1440",
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "ParaView",
+      "cwd": "jobdata/default/ParaView",
+      "application": "ParaView"
+    },
+    "jobID": {
+      "jobID": 52600
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 32,
+    "statusString": "EXIT",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626653360,
+    "startTime": 1626653360,
+    "endTime": 1626658763,
+    "exitCode": 256,
+    "exitStatusString": "Exit Code 1",
+    "endReason": "Signaled by the job owner",
+    "submitHost": "gsn018",
+    "cPUTime": 204.97743225097656,
+    "resource": {
+      "utime": 57,
+      "stime": 14,
+      "cpu": 71,
+      "mem": 7547964,
+      "swap": 25212244,
+      "nthreads": 135,
+      "pids": [
+        {
+          "pid": [
+            1221,
+            1645,
+            1746,
+            1753,
+            1791,
+            1879,
+            1880,
+            1885,
+            1887,
+            1899,
+            1950,
+            1954,
+            1991
+          ],
+          "pgid": 1645
+        }
+      ],
+      "diskIO": 41329,
+      "gPUMem": 170
+    },
+    "msg": {
+      "time": 1626653360,
+      "content": "p5veyMXBQEKNT3DY9wsdAtq8LuRfHGa0"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16337,\"Assigned Resource Units\":[{\"gpu\":[5]}]}]}]",
+    "runTime": 5403,
+    "cPUUsage": 0.0379377072461552
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23701",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52610
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626659162,
+    "startTime": 1626659162,
+    "endTime": 1626659163,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.06457500159740448,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            201904
+          ],
+          "pgid": 201904
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 1,
+    "cPUUsage": 0.06457500159740448
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23702",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52611
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626660062,
+    "startTime": 1626660062,
+    "endTime": 1626660063,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.059066999703645706,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            35300
+          ],
+          "pgid": 35300
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 1,
+    "cPUUsage": 0.059066999703645706
+  },
+  {
+    "jobSpec": {
+      "jobName": "cubevnc",
+      "command": "#!/bin/bash;#CSUB -J cubevnc;vncpath=$HOME/.vnc;if [ ! -d $vncpath ];then mkdir $vncpath;fi;export XDG_RUNTIME_DIR=$vncpath;vncwdfile=$vncpath/pw`echo $CB_HOSTS | cut -f1 -d ' '`.$CB_JOBID;sessionfile=$vncpath/session.$CB_JOBID;xstart=$vncpath/xstartup.$CB_JOBID;vnctop=$CB_ENVDIR/skyformvnc;vncbin=${vnctop}/bin;printf 'S05V4d76;S05V4d77;' | $vncbin/vncpasswd -f > $vncwdfile;chmod 600 $vncwdfile;head -2 $vnctop/openbox/xstartup > $xstart;echo paraview_job >> $xstart;echo exitcode=\\$? >> $xstart;echo kill \\$PID >> $xstart;echo exit \\$exitcode >> $xstart;chmod +x $xstart;sid=`$vncbin/vncserver -geometry 1900x1060 -rfbauth $vncwdfile -autokill -name Desktop$CB_JOBID -xstartup $xstart 2>&1 | grep display | cut -d':' -f2 | cut -d' ' -f1`;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;if [ _$process == '_' ]; then;  echo Cannot start VNC session;  rm -f $vncwdfile $xstart;  exit 1;fi;echo $HOSTNAME $sid > $sessionfile;function sighd(){;  $vncbin/vncserver -kill :$sid;rm -f $vncwdfile $xstart $sessionfile; cat $vncpath/$HOSTNAME\\:$sid.log;  exit 1;};trap sighd SIGINT SIGTERM;while true; do;  sleep 2;process=`$vncbin/vncserver -list | grep -P \":$sid\\t\" | awk '{print $2}'`;  if [ _$process == '_' ]; then;    rm -f $vncwdfile $xstart $sessionfile;    break;   fi;done; cat $vncpath/$HOSTNAME\\:$sid.log",
+      "resourceStr": "need[gpu=0.0625]",
+      "queue": "local",
+      "minNumSlots": 1,
+      "maxNumSlots": 1,
+      "maxRunTime": "1440",
+      "inFile": "/dev/null",
+      "outFile": {
+        "name": "%J.txt",
+        "overwrite": false
+      },
+      "project": "default",
+      "jobDescription": "ParaView",
+      "cwd": "WORK/jobdata/default/ParaView",
+      "application": "ParaView"
+    },
+    "jobID": {
+      "jobID": 52506
+    },
+    "cluster": "aip",
+    "user": "amd_app",
+    "status": 32,
+    "statusString": "EXIT",
+    "execHosts": [
+      "gsn036"
+    ],
+    "submitTime": 1626574384,
+    "startTime": 1626574384,
+    "endTime": 1626660788,
+    "exitCode": 35840,
+    "exitStatusString": "By Signal 12",
+    "submitHost": "gsn018",
+    "cPUTime": 3225.6357421875,
+    "resource": {
+      "utime": 257,
+      "stime": 68,
+      "cpu": 325,
+      "mem": 25483880,
+      "swap": 46207100,
+      "nthreads": 135,
+      "pids": [
+        {
+          "pid": [
+            15997,
+            18819,
+            18912,
+            18917,
+            18940,
+            19026,
+            19027,
+            19028,
+            19033,
+            19044,
+            19084,
+            19086,
+            19122
+          ],
+          "pgid": 18819
+        }
+      ],
+      "diskIO": 50022,
+      "gPUMem": 409
+    },
+    "msg": {
+      "time": 1626574384,
+      "content": "S05V4d768itNm2wsqQzvDZYKHrehu9Tk"
+    },
+    "allocation": "[{\"ResSpec\":\"need[gpu=0.0625]\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn036\",\"Port\":16336,\"Assigned Resource Units\":[{\"gpu\":[4]}]}]}]",
+    "runTime": 86404,
+    "cPUUsage": 0.03733201868186079
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23703",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52612
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626660962,
+    "startTime": 1626660962,
+    "endTime": 1626660963,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.05624999850988388,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            97359
+          ],
+          "pgid": 97359
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 1,
+    "cPUUsage": 0.05624999850988388
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23704",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52615
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626661862,
+    "startTime": 1626661862,
+    "endTime": 1626661863,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.11673799902200699,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            183956
+          ],
+          "pgid": 183956
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 1,
+    "cPUUsage": 0.11673799902200699
+  },
+  {
+    "jobSpec": {
+      "jobName": "cron.tianyun.15min charge.23705",
+      "command": "/usr/bin/php charge.php",
+      "resourceStr": "",
+      "queue": "admin",
+      "minNumSlots": 1,
+      "outFile": {
+        "name": "/var/www/html/apps/php/jobout/%J.txt",
+        "overwrite": false
+      },
+      "cwd": "/var/www/html/apps/php",
+      "interactive": false
+    },
+    "jobID": {
+      "jobID": 52616
+    },
+    "cluster": "aip",
+    "user": "tianyun",
+    "status": 192,
+    "statusString": "FINISH",
+    "execHosts": [
+      "gsn018"
+    ],
+    "submitTime": 1626662762,
+    "startTime": 1626662762,
+    "endTime": 1626662763,
+    "exitStatusString": "Exit Code 0",
+    "submitHost": "gsn018",
+    "cPUTime": 0.11897300183773041,
+    "resource": {
+      "mem": 14308,
+      "swap": 68516,
+      "pids": [
+        {
+          "pid": [
+            39138
+          ],
+          "pgid": 39138
+        }
+      ]
+    },
+    "allocation": "[{\"ResSpec\":\"\",\"MinSlots\":1,\"MaxSlots\":1, \"Hosts\":[{\"Name\":\"gsn018\",\"Port\":16331}]}]",
+    "runTime": 1,
+    "cPUUsage": 0.11897300183773041
+  }
+]
+

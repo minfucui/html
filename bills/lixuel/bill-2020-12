@@ -1,0 +1,44 @@
+{
+ "User": "lixuel",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-12",
+ "CPU_Hours": 4625.589824205512,
+ "Mem_GB_Hours": 10.449788582956945,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 925.1179648411021,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 925.1179648411021,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 4625.589824205512,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 4625.589824205512,
+   "Mem_GB_Hours": 10.449788582956945,
+   "GPU_Hours": 0,
+   "Runtime": 72.27484100321112,
+   "App_Hours": 4625.589824205512,
+   "JobId": "19662",
+   "Queue": "q_x86_cn_sim",
+   "User": "lixuel",
+   "App": "Fluent",
+   "JobDescription": "50LSTR",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 925.1179648411021,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/12/06",
+   "Project": "default"
+  }
+ ]
+}

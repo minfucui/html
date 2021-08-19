@@ -1,0 +1,30 @@
+  page_title: USERS
+  rows:
+  - width: 12    # 1-12
+    table:
+      id: users
+      thead:
+      - USERNAME
+      - USER_GROUP
+      - TOTAL_NUM_SLOTS
+      - NUM_PENDING_JOBS
+      - NUM_RUNNING_JOBS
+      - NUM_SUSP_JOBS
+      - NUM_RESERVED_JOB_SLOTS
+      - MAX_JOB_SLOTS
+      tbody:
+      - name
+      - isgroup
+      - njobs
+      - npend
+      - nrun
+      - nstop
+      - nrsv
+      - maxj
+      update:
+        interval: 30
+        url: php/users.php
+        post: '{"action":"update"}'
+      lengthMenu: '[30, 100, 500]'
+      idkey: none
+      noselect: yes

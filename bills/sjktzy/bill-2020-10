@@ -1,0 +1,68 @@
+{
+ "User": "sjktzy",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.03388888888888889,
+ "Mem_GB_Hours": 0.007854686313205295,
+ "GPU_Hours": 0.012222222222222223,
+ "App_Cost": 0.10833333333333334,
+ "CPU_Cost": 0.016944444444444446,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.006111111111111111,
+ "Total_Cost": 0.1436111111111111,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 0.021666666666666667,
+   "Cost": 0.10833333333333334
+  },
+  "FluentMeshing": {
+   "Hours": 0.012222222222222223,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.012222222222222223,
+   "Mem_GB_Hours": 0.0056855731540256076,
+   "GPU_Hours": 0.012222222222222223,
+   "Runtime": 0.012222222222222223,
+   "App_Hours": 0.012222222222222223,
+   "JobId": "14784",
+   "Queue": "local",
+   "User": "sjktzy",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.006111111111111111,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.006111111111111111,
+   "App_Cost": 0,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.021666666666666667,
+   "Mem_GB_Hours": 0.0021691131591796875,
+   "GPU_Hours": 0,
+   "Runtime": 0.021666666666666667,
+   "App_Hours": 0.021666666666666667,
+   "JobId": "14782",
+   "Queue": "q_x86_expr",
+   "User": "sjktzy",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.010833333333333334,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.10833333333333334,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  }
+ ]
+}

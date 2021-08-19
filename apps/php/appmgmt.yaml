@@ -1,0 +1,140 @@
+  page_title: APP_PUBLISH
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: add
+      modal: add-modal
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    - label: PUBLISH
+      attr: success
+      modal: b1-modal
+    - label: UNPUBLISH
+      attr: warning
+      modal: b2-modal
+    table:
+      id: apps
+      thead:
+      - APP_NAME
+      - ICON
+      - CATEGORY
+      - PUBLISHED
+      - DESCRIPTION
+      - ACTIVEJOBS
+      - CONFPATH
+      - LAST_MODIFIED
+      tbody:
+      - appname
+      - icon
+      - catname
+      - published
+      - description
+      - activejobs
+      - confpath
+      - last_update
+      update:
+        url: php/appmgmt.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      idkey: appname
+  modals:
+  - modal: add-modal
+    title: NEW
+    body:
+    - label: APP_NAME
+      type: text
+      id: appname
+    - label: CATEGORY
+      type: select
+      id: catname
+      options: catname
+    - label: PUBLISHED
+      type: select
+      id: published
+      options: published
+    - label: CONFPATH
+      type: text
+      id: confpath
+    - label: DESCRIPTION
+      id: description
+      type: textarea
+      rows: 3
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/appmgmt.php
+      post: '{"action":"new_app"}'
+      data: all
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/appmgmt.php
+      post: '{"action": "delete_apps"}'
+      confirm: 
+        - appname
+        - catname
+        - published
+        - activejobs
+    - label: CANCEL
+      attr: success
+      action: cancel
+  - modal: b1-modal
+    title: PUBLISH
+    buttons:
+    - label: PUBLISH
+      attr: success
+      url: php/appmgmt.php
+      post: '{"action": "publish_apps"}'
+      confirm:
+      - appname
+      - catname
+    - label: CANCEL
+      attr: secondary
+  - modal: b2-modal
+    title: UNPUBLISH
+    buttons:
+    - label: UNPUBLISH
+      attr: warning
+      url: php/appmgmt.php
+      post: '{"action": "unpublish_apps"}'
+      confirm:
+      - appname
+      - catname
+      - activejobs
+    - label: CANCEL
+      attr: secondary 
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: APP_NAME
+      id: appname
+      type: fixed_text
+    - label: CATEGORY
+      type: select
+      id: catname
+      options: catname
+    - label: PUBLISHED
+      type: select
+      id: published
+      options: published
+    - label: DESCRIPTION
+      id: description
+      type: textarea
+      rows: 3
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/appmgmt.php
+      post: '{"action":"modify_app"}'
+    - label: CANCEL
+      attr: success
+      action: cancel

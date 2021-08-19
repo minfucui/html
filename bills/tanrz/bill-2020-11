@@ -1,0 +1,44 @@
+{
+ "User": "tanrz",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 4.0012800260758326,
+ "Mem_GB_Hours": 4.862621961057336,
+ "GPU_Hours": 4.0012800260758326,
+ "App_Cost": 20.006400130379163,
+ "CPU_Cost": 2.0006400130379163,
+ "Mem_Cost": 0,
+ "GPU_Cost": 2.0006400130379163,
+ "Total_Cost": 24.007680156455,
+ "App_Hours": {
+  "Hypermesh": {
+   "Hours": 4.0012800260758326,
+   "Cost": 20.006400130379163
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 4.0012800260758326,
+   "Mem_GB_Hours": 4.862621961057336,
+   "GPU_Hours": 4.0012800260758326,
+   "Runtime": 4.0012800260758326,
+   "App_Hours": 4.0012800260758326,
+   "JobId": "18292",
+   "Queue": "local",
+   "User": "tanrz",
+   "App": "Hypermesh",
+   "JobDescription": "例子",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 2.0006400130379163,
+   "Mem_Cost": 0,
+   "GPU_Cost": 2.0006400130379163,
+   "App_Cost": 20.006400130379163,
+   "StartDate": "2020/11/26",
+   "Project": "default"
+  }
+ ]
+}

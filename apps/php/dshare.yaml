@@ -1,0 +1,49 @@
+  page_title: DATA_SHARE
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: "new_file_share()"
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    table:
+      id: dshare
+      thead:
+      - ID
+      - FILE
+      - SHARE
+      - DESCRIPTION
+      - USERS
+      - LAST_MODIFIED
+      tbody:
+      - id
+      - file
+      - share
+      - description
+      - targets
+      - last_update
+      update:
+        interval: 60
+        url: php/dshare.php
+        post: '{"action":"update"}'
+      idkey: none
+  - width: 12
+    file:
+      height: 400px
+  modals:
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/dshare.php
+      post: '{"action": "delete"}'
+      confirm:
+      - id
+      - file
+      - targets
+    - label: CANCEL
+      attr: success

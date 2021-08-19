@@ -1,0 +1,43 @@
+  page_title: APPLICATION_SHARES
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    table:
+      id: ashare
+      thead:
+      - ID
+      - JOB
+      - SHARE
+      - DESCRIPTION
+      - USERS
+      - LAST_MODIFIED
+      tbody:
+      - id
+      - app
+      - share
+      - description
+      - targets
+      - last_update
+      update:
+        interval: 60
+        url: php/ashare.php
+        post: '{"action":"update"}'
+      idkey: none
+  modals:
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/ashare.php
+      post: '{"action": "delete"}'
+      confirm:
+      - id
+      - app
+      - targets
+    - label: CANCEL
+      attr: success

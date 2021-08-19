@@ -1,0 +1,2 @@
+#!/bin/bash
+wc -l dbconfig yamltest *.yaml *.html php/*.yaml php/*.php php/i18n/* js/*.js

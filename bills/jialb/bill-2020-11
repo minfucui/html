@@ -1,0 +1,44 @@
+{
+ "User": "jialb",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 0.5347222222222222,
+ "Mem_GB_Hours": 0.014591040081448025,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.10694444444444445,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.10694444444444445,
+ "App_Hours": {
+  "StarCCM": {
+   "Hours": 0.5347222222222222,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.5347222222222222,
+   "Mem_GB_Hours": 0.014591040081448025,
+   "GPU_Hours": 0,
+   "Runtime": 0.021388888888888888,
+   "App_Hours": 0.5347222222222222,
+   "JobId": "17417",
+   "Queue": "q_x86_cn_sim_plus",
+   "User": "jialb",
+   "App": "StarCCM",
+   "JobDescription": "Star_Black_Holes",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.10694444444444445,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/19",
+   "Project": "default"
+  }
+ ]
+}

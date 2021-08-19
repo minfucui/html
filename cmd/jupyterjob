@@ -1,0 +1,30 @@
+#!/bin/bash
+#CSUB -J jupyter
+jupyter_workdir=$HOME/.jupyter
+if [ ! -d $jupyter_workdir ]; then
+    mkdir $jupyter_workdir
+    if [ $? != 0 ]; then
+       echo 'ERROR: Cannot write to user home directory.'
+       exit 1
+    fi
+fi
+
+# delete log files older than 30 days
+find $jupyter_workdir -type f -name '*.log' -mtime +30 -exec rm {} \;
+
+export XDG_RUNTIME_DIR=$jupyter_workdir
+port=`echo $CB_ALLOCATION | cut -d':' -f7 | cut -d'}' -f1`
+
+logfile=${jupyter_workdir}/session$CB_JOBID.log
+jupyter notebook --ip=$HOSTNAME --port=$port > $logfile 2>&1 &
+sleep 10
+ip=`hostname -I | head -1 | cut -d' ' -f1`
+message=`grep http $logfile | grep -v NotebookApp | sed s/$HOSTNAME/$ip/`
+cpost -d "$message" $CB_JOBID > /dev/null
+while true; do
+  sleep 2
+  jobs | grep Running 2>&1 > /dev/null
+  if [ $? != 0 ]; then
+    exit 0
+  fi
+done

@@ -1,0 +1,68 @@
+{
+ "User": "qaz00998",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 0.017777777777777778,
+ "Mem_GB_Hours": 0.003075794643825955,
+ "GPU_Hours": 0.010555555555555556,
+ "App_Cost": 0,
+ "CPU_Cost": 0.0035555555555555557,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.0021111111111111113,
+ "Total_Cost": 0.0071111111111111115,
+ "App_Hours": {
+  "AnsysAPDL": {
+   "Hours": 0.007222222222222222,
+   "Cost": 0
+  },
+  "ICEM-CFD": {
+   "Hours": 0.010555555555555556,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.007222222222222222,
+   "Mem_GB_Hours": 0.0005434905158148871,
+   "GPU_Hours": 0,
+   "Runtime": 0.007222222222222222,
+   "App_Hours": 0.007222222222222222,
+   "JobId": "15761",
+   "Queue": "q_x86_expr",
+   "User": "qaz00998",
+   "App": "AnsysAPDL",
+   "JobDescription": "AnsysAPDL",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0014444444444444444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/03",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.010555555555555556,
+   "Mem_GB_Hours": 0.002532304128011068,
+   "GPU_Hours": 0.010555555555555556,
+   "Runtime": 0.010555555555555556,
+   "App_Hours": 0.010555555555555556,
+   "JobId": "15763",
+   "Queue": "local",
+   "User": "qaz00998",
+   "App": "ICEM-CFD",
+   "JobDescription": "ICEM-CFD",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0021111111111111113,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0021111111111111113,
+   "App_Cost": 0,
+   "StartDate": "2020/11/03",
+   "Project": "default"
+  }
+ ]
+}

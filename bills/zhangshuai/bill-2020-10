@@ -1,0 +1,68 @@
+{
+ "User": "zhangshuai",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.7341979385713888,
+ "Mem_GB_Hours": 0.14579188769405527,
+ "GPU_Hours": 0.7341979385713888,
+ "App_Cost": 0,
+ "CPU_Cost": 0.1468395877142778,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.1468395877142778,
+ "Total_Cost": 0.2936791754285556,
+ "App_Hours": {
+  "ParaView": {
+   "Hours": 0.034722222222222224,
+   "Cost": 0
+  },
+  "TankSim": {
+   "Hours": 0.6994757163491666,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.034722222222222224,
+   "Mem_GB_Hours": 0.016041994094848633,
+   "GPU_Hours": 0.034722222222222224,
+   "Runtime": 0.034722222222222224,
+   "App_Hours": 0.034722222222222224,
+   "JobId": "15330",
+   "Queue": "local",
+   "User": "zhangshuai",
+   "App": "ParaView",
+   "JobDescription": "ParaView",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.006944444444444445,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.006944444444444445,
+   "App_Cost": 0,
+   "StartDate": "2020/10/31",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.6994757163491666,
+   "Mem_GB_Hours": 0.12974989359920663,
+   "GPU_Hours": 0.6994757163491666,
+   "Runtime": 0.6994757163491666,
+   "App_Hours": 0.6994757163491666,
+   "JobId": "15299",
+   "Queue": "local",
+   "User": "zhangshuai",
+   "App": "TankSim",
+   "JobDescription": "TankSim-StarCCM",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.13989514326983335,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.13989514326983335,
+   "App_Cost": 0,
+   "StartDate": "2020/10/31",
+   "Project": "default"
+  }
+ ]
+}

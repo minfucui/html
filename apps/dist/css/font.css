@@ -1,0 +1,11 @@
+* {
+            font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu
+  }
+
+.page-item.active .page-link {
+    background-color: lightgrey !important;
+    border: 1px solid lightgrey;
+}
+.page-link {
+    color: black !important;
+}

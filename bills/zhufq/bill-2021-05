@@ -1,0 +1,108 @@
+{
+ "User": "zhufq",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-05",
+ "CPU_Hours": 63.68953750674638,
+ "Mem_GB_Hours": 0.25619213882075126,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 12.737907501349277,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 15.740564442472834,
+ "App_Hours": {
+  "SC_Batch1404": {
+   "Hours": 55.835187437920005,
+   "Cost": 0
+  },
+  "StarCCM1404": {
+   "Hours": 7.854350068826389,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 6.944627846604167,
+   "Mem_GB_Hours": 0.2119562455247455,
+   "GPU_Hours": 0,
+   "Runtime": 0.27778511386416666,
+   "App_Hours": 6.944627846604167,
+   "JobId": "43629",
+   "Queue": "q_x86_vio_share_plus",
+   "User": "zhufq",
+   "App": "StarCCM1404",
+   "JobDescription": "AA",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 1.3889255693208336,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/09",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.9097222222222222,
+   "Mem_GB_Hours": 0.0275740114847819,
+   "GPU_Hours": 0,
+   "Runtime": 0.03638888888888889,
+   "App_Hours": 0.9097222222222222,
+   "JobId": "43636",
+   "Queue": "q_x86_cn_sim_plus",
+   "User": "zhufq",
+   "App": "StarCCM1404",
+   "JobDescription": "bb",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.18194444444444446,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/09",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 27.114305241106663,
+   "Mem_GB_Hours": 0.008008653587703161,
+   "GPU_Hours": 0,
+   "Runtime": 1.1297627183794445,
+   "App_Hours": 27.114305241106663,
+   "JobId": "43631",
+   "Queue": "q_x86_vio_share",
+   "User": "zhufq",
+   "App": "SC_Batch1404",
+   "JobDescription": "duck0430-1",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/starccmyaml1404 /home/export/base/nsccwuxi_amd/zhufq/WORK/WZY/H20/014-H20-deice-duck0430-1-20210508@meshed.sim",
+   "Cluster": "aip",
+   "CPU_Cost": 5.422861048221334,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/09",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 28.720882196813335,
+   "Mem_GB_Hours": 0.008653228223520758,
+   "GPU_Hours": 0,
+   "Runtime": 1.1967034248672224,
+   "App_Hours": 28.720882196813335,
+   "JobId": "43637",
+   "Queue": "q_x86_cn_sim",
+   "User": "zhufq",
+   "App": "SC_Batch1404",
+   "JobDescription": "duck0430-2",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/starccmyaml1404 /home/export/base/nsccwuxi_amd/zhufq/WORK/WZY/H20/014-H20-deice-duck0430-2-20210508@meshed.sim",
+   "Cluster": "aip",
+   "CPU_Cost": 5.744176439362667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/09",
+   "Project": "default"
+  }
+ ]
+}

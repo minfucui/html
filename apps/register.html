@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="plugins/ionicons/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/font.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/skyform.ico">
+</head>
+<body class="hold-transition register-page"
+  style="background: url('images/login.png') no-repeat fixed center left,
+         linear-gradient(141deg, #c9d6ff 0%, #e2e2e2 80%);">
+
+<div class="register-box">
+  <div class="register-logo">
+    <img src="images/logo.png"><br>
+    <span id="logo"></span>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body register-card-body">
+      <p class="login-box-msg" id="register-title"></p>
+      <form method="post", action="register2.html">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="username"
+           placeholder="" autofocus>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- /.col -->
+          <div class="col-12">
+            <input class="btn btn-outline-primary btn-block"
+             id="continue-button" onclick="register()">
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+  <div id="errmsg" style="color:red"><br></div>
+</div>
+<!-- /.login-box -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script>
+  var dict = JSON.parse(localStorage.getItem('dict'));
+  if (dict == null)
+      window.location.href="index.html"; 
+
+  $('head').append('<title>' + dict.SKYFORM_WEB_INTERFACE + '</title>');
+  $('#logo').html(dict.SKYFORM_WEB_INTERFACE);
+  $('#username').attr('placeholder', dict.USERNAME);
+  $('#register-title').html(dict.FILL_REGISTER_FORM);
+  $('#continue-button').val(dict.CONTINUE);
+
+  function register() {
+    var auth_data = {username: $("#username").val()};
+    if (auth_data.username == '') {
+      $('#errmsg').html(dict.NEED_USERNAME);
+      return;
+    }
+    
+    localStorage.setItem('aipusername', auth_data.username);
+    $.ajax({
+      type: "post",
+      url: "php/checkuser.php",
+      contentType: "application/json",
+      data: JSON.stringify(auth_data),
+      datatype: "json",
+      success: function(data) {
+        var d = JSON.parse(data);
+        if (d.code == 0) {
+           window.location.href = "register2.html";
+        } else {
+           $('#errmsg').html(dict[d.message] ? 
+               dict[d.message] : d.message);
+        }
+      },
+      error: function() {
+        $('#errmsg').html(back_error);
+      }
+    });
+  }
+</script>
+</body>
+</html>

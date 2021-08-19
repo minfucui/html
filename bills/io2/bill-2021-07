@@ -1,0 +1,37 @@
+{
+ "User": "io2",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-07",
+ "CPU_Hours": 448.0153251816408,
+ "Mem_GB_Hours": 13.06951621068312,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 134.40459755449194,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 134.40459755449194,
+ "App_Hours": {},
+ "Details": [
+  {
+   "CPU_Hours": 448.0153251816408,
+   "Mem_GB_Hours": 13.06951621068312,
+   "GPU_Hours": 0,
+   "Runtime": 448.0153251816408,
+   "App_Hours": 448.0153251816408,
+   "JobId": "46998",
+   "Queue": "intesim",
+   "User": "io2",
+   "JobName": "/home/export/online3/intesim_share/script/Workbench/workbench01",
+   "Cluster": "aip",
+   "CPU_Cost": 134.40459755449194,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/06/05",
+   "Project": "default"
+  }
+ ]
+}

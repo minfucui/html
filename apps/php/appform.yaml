@@ -1,0 +1,49 @@
+  page_title: APP_INSTANCES
+  rows:
+  - width: 6    # 1-12
+    height: 600px
+    form:
+    - title: INSTANCE_PARAMS
+      items:
+      - label: PROJECT
+        type: select
+        id: projname
+      - label: INSTANCE_NAME
+        id: ins_name
+        type: text
+        required: yes
+      - label: APP_NAME
+        id: appname
+        type: fixed_text
+    buttons:
+    - label: SUBMIT
+      attr: primary
+      action: "jobsubmit()"
+    - label: SAVE
+      attr: success
+      action: "saveInstance()"
+  - width: 6
+    height: 600px
+    table:
+      title: APP_INSTANCES
+      id: instances
+      thead:
+      - INSTANCE_NAME
+      - PROJECT
+      - ACTIVEJOBS
+      - APP_NAME
+      tbody:
+      - ins_name
+      - projname
+      - activejobs
+      - appname
+      update:
+        interval: 60
+        url: php/appins.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      idkey: ins_name
+      noselect: yes
+  - width: 12
+    file:
+      height: 300px

@@ -1,0 +1,102 @@
+  page_title: DASHBOARD 
+  rows:
+  - width: 3       ############0
+    infobox:
+      id: runjobs
+      title: NUM_RUNNING_JOBS
+      icon: cog
+      attr: info
+  - width: 3       ############1
+    infobox:
+      id: pendjobs
+      title: NUM_PENDING_JOBS
+      icon: hourglass-half
+      attr: warning
+  - width: 3       ############2
+    infobox:
+      id: runningusers
+      title: NUM_RUNNING_USERS
+      icon: users-cog
+      attr: info
+  - width: 3       ############3
+    infobox:
+      id: pendingusers
+      title: NUM_PENDING_USERS
+      icon: user-clock
+      attr: warning
+  - width: 3       ############4
+    donutchart:
+      id: hoststatus
+      title: HOST_STATUS
+      data:
+      - label: OK_CHART
+        color: success
+      - label: FULL
+        color: primary
+      - label: BUSY
+        color: info
+      - label: CLOSED
+        color: secondary
+      - label: PROBLEM
+        color: danger
+  - width: 3       ############5
+    donutchart:
+      id: cpustatus  
+      title: CPU_STATUS
+      data:
+      - label: AVAILABLE
+        color: success
+      - label: USED
+        color: primary
+      - label: BUSY
+        color: info
+      - label: CLOSED
+        color: secondary
+      - label: PROBLEM
+        color: danger
+  - width: 6       ############6
+    hor_barchart:
+      id: userjobs
+      title: NUMBER_OF_JOBS_BY_USER
+      data:
+      - label: PENDING
+        color: warning
+      - label: RUNNING
+        color: info
+      - label: SUSPENDED
+        color: secondary
+  - width: 3       ############7
+    donutchart:
+      id: gpustatus
+      title: LS_STATUS
+      data:
+      - label: AVAILABLE
+        color: success
+      - label: USED
+        color: primary
+  - width: 3       ############8
+    donutchart:
+      id: jobstatus
+      title: JOB_STATUS
+      data:
+      - label: PENDING
+        color: warning
+      - label: RUNNING
+        color: info
+      - label: SUSPENDED
+        color: secondary
+  - width: 6       ############9
+    hor_barchart:
+      id: queuejobs
+      title: NUMBER_OF_JOBS_BY_QUEUE
+      data:
+      - label: PENDING
+        color: warning
+      - label: RUNNING
+        color: info
+      - label: SUSPENDED
+        color: secondary
+  - width: 12       ###########10
+    hostlist:
+      id: hostlist
+      title: HOSTS

@@ -1,0 +1,84 @@
+  page_title: JOBS
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: KILL
+      attr: danger
+      modal: del-modal
+    - label: SUSPEND
+      attr: warning
+      modal: b1-modal
+    - label: RESUME
+      attr: success
+      modal: b2-modal
+    table:
+      id: jobs
+      thead:
+      - JOB_ID
+      - STATUS
+      - INSTANCE_NAME
+      - APP_NAME
+      - APPLICATION_SHARES
+      - QUEUE
+      - SUBMIT_TIME
+      - START_TIME
+      - FINISH_TIME
+      - USERNAME
+      tbody:
+      - jobid
+      - status
+      - ins_name
+      - appname
+      - share
+      - queue
+      - submit_time
+      - start_time
+      - finish_time
+      - user
+      update:
+        interval: 30
+        url: php/jobs.php
+        post: '{"action":"update"}'
+      order: '[[2, "des"]]'
+      lengthMenu: '[30, 100, 500]'
+      idkey: jobid
+  modals:
+  - modal: del-modal
+    title: KILL
+    buttons:
+    - label: KILL
+      attr: danger
+      url: php/jobs.php
+      post: '{"action":"kill"}'
+      confirm:
+      - jobid
+      - ins_name
+      - appname
+    - label: CANCEL
+      attr: success
+  - modal: b1-modal
+    title: SUSPEND
+    buttons:
+    - label: SUSPEND
+      attr: warning
+      url: php/jobs.php
+      post: '{"action": "stop"}'
+      confirm:
+        - jobid
+        - ins_name
+        - appname
+    - label: CANCEL
+      attr: success
+  - modal: b2-modal
+    title: RESUME
+    buttons:
+    - label: RESUME
+      attr: success
+      url: php/jobs.php
+      post: '{"action":"resume"}'
+      confirm:
+        - jobid
+        - ins_name
+        - appname
+    - label: CANCEL
+      attr: secondary 

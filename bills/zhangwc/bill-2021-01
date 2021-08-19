@@ -1,0 +1,132 @@
+{
+ "User": "zhangwc",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-01",
+ "CPU_Hours": 300.84282202157686,
+ "Mem_GB_Hours": 101.98103649923806,
+ "GPU_Hours": 300.8328220215769,
+ "App_Cost": 0,
+ "CPU_Cost": 60.1685644043155,
+ "Mem_Cost": 0,
+ "GPU_Cost": 60.16656440431549,
+ "Total_Cost": 120.37680267712243,
+ "App_Hours": {
+  "ICESIM": {
+   "Hours": 0.005,
+   "Cost": 0
+  },
+  "ICESIM_v1": {
+   "Hours": 0.005,
+   "Cost": 0
+  },
+  "ParaView": {
+   "Hours": 300.8328220215769,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.4941853162680556,
+   "Mem_GB_Hours": 0.18943552429037036,
+   "GPU_Hours": 0.4941853162680556,
+   "Runtime": 0.4941853162680556,
+   "App_Hours": 0.4941853162680556,
+   "JobId": "27556",
+   "Queue": "local",
+   "User": "zhangwc",
+   "App": "ParaView",
+   "JobDescription": "ParaView",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.09883706325361112,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.09883706325361112,
+   "App_Cost": 0,
+   "StartDate": "2021/01/19",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.005,
+   "Mem_GB_Hours": 0.0000714111328125,
+   "GPU_Hours": 0,
+   "Runtime": 0.005,
+   "App_Hours": 0.005,
+   "JobId": "27551",
+   "Queue": "local",
+   "User": "zhangwc",
+   "App": "ICESIM_v1",
+   "JobDescription": "ICESIM_v1",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.001,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/01/19",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.07472222222222222,
+   "Mem_GB_Hours": 0.03213627921210395,
+   "GPU_Hours": 0.07472222222222222,
+   "Runtime": 0.07472222222222222,
+   "App_Hours": 0.07472222222222222,
+   "JobId": "27552",
+   "Queue": "local",
+   "User": "zhangwc",
+   "App": "ParaView",
+   "JobDescription": "ParaView",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.014944444444444444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.014944444444444444,
+   "App_Cost": 0,
+   "StartDate": "2021/01/19",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 300.26391448308664,
+   "Mem_GB_Hours": 101.75932183532298,
+   "GPU_Hours": 300.26391448308664,
+   "Runtime": 300.26391448308664,
+   "App_Hours": 300.26391448308664,
+   "JobId": "27565",
+   "Queue": "local",
+   "User": "zhangwc",
+   "App": "ParaView",
+   "JobDescription": "ParaView",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 60.05278289661744,
+   "Mem_Cost": 0,
+   "GPU_Cost": 60.05278289661744,
+   "App_Cost": 0,
+   "StartDate": "2021/01/19",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.005,
+   "Mem_GB_Hours": 0.00007144927978515625,
+   "GPU_Hours": 0,
+   "Runtime": 0.005,
+   "App_Hours": 0.005,
+   "JobId": "27550",
+   "Queue": "local",
+   "User": "zhangwc",
+   "App": "ICESIM",
+   "JobDescription": "ICESIM",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.001,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/01/19",
+   "Project": "default"
+  }
+ ]
+}

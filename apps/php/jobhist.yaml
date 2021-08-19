@@ -1,0 +1,70 @@
+  page_title: JOB_HIST
+  rows:
+  - width: 2    # 1-12
+    height: 800px
+    form:
+    - title: PARAMETERS
+      format: normal
+      items:
+      - label: TIME_PERIOD
+        type: select
+        id: timep
+        options:
+        - ALL
+        - LAST_24_HOURS
+        - LAST_7_DAYS
+        - LAST_MONTH
+        - LAST_QUARTER
+        - CUSTOM
+      - label: FROM_DATE
+        id: from
+        type: calendar
+      - label: TO
+        id: to
+        type: calendar
+      - label: JOB_STATUS
+        id: type
+        type: select
+        options:
+        - ALL
+        - FINISH
+        - EXIT
+      - label: QUEUE
+        id: queue
+        type: select
+      - label: HOST
+        id: host
+        type: select
+      - label: USER
+        id: user
+        type: select
+    buttons:
+    - label: SEARCH
+      attr: primary
+      action: "searchjobhist()"
+  - width: 10
+    height: 800px
+    table:
+      id: jobhist
+      thead:
+      - JOB_ID
+      - USERNAME
+      - QUEUE
+      - JOB_EXECUTION_HOSTS
+      - JOB_STATUS
+      - SUBMIT_TIME
+      - START_TIME
+      - FINISH_TIME
+      tbody:
+      - jobid
+      - user
+      - queue
+      - exec_hosts
+      - status
+      - submit_time
+      - start_time
+      - finish_time
+      lengthMenu: '[20]'
+      order: '[[1,"desc"]]'
+      idkey: jobid
+      noselect: yes

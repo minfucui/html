@@ -1,0 +1,5 @@
+currenttime=2021-07-14 22:16:02
+User: amd_train balance reduced by 0.25
+User: amd_dev2 balance reduced by 0.75
+User: amd_app balance reduced by 1.00
+User: tianyun balance reduced by 0.00

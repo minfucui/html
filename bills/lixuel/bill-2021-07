@@ -1,0 +1,44 @@
+{
+ "User": "lixuel",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-07",
+ "CPU_Hours": 0.01861111111111111,
+ "Mem_GB_Hours": 0.007622175216674804,
+ "GPU_Hours": 0.01861111111111111,
+ "App_Cost": 0,
+ "CPU_Cost": 0.0037222222222222223,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.0037222222222222223,
+ "Total_Cost": 0.0074444444444444445,
+ "App_Hours": {
+  "FluentMeshing": {
+   "Hours": 0.01861111111111111,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.01861111111111111,
+   "Mem_GB_Hours": 0.007622175216674804,
+   "GPU_Hours": 0.01861111111111111,
+   "Runtime": 0.01861111111111111,
+   "App_Hours": 0.01861111111111111,
+   "JobId": "51841",
+   "Queue": "local",
+   "User": "lixuel",
+   "App": "FluentMeshing",
+   "JobDescription": "MeshingTest",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0037222222222222223,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0037222222222222223,
+   "App_Cost": 0,
+   "StartDate": "2021/07/13",
+   "Project": "default"
+  }
+ ]
+}

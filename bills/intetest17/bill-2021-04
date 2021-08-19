@@ -1,0 +1,55 @@
+{
+ "User": "intetest17",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-04",
+ "CPU_Hours": 2.667574926109167,
+ "Mem_GB_Hours": 1.6927784250290214,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.8002724778327499,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.8002724778327499,
+ "App_Hours": {},
+ "Details": [
+  {
+   "CPU_Hours": 0.4769584034883333,
+   "Mem_GB_Hours": 0.46433360910062405,
+   "GPU_Hours": 0,
+   "Runtime": 0.4769584034883333,
+   "App_Hours": 0.4769584034883333,
+   "JobId": "41858",
+   "Queue": "intesim",
+   "User": "intetest17",
+   "JobName": "/home/export/online3/intesim_share/script/Workbench/workbench01",
+   "Cluster": "aip",
+   "CPU_Cost": 0.1430875210465,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/04/22",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 2.1906165226208336,
+   "Mem_GB_Hours": 1.2284448159283974,
+   "GPU_Hours": 0,
+   "Runtime": 2.1906165226208336,
+   "App_Hours": 2.1906165226208336,
+   "JobId": "41826",
+   "Queue": "intesim",
+   "User": "intetest17",
+   "JobName": "/home/export/online3/intesim_share/script/Workbench/workbench01",
+   "Cluster": "aip",
+   "CPU_Cost": 0.6571849567862499,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/04/22",
+   "Project": "default"
+  }
+ ]
+}

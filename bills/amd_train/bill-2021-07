@@ -1,0 +1,88 @@
+{
+ "User": "amd_train",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-07",
+ "CPU_Hours": 447.95532518164083,
+ "Mem_GB_Hours": 149.89504487627775,
+ "GPU_Hours": 447.95532518164083,
+ "App_Cost": 89.52718590734675,
+ "CPU_Cost": 223.97766259082042,
+ "Mem_Cost": 0,
+ "GPU_Cost": 223.97766259082042,
+ "Total_Cost": 537.9325285707525,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 0.011944444444444445,
+   "Cost": 0.059722222222222225
+  },
+  "ParaView": {
+   "Hours": 447.9433807371964,
+   "Cost": 89.46746368512453
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 408.64785384935146,
+   "Mem_GB_Hours": 149.1984985616604,
+   "GPU_Hours": 408.64785384935146,
+   "Runtime": 408.64785384935146,
+   "App_Hours": 408.64785384935146,
+   "JobId": "49977",
+   "Queue": "local",
+   "User": "amd_train",
+   "App": "ParaView",
+   "JobDescription": "ParaView",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 204.32392692467573,
+   "Mem_Cost": 0,
+   "GPU_Cost": 204.32392692467573,
+   "App_Cost": 69.81970024120209,
+   "StartDate": "2021/07/02",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 39.29552688784473,
+   "Mem_GB_Hours": 0.6909873618619016,
+   "GPU_Hours": 39.29552688784473,
+   "Runtime": 39.29552688784473,
+   "App_Hours": 39.29552688784473,
+   "JobId": "48083",
+   "Queue": "local",
+   "User": "amd_train",
+   "App": "ParaView",
+   "JobDescription": "ParaView",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 19.647763443922365,
+   "Mem_Cost": 0,
+   "GPU_Cost": 19.647763443922365,
+   "App_Cost": 19.647763443922365,
+   "StartDate": "2021/06/15",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.011944444444444445,
+   "Mem_GB_Hours": 0.00555895275539822,
+   "GPU_Hours": 0.011944444444444445,
+   "Runtime": 0.011944444444444445,
+   "App_Hours": 0.011944444444444445,
+   "JobId": "52630",
+   "Queue": "local",
+   "User": "amd_train",
+   "App": "Abaqus",
+   "JobDescription": "Abaqus",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0059722222222222225,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0059722222222222225,
+   "App_Cost": 0.059722222222222225,
+   "StartDate": "2021/07/19",
+   "Project": "default"
+  }
+ ]
+}

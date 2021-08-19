@@ -1,0 +1,61 @@
+  page_title: REPORTS
+  rows:
+  - width: 2    # 1-12
+    height: 800px
+    form:
+    - title: PARAMETERS
+      format: normal
+      items:
+      - label: TIME_PERIOD
+        type: select
+        id: timep
+        options:
+        - ALL
+        - LAST_24_HOURS
+        - LAST_7_DAYS
+        - LAST_MONTH
+        - LAST_QUARTER
+        - CUSTOM
+      - label: FROM_DATE
+        id: from
+        type: calendar
+      - label: TO
+        id: to
+        type: calendar
+      - label: REPORT_TYPE
+        id: type
+        type: select
+        options:
+        - JOB_SLOT_USAGE
+        - JOB_THROUGHPUT
+        - PENDING_JOBS
+        - SUSPEND_JOB
+        - DONE_JOBS
+        - EXITED_JOBS
+        - SUBMITTED_JOBS
+      - label: DATA_TYPE
+        id: cat
+        type: select
+        options:
+        - BYUSER
+        - BYQUEUE
+        - BYUSERGROUP
+        - BYPROJECT
+        - BYAPP
+      - label: QUEUE
+        id: queue
+        type: select
+      - label: HOST
+        id: host
+        type: select
+      - label: USER
+        id: user
+        type: select
+    buttons:
+    - label: RUN_REPORTS
+      attr: primary
+      action: "runReport()"
+  - width: 10
+    height: 800px
+    report:
+      title: 结果

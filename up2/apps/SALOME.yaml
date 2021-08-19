@@ -1,0 +1,28 @@
+---
+command_path: vncsub
+common_params: -q local -novnc none -o %J.txt -R "need[gpu=0.0625]" salome-job
+
+cluster_params:
+  runlimit:
+    options:
+    - ' '
+    - 240
+    - 480
+    - 1440
+
+gui: true
+icon: "image/jpeg;base64,
+iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEQAACxEBf2RfkQAAAAd0SU1FB9wLDhA7B4DX6T0AAAJOSURBVDjL
+7ZRBSFNxHMd///9/e763t5zM1K2xNdcYQzbqYGljZhmEdjAKgiLaunSSOnkIqkMSFHQIq1PUIfHm
+ISKIQMdMD+lBYUuxMczcdHPulb219zbf9n+vW4fQkiDo4Pf6+f6+h9/3xw9gV/+d0E5M3RMTzyRJ
+ejHZ0zP5K+uMRKycXn+mTKlaFoQhdCMeP1FRVZ2iqkhQFMhIEmwKAnicziMWlu1gMCYEoY5CtZrY
+pDSXkuVCampqtLSy8q1SLAa94XDYbjDc21CU9BdFOaRbKBQeU00z6xFi6xiGP2W1MpbmZmAwBo4Q
+2FtTAy6eB03T/ElJ8o/lcpAm5Gwpk0FVWaZFUaQfMpkndodDsXFcF3rzYB9QSmGg6T5aj0ZdmGXv
+mPz+C53BIAnU14ON48DOcSBRCi9XV2EkEoF8NKpRWVYBoeVar3fD4HLN73G7S4iQoZ87vN53FT7N
+vQUj8x3ecce6axoabppaWgLOtjbsMhohWyrBx+lpdWNmpryZz0eAkIe1Hs94R/K5ZmuqhTrLQcBY
+27qUrsMmSLWHsFatHtebzVfYxsbL0tJSuiKKjyqi+Mr9eTSpYiNYrA4YeT29s5bPnW4HUl2DTN8g
+r1JaTA0P324X398VJQpjU+t/f1f9sZjt5Pi4au3tfboTP/4dvDY7Sw7w/KDPZEKYkIv7Q6HAnwLJ
+dmBgft5hNxhu8TqdV9W09FwikStns0dNPh9vbm2NifG4utWcbrvASwvnUw1GpZ9nAda+ViC5KEBa
+wEB0DCDGDMu7X+af6Qd/nvFrs5+7ZAAAAABJRU5ErkJggg=="
+...

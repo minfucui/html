@@ -1,0 +1,92 @@
+{
+ "User": "huzw",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-12",
+ "CPU_Hours": 0.11666666666666667,
+ "Mem_GB_Hours": 0.08025903171963161,
+ "GPU_Hours": 0.0775,
+ "App_Cost": 0,
+ "CPU_Cost": 0.023333333333333338,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.0155,
+ "Total_Cost": 0.03883333333333333,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 0.024722222222222222,
+   "Cost": 0
+  },
+  "Fluent": {
+   "Hours": 0.03916666666666667,
+   "Cost": 0
+  },
+  "Hypermesh": {
+   "Hours": 0.05277777777777778,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.05277777777777778,
+   "Mem_GB_Hours": 0.06350973976982964,
+   "GPU_Hours": 0.05277777777777778,
+   "Runtime": 0.05277777777777778,
+   "App_Hours": 0.05277777777777778,
+   "JobId": "19752",
+   "Queue": "local",
+   "User": "huzw",
+   "App": "Hypermesh",
+   "JobDescription": "test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.010555555555555556,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.010555555555555556,
+   "App_Cost": 0,
+   "StartDate": "2020/12/07",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.03916666666666667,
+   "Mem_GB_Hours": 0.0036566352844238283,
+   "GPU_Hours": 0,
+   "Runtime": 0.03916666666666667,
+   "App_Hours": 0.03916666666666667,
+   "JobId": "19045",
+   "Queue": "q_x86_expr",
+   "User": "huzw",
+   "App": "Fluent",
+   "JobDescription": "123",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.007833333333333335,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/12/01",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.024722222222222222,
+   "Mem_GB_Hours": 0.013092656665378146,
+   "GPU_Hours": 0.024722222222222222,
+   "Runtime": 0.024722222222222222,
+   "App_Hours": 0.024722222222222222,
+   "JobId": "19043",
+   "Queue": "local",
+   "User": "huzw",
+   "App": "Abaqus",
+   "JobDescription": "123",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.004944444444444445,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.004944444444444445,
+   "App_Cost": 0,
+   "StartDate": "2020/12/01",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "User": "bwmask",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 65.18349848118334,
+ "Mem_GB_Hours": 0.9609711093981098,
+ "GPU_Hours": 0,
+ "App_Cost": 325.9174924059167,
+ "CPU_Cost": 32.59174924059167,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 358.5092416465083,
+ "App_Hours": {
+  "StarCCM": {
+   "Hours": 65.18349848118334,
+   "Cost": 325.9174924059167
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 65.18349848118334,
+   "Mem_GB_Hours": 0.9609711093981098,
+   "GPU_Hours": 0,
+   "Runtime": 1.0028230535566667,
+   "App_Hours": 65.18349848118334,
+   "JobId": "17939",
+   "Queue": "q_x86_cn_sim_plus",
+   "User": "bwmask",
+   "App": "StarCCM",
+   "JobDescription": "jag-2",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 32.59174924059167,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 325.9174924059167,
+   "StartDate": "2020/11/23",
+   "Project": "default"
+  }
+ ]
+}

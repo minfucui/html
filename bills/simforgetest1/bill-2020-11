@@ -1,0 +1,64 @@
+{
+ "User": "simforgetest1",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 0.004722222222222222,
+ "Mem_GB_Hours": 0.00004447513156467014,
+ "GPU_Hours": 0,
+ "App_Cost": 0.004722222222222222,
+ "CPU_Cost": 0.002361111111111111,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.010833333333333334,
+ "App_Hours": {
+  "SWOF": {
+   "Hours": 0.004722222222222222,
+   "Cost": 0.004722222222222222
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.0025,
+   "Mem_GB_Hours": 0.00002353668212890625,
+   "GPU_Hours": 0,
+   "Runtime": 0.0025,
+   "App_Hours": 0.0025,
+   "JobId": "18183",
+   "Queue": "q_x86_expr",
+   "User": "simforgetest1",
+   "App": "SWOF",
+   "JobDescription": "SWOF_fluentMeshToFoam",
+   "JobName": "swof_/home/export/base/nsccwuxi_amd/simforgetest1/WORK/12/12_Mesh3617",
+   "Cluster": "aip",
+   "CPU_Cost": 0.00125,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.0025,
+   "StartDate": "2020/11/25",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.0022222222222222222,
+   "Mem_GB_Hours": 0.00002093844943576389,
+   "GPU_Hours": 0,
+   "Runtime": 0.0022222222222222222,
+   "App_Hours": 0.0022222222222222222,
+   "JobId": "18184",
+   "Queue": "q_x86_expr",
+   "User": "simforgetest1",
+   "App": "SWOF",
+   "JobDescription": "SWOF_fluentMeshToFoam",
+   "JobName": "swof_/home/export/base/nsccwuxi_amd/simforgetest1/WORK/12/12_Mesh8039",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0011111111111111111,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.0022222222222222222,
+   "StartDate": "2020/11/25",
+   "Project": "default"
+  }
+ ]
+}

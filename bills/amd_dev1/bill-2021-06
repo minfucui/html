@@ -1,0 +1,44 @@
+{
+ "User": "amd_dev1",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-06",
+ "CPU_Hours": 1.3731042399569444,
+ "Mem_GB_Hours": 0.2580869377003202,
+ "GPU_Hours": 1.3731042399569444,
+ "App_Cost": 6.865521199784722,
+ "CPU_Cost": 0.6865521199784722,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.6865521199784722,
+ "Total_Cost": 8.238625439741666,
+ "App_Hours": {
+  "ICEM-CFD": {
+   "Hours": 1.3731042399569444,
+   "Cost": 6.865521199784722
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 1.3731042399569444,
+   "Mem_GB_Hours": 0.2580869377003202,
+   "GPU_Hours": 1.3731042399569444,
+   "Runtime": 1.3731042399569444,
+   "App_Hours": 1.3731042399569444,
+   "JobId": "49479",
+   "Queue": "local",
+   "User": "amd_dev1",
+   "App": "ICEM-CFD",
+   "JobDescription": "ICEM-CFD",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.6865521199784722,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.6865521199784722,
+   "App_Cost": 6.865521199784722,
+   "StartDate": "2021/06/28",
+   "Project": "default"
+  }
+ ]
+}

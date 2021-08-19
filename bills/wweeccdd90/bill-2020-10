@@ -1,0 +1,112 @@
+{
+ "User": "wweeccdd90",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.28306642044388886,
+ "Mem_GB_Hours": 0.08358709852112853,
+ "GPU_Hours": 0.15417753155499997,
+ "App_Cost": 0,
+ "CPU_Cost": 0.056613284088777784,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.030835506311000002,
+ "Total_Cost": 0.24168405048800004,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 0.1488997537772222,
+   "Cost": 0
+  },
+  "Abaqus2017": {
+   "Hours": 0.1288888888888889,
+   "Cost": 0
+  },
+  "ParaView": {
+   "Hours": 0.005277777777777778,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.129177531555,
+   "Mem_GB_Hours": 0.0710991964096512,
+   "GPU_Hours": 0.129177531555,
+   "Runtime": 0.129177531555,
+   "App_Hours": 0.129177531555,
+   "JobId": "14631",
+   "Queue": "local",
+   "User": "wweeccdd90",
+   "App": "Abaqus",
+   "JobDescription": "test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.025835506311000005,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.025835506311000005,
+   "App_Cost": 0,
+   "StartDate": "2020/10/26",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.01972222222222222,
+   "Mem_GB_Hours": 0.010262410905626084,
+   "GPU_Hours": 0.01972222222222222,
+   "Runtime": 0.01972222222222222,
+   "App_Hours": 0.01972222222222222,
+   "JobId": "14629",
+   "Queue": "local",
+   "User": "wweeccdd90",
+   "App": "Abaqus",
+   "JobDescription": "test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.003944444444444444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.003944444444444444,
+   "App_Cost": 0,
+   "StartDate": "2020/10/26",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.005277777777777778,
+   "Mem_GB_Hours": 0.0021521706051296657,
+   "GPU_Hours": 0.005277777777777778,
+   "Runtime": 0.005277777777777778,
+   "App_Hours": 0.005277777777777778,
+   "JobId": "14630",
+   "Queue": "local",
+   "User": "wweeccdd90",
+   "App": "ParaView",
+   "JobDescription": "test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0010555555555555557,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0010555555555555557,
+   "App_Cost": 0,
+   "StartDate": "2020/10/26",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.1288888888888889,
+   "Mem_GB_Hours": 0.00007332060072157118,
+   "GPU_Hours": 0,
+   "Runtime": 0.008055555555555555,
+   "App_Hours": 0.1288888888888889,
+   "JobId": "14632",
+   "Queue": "q_x86_expr",
+   "User": "wweeccdd90",
+   "App": "Abaqus2017",
+   "JobDescription": "Job-165741-Model-1",
+   "JobName": "Job-165741",
+   "Cluster": "aip",
+   "CPU_Cost": 0.025777777777777778,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/10/26",
+   "Project": "default"
+  }
+ ]
+}

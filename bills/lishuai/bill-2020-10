@@ -1,0 +1,88 @@
+{
+ "User": "lishuai",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 4764.016070125447,
+ "Mem_GB_Hours": 41.0326605418944,
+ "GPU_Hours": 79.02256744396745,
+ "App_Cost": 0,
+ "CPU_Cost": 952.8032140250889,
+ "Mem_Cost": 0,
+ "GPU_Cost": 15.804513488793502,
+ "Total_Cost": 971.726070660919,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 4684.993502681479,
+   "Cost": 0
+  },
+  "FluentMeshing": {
+   "Hours": 79.02256744396745,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 4578.713663130598,
+   "Mem_GB_Hours": 7.801142924833201,
+   "GPU_Hours": 0,
+   "Runtime": 71.5424009864156,
+   "App_Hours": 4578.713663130598,
+   "JobId": "14841",
+   "Queue": "q_x86_cn_sim",
+   "User": "lishuai",
+   "App": "Fluent",
+   "JobDescription": "jiaoban-xjq",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 915.7427326261193,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 106.27983955087998,
+   "Mem_GB_Hours": 0.14341170636964673,
+   "GPU_Hours": 0,
+   "Runtime": 1.6606224929824998,
+   "App_Hours": 106.27983955087998,
+   "JobId": "14840",
+   "Queue": "q_x86_cn_sim",
+   "User": "lishuai",
+   "App": "Fluent",
+   "JobDescription": "jiaoban-xjq",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 21.255967910176004,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 79.02256744396745,
+   "Mem_GB_Hours": 33.08810591069155,
+   "GPU_Hours": 79.02256744396745,
+   "Runtime": 79.02256744396745,
+   "App_Hours": 79.02256744396745,
+   "JobId": "14277",
+   "Queue": "local",
+   "User": "lishuai",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 15.804513488793502,
+   "Mem_Cost": 0,
+   "GPU_Cost": 15.804513488793502,
+   "App_Cost": 0,
+   "StartDate": "2020/10/23",
+   "Project": "default"
+  }
+ ]
+}

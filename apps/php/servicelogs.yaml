@@ -1,0 +1,9 @@
+  page_title: SERVICE_LOGS
+  rows:
+  - width: 12    # 1-12
+    file:
+      height: 600px
+  #- width: 12
+  #  file:
+  #    height: 300px
+  #    path: /var/log/httpd

@@ -1,0 +1,118 @@
+  page_title: HOST_CONF
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: ADD
+      attr: primary
+      modal: add-modal
+    - label: REMOVE
+      attr: danger
+      modal: del-modal
+    - label: SHUTDOWN
+      attr: warning
+      modal: b1-modal
+    - label: POWERUP
+      attr: info
+      modal: b2-modal
+    table:
+      id: hosts
+      thead:
+      - HOST
+      - STATUS
+      - CPUS
+      - GPUS
+      - MAXIMUM_MEMORY
+      - MAXIMUM_SWAP
+      - MAX_JOB_SLOTS
+      - LOAD_THRESHOLD
+      tbody:
+      - name
+      - status
+      - cpus
+      - gpus
+      - maxmem
+      - maxswap
+      - maxjobs
+      - load_threshold
+      update:
+        interval: 30
+        url: php/hostconf.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      lengthMenu: '[30, 100, 500]'
+  modals:
+  - modal: add-modal
+    title: ADD
+    body:
+    - label: HOST
+      type: text
+      id: name
+    - label: MAX_JOB_SLOTS
+      type: text
+      id: maxjobs
+    - label: LOAD_THRESHOLD
+      type: text
+      id: load_threshold
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/hostconf.php
+      post: '{"action":"add"}'
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: HOST
+      type: fixed_text
+      id: name
+    - label: MAX_JOB_SLOTS
+      type: text
+      id: maxjobs
+    - label: LOAD_THRESHOLD
+      type: text
+      id: load_threshold
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/hostconf.php
+      post: '{"action":"modify"}'
+    - label: CANCEL
+      attr: success
+  - modal: del-modal
+    title: REMOVE
+    buttons:
+    - label: REMOVE
+      attr: danger
+      url: php/hostconf.php
+      post: '{"action":"remove"}'
+      confirm:
+      - name
+      - status
+    - label: CANCEL
+      attr: success
+  - modal: b1-modal
+    title: SHUTDOWN
+    buttons:
+    - label: SHUTDOWN
+      attr: warning
+      url: php/hostconf.php
+      post: '{"action": "shutdown"}'
+      confirm:
+        - name
+        - status
+    - label: CANCEL
+      attr: success
+  - modal: b2-modal
+    title: POWERUP
+    buttons:
+    - label: POWERUP
+      attr: info
+      url: php/hostconf.php
+      post: '{"action":"powerup"}'
+      confirm:
+        - name
+        - status
+    - label: CANCEL
+      attr: secondary 

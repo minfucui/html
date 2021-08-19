@@ -1,0 +1,30 @@
+  page_title: PERMISSIONS 
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: SAVE
+      attr: primary
+      action: "savepermissions()"
+
+    table:
+      id: permissions
+      thead:
+      - SCOPE
+      - ADMIN
+      - GROUP_ADMIN
+      - USER
+      - CONFIDENTIAL_ADMIN
+      - AUDITOR
+      - LAST_MODIFIED
+      tbody:
+      - scope
+      - admin
+      - group_admin
+      - user
+      - confidential_admin
+      - auditor
+      - last_update
+      noselect: yes
+      action: permissions
+      idkey: none
+      nopaging: yes

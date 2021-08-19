@@ -1,0 +1,44 @@
+{
+ "User": "simforge23",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 4270.142165680201,
+ "Mem_GB_Hours": 11.975006920312621,
+ "GPU_Hours": 0,
+ "App_Cost": 10675.355414200529,
+ "CPU_Cost": 213.50710828401034,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 10888.862522484527,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 4270.142165680201,
+   "Cost": 10675.355414200529
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 4270.142165680201,
+   "Mem_GB_Hours": 11.975006920312621,
+   "GPU_Hours": 0,
+   "Runtime": 177.9225902366752,
+   "App_Hours": 4270.142165680201,
+   "JobId": "12924",
+   "Queue": "q_x86_cn_sim",
+   "User": "simforge23",
+   "App": "Fluent",
+   "JobDescription": "fluent_test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 213.50710828401034,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 10675.355414200529,
+   "StartDate": "2020/09/28",
+   "Project": "default"
+  }
+ ]
+}

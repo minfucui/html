@@ -1,0 +1,105 @@
+  page_title: SIM_ORDERS
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: add
+      modal: add-modal
+    - label: COMPLETE
+      attr: success
+      modal: b1-modal
+    table:
+      id: it_orders
+      thead:
+      - ORDER_ID
+      - TASK
+      - UPDATE
+      - CREATOR
+      - CREATE_TIME
+      - ASSIGNED_USER
+      - FINISHED_BY
+      - LAST_MODIFIED
+      tbody:
+      - orderid
+      - task
+      - taskupdate
+      - creator
+      - create_time
+      - assigned
+      - finishby
+      - last_update
+      update:
+        url: php/sim_orders.php
+        post: '{"action":"update"}'
+      order: '[[1, "desc"]]'
+      idkey: orderid
+  modals:
+  - modal: add-modal
+    title: NEW
+    body:
+    - label: TASK
+      type: textarea
+      rows: 3
+      id: task
+    - label: ASSIGNED_USER
+      id: assigned
+      type: select
+      options: assigned
+    - label: FINISHED_BY
+      type: calendar_date
+      id: finishby
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/sim_orders.php
+      post: '{"action":"new_order"}'
+      data: all
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: b1-modal
+    title: COMPLETE
+    buttons:
+    - label: COMPLETE
+      attr: success
+      url: php/sim_orders.php
+      post: '{"action": "complete_orders"}'
+      confirm:
+        - orderid
+        - task
+    - label: CANCEL
+      attr: warning
+      action: cancel
+  - modal: view-modal
+    title: UPDATE
+    body:
+    - label: ORDERID
+      type: fixed_text
+      id: orderid
+    - label: TASK
+      id: task
+      rows: 3
+      type: fixed_textarea
+    - label: CREATOR
+      type: fixed_text
+      id: creator
+    - label: UPDATE
+      type: textarea
+      id: taskupdate
+      rows: 3
+    - label: ASSIGNED_USER
+      type: select
+      id: assigned
+      options: assigned
+    - label: FINISHED_BY
+      type: calendar_date
+      id: finishby
+    buttons:
+    - label: UPDATE
+      attr: primary
+      url: php/sim_orders.php
+      post: '{"action":"update_order"}'
+    - label: CANCEL
+      attr: success
+      action: cancel

@@ -1,0 +1,75 @@
+  page_title: 其他调度器参数
+  rows:
+  - width: 6
+    height: 800px
+    form:
+    - title: PARAMETERS
+      format: normal
+      width: 4
+      items:
+      - label: 缺省队列
+        type: select
+        id: default_queue
+      - label: 结束作业信息保留时间(秒)
+        id: memperiod
+        type: text
+      - label: cgroup集成
+        id: cgroup
+        type: select
+        options:
+        - 不用
+        - mem
+        - cpu
+        - cpu mem
+      - label: 用户root可以运行作业
+        id: type
+        type: select
+        options:
+        - WORDYES
+        - WORDNO
+      - label: 主机负载更新间隔(秒)
+        id: load_interval
+        type: select
+        options:
+        - 5
+        - 10
+        - 15
+        - 30
+    buttons:
+    - label: RECONFIGURING_THE_SCHEDULER
+      attr: primary
+      action: reconfig_sched
+  - width: 6
+    height: 800px
+    form:
+    - title: 节能调度参数
+      format: normal
+      width: 4
+      items:
+      - label: 最小无作业时间触发主机节能(分)
+        id: idle_time
+        type: text
+      - label: 作业等待时间最小时间触发主机恢复(分)
+        id: pend_time
+        type: text
+      - label: 主机电源切换时间(分)
+        id: cycle_time
+        type: text
+      - label: 集群主机节能关闭最大率（台/分）
+        id: suspend_rate
+        type: text
+      - label: 集群主机恢复电源开启最大率（台/分）
+        id: resume_rate
+        type: text
+      - label: 节能调度不包含主机名
+        type: text
+        id: exclude_hosts
+      - label: 主机关闭电源命令
+        type: text
+        id: power_down_cmd
+      - label: 主机开启电源命令
+        type: text
+        id: power_up_cmd
+      - label: 主机重启命令
+        id: power_restart_cmd
+        type: text

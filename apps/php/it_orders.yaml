@@ -1,0 +1,109 @@
+  page_title: REG_ORDERS
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: NEW
+      attr: primary
+      action: add
+      modal: add-modal
+    - label: DELETE
+      attr: danger
+      action: delete
+      modal: del-modal
+    table:
+      id: it_orders
+      thead:
+      - USERNAME
+      - ORGANIZATION
+      - NAME
+      - PHONE
+      - EMAIL
+      - ADDRESS
+      - LAST_MODIFIED
+      tbody:
+      - username
+      - organization
+      - name
+      - phone
+      - email
+      - address
+      - last_update
+      update:
+        url: php/it_orders.php
+        post: '{"action":"update"}'
+      order: '[[7, "asc"]]'
+      idkey: username
+  modals:
+  - modal: add-modal
+    title: NEW
+    body:
+    - label: USERNAME
+      type: text
+      id: username
+    - label: ORGANIZATION
+      id: organization
+      type: text
+    - label: NAME
+      type: text
+      id: name
+    - label: PHONE
+      type: text
+      id: phone
+    - label: EMAIL
+      type: text
+      id: email
+    - label: ADDRESS
+      id: address
+      type: text
+    buttons:
+    - label: ADD
+      attr: primary
+      url: php/it_orders.php
+      post: '{"action":"new_order"}'
+      data: all
+    - label: RESET
+      attr: warning
+      action: reset
+  - modal: del-modal
+    title: DELETE
+    buttons:
+    - label: DELETE
+      attr: danger
+      url: php/it_orders.php
+      post: '{"action": "delete_orders"}'
+      confirm: 
+        - username
+        - organization
+        - name
+    - label: CANCEL
+      attr: success
+      action: cancel
+  - modal: view-modal
+    title: MODIFY
+    body:
+    - label: USERNAME
+      type: fixed_text
+      id: username
+    - label: ORGANIZATION
+      id: organization
+      type: text
+    - label: NAME
+      type: text
+      id: name
+    - label: PHONE
+      type: text
+      id: phone
+    - label: EMAIL
+      type: text
+      id: email
+    - label: ADDRESS
+      id: address
+      type: text
+    buttons:
+    - label: MODIFY
+      attr: warning
+      url: php/it_orders.php
+      post: '{"action":"modify_order"}'
+    - label: CANCEL
+      attr: success
+      action: cancel

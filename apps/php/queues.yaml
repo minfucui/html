@@ -1,0 +1,65 @@
+  page_title: QUEUES
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: CLOSE
+      attr: warning
+      modal: b1-modal
+    - label: OPEN
+      attr: info
+      modal: b2-modal
+    table:
+      id: queues
+      thead:
+      - QUEUE_NAME
+      - STATUS
+      - PRIORITY
+      - UTILIZATION
+      - TOTAL_NUM_SLOTS
+      - NUM_PENDING_JOBS
+      - NUM_RUNNING_JOBS
+      - NUM_SUSP_JOBS
+      - MAX_JOB_SLOTS
+      tbody:
+      - name
+      - status
+      - priority
+      - utilization
+      - njobs
+      - npend
+      - nrun
+      - nstop
+      - maxj
+      update:
+        interval: 30
+        url: php/queues.php
+        post: '{"action":"update"}'
+      order: '[[3, "desc"]]'
+      lengthMenu: '[20, 50]'
+      idkey: none
+  modals:
+  - modal: b1-modal
+    title: CLOSE
+    buttons:
+    - label: CLOSE
+      attr: warning
+      url: php/queues.php
+      post: '{"action": "close"}'
+      confirm:
+        - name
+        - status
+        - nrun
+    - label: CANCEL
+      attr: success
+  - modal: b2-modal
+    title: OPEN
+    buttons:
+    - label: OPEN
+      attr: info
+      url: php/queues.php
+      post: '{"action":"open"}'
+      confirm:
+        - name
+        - status
+    - label: CANCEL
+      attr: secondary

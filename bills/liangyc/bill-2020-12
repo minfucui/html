@@ -1,0 +1,68 @@
+{
+ "User": "liangyc",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-12",
+ "CPU_Hours": 0.03277777777777778,
+ "Mem_GB_Hours": 0.009343511793348525,
+ "GPU_Hours": 0.015277777777777777,
+ "App_Cost": 0,
+ "CPU_Cost": 0.006555555555555556,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.0030555555555555557,
+ "Total_Cost": 0.009611111111111112,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 0.015277777777777777,
+   "Cost": 0
+  },
+  "Fluent": {
+   "Hours": 0.0175,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.0175,
+   "Mem_GB_Hours": 0.0015883541107177736,
+   "GPU_Hours": 0,
+   "Runtime": 0.0175,
+   "App_Hours": 0.0175,
+   "JobId": "23763",
+   "Queue": "q_x86_expr",
+   "User": "liangyc",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0035000000000000005,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/12/29",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.015277777777777777,
+   "Mem_GB_Hours": 0.007755157682630751,
+   "GPU_Hours": 0.015277777777777777,
+   "Runtime": 0.015277777777777777,
+   "App_Hours": 0.015277777777777777,
+   "JobId": "20991",
+   "Queue": "local",
+   "User": "liangyc",
+   "App": "Abaqus",
+   "JobDescription": "Abaqus",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0030555555555555557,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0030555555555555557,
+   "App_Cost": 0,
+   "StartDate": "2020/12/15",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+.tab {border-collapse:collapse;font-size:14px;}
+.tab .celll {text-align:right; width:180px;}
+.tab .cellr {text-align:right; width:180px;}
+
+.jtab {border-collapse:collapse;font-size:14px;}
+.jtab .cell {text-align:right; width:250px;}
+
+th, td {
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: 'Microsoft YaHei','宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}

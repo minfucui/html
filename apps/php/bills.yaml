@@ -1,0 +1,36 @@
+  page_title: BILLS
+  rows:
+  - width: 12    # 1-12
+    #buttons:
+    #- label: RUN_BILLS
+    #  attr: primary
+    #  action: runbills
+    table:
+      id: bills
+      thead:
+      - MONTH
+      - USERNAME
+      - CPU(核小时)
+      - CPU费用
+      - GPU(个小时)
+      - GPU费用
+      - 内存(GB小时)
+      - 内存费用
+      - 应用(核小时)
+      - 应用费用
+      - 总费用
+      tbody:
+      - Month
+      - username
+      - CPU_Hours
+      - CPU_Cost
+      - GPU_Hours
+      - GPU_Cost
+      - Mem_GB_Hours
+      - Mem_Cost
+      - App_Hours
+      - App_Cost
+      - Total_Cost
+      idkey: Month
+      order: '[[1, "desc"]]'
+      noselect: yes

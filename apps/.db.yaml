@@ -1,0 +1,274 @@
+dbserver: localhost
+dbuser: root
+dbpassword: password
+databases:
+- dbname: aipconf
+  tables:
+  - name: regusers
+    columns:
+    - name: username
+      type: VARCHAR(20)
+      options: primary key
+    - name: name
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: phone
+      type: VARCHAR(20)
+    - name: email
+      type: VARCHAR(20)
+    - name: organization
+      type: VARCHAR(30)
+      options: NOT NULL
+    - name: address
+      type: VARCHAR(128)
+    - name: acctstatus
+      type: VARCHAR(12) NOT NULL
+    - name: last_update
+      type: TIMESTAMP
+  - name: users
+    columns:
+    - name: username
+      type: VARCHAR(20)
+      options: primary key
+    - name: name
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: phone
+      type: VARCHAR(20)
+    - name: groupname
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: roles
+      type: VARCHAR(100)
+      options: NOT NULL
+    - name: email
+      type: VARCHAR(40)
+    - name: last_update
+      type: TIMESTAMP
+    - name: activation
+      type: VARCHAR(128)
+    - name: acctstatus
+      type: VARCHAR(12) NOT NULL
+    - name: last_pay
+      type: DECIMAL(14,2)
+    - name: last_pay_time
+      type: DATETIME
+    - name: balance
+      type: DECIMAL(14,2)
+    - name: discount
+      type: DECIMAL(5,3)
+    - name: bill_end_balance
+      type: DECIMAL(14,2)
+    - name: bill_end_time
+      type: DATETIME
+  - name: usergroups
+    columns:
+    - name: groupname
+      type: VARCHAR(20)
+      options: primary key
+    - name: organization
+      type: VARCHAR(30)
+      options: NOT NULL
+    - name: contactname
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: groupadmin
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: address
+      type: VARCHAR(128)
+    - name: last_update
+      type: TIMESTAMP
+  - name: budgets
+    columns:
+    - name: unitname
+      type: VARCHAR(20)
+      options: primary key
+    - name: maxslots
+      type: INT
+      options: NOT NULL
+    - name: budget
+      type: FLOAT(10,2)
+      options: NOT NULL
+    - name: discount
+      type: FLOAT(10,2)
+      options: NOT NULL
+    - name: last_update
+      type: TIMESTAMP
+  - name: roles
+    columns:
+    - name: rolename
+      type: VARCHAR(20)
+      options: primary key
+    - name: description
+      type: VARCHAR(100)
+  - name: appcat
+    columns:
+    - name: catname
+      type: VARCHAR(30)
+      options: primary key
+    - name: description
+      type: VARCHAR(1024)
+    - name: last_update
+      type: TIMESTAMP
+  - name: applications
+    columns:
+    - name: appname
+      type: VARCHAR(30)
+      options: primary key
+    - name: catname
+      type: VARCHAR(30)
+    - name: published
+      type: TINYINT(1)
+    - name: confpath
+      type: VARCHAR(1024)
+      options: NOT NULL
+    - name: description
+      type: VARCHAR(1024)
+    - name: icon
+      type: VARCHAR(32000) 
+    - name: last_update
+      type: TIMESTAMP
+  - name: prices
+    columns:
+    - name: id
+      type: INT(11)
+      options: primary key auto_increment
+    - name: chargename
+      type: VARCHAR(30)
+      options: NOT NULL
+    - name: unit
+      type: VARCHAR(20)
+    - name: unitprice
+      type: float
+    - name: last_update
+      type: TIMESTAMP
+  - name: permissions
+    columns:
+    - name: idvalue
+      type: VARCHAR(60)
+      options: primary key
+    - name: roles_permitted
+      type: VARCHAR(1024)
+    - name: last_update
+      type: TIMESTAMP
+  - name: apporders
+    columns:
+    - name: ugname
+      type: VARCHAR(20)
+    - name: appname
+      type: VARCHAR(30)
+    - name: id
+      type: INT(11)
+      options: primary key auto_increment
+    - name: last_update
+      type: TIMESTAMP
+  - name: projects
+    columns:
+    - name: id
+      type: VARCHAR(100)
+      options: primary key
+    - name: username
+      type: VARCHAR(20)
+    - name: projname
+      type: VARCHAR(64)
+    - name: confidential
+      type: VARCHAR(16)
+    - name: description
+      type: VARCHAR(1024)
+    - name: last_update
+      type: TIMESTAMP
+  - name: instances
+    columns:
+    - name: id
+      type: VARCHAR(20)
+      options: primary key
+    - name: username
+      type: VARCHAR(20)
+    - name: projname
+      type: VARCHAR(64)
+    - name: ins_name
+      type: VARCHAR(64)
+    - name: appname
+      type: VARCHAR(30)
+    - name: ins_path
+      type: VARCHAR(1024)
+    - name: last_update
+      type: TIMESTAMP
+  - name: orders
+    columns:
+    - name: orderid
+      type: INT(11)
+      options: primary key auto_increment
+    - name: creator
+      type: VARCHAR(20)
+    - name: create_time
+      type: DATETIME
+    - name: assigned
+      type: VARCHAR(20)
+    - name: finishby
+      type: DATE
+    - name: task
+      type: VARCHAR(1024)
+      options: NOT NULL
+    - name: taskupdate
+      type: VARCHAR(4096)
+    - name: last_update
+      type: TIMESTAMP
+  - name: chargeorders
+    columns:
+    - name: orderid
+      type: INT(11)
+      options: primary key auto_increment
+    - name: username
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: pay
+      type: DECIMAL(14,2)
+    - name: req_time
+      type: DATETIME
+    - name: approvedby
+      type: VARCHAR(20)
+    - name: approvedat
+      type: DATETIME
+- dbname: aiphist
+  tables:
+  - name: accounting
+    columns:
+    - name: ugname
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: id
+      type: BIGINT(21)
+      options: primary key auto_increment
+    - name: description
+      type: VARCHAR(128)
+    - name: transaction
+      type: float
+    - name: time
+      type: TIMESTAMP
+  - name: operation
+    columns:
+    - name: username
+      type: VARCHAR(20)
+      options: NOT NULL
+    - name: id
+      type: BIGINT(21)
+      options: primary key auto_increment
+    - name: category
+      type: VARCHAR(20)
+    - name: notes
+      type: VARCHAR(128)
+    - name: time
+      type: TIMESTAMP
+default_roles:
+  - name: 保密员
+  - name: 审计员
+  - name: 管理员
+  - name: 用户
+  - name: 组管理员
+default_classifications:
+  - 绝密
+  - 机密
+  - 秘密
+  - 公开

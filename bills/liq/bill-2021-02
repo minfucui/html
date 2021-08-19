@@ -1,0 +1,88 @@
+{
+ "User": "liq",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-02",
+ "CPU_Hours": 1.0444444444444445,
+ "Mem_GB_Hours": 0.015819437238905165,
+ "GPU_Hours": 0.03111111111111111,
+ "App_Cost": 0,
+ "CPU_Cost": 0.2088888888888889,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.006222222222222223,
+ "Total_Cost": 0.4177777777777778,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 1.0133333333333334,
+   "Cost": 0
+  },
+  "FluentMeshing": {
+   "Hours": 0.03111111111111111,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 1.0133333333333334,
+   "Mem_GB_Hours": 0.0015830675760904948,
+   "GPU_Hours": 0,
+   "Runtime": 0.015833333333333335,
+   "App_Hours": 1.0133333333333334,
+   "JobId": "32345",
+   "Queue": "q_x86_cn_sim",
+   "User": "liq",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.2026666666666667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/02/20",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.01888888888888889,
+   "Mem_GB_Hours": 0.008692114088270399,
+   "GPU_Hours": 0.01888888888888889,
+   "Runtime": 0.01888888888888889,
+   "App_Hours": 0.01888888888888889,
+   "JobId": "32348",
+   "Queue": "local",
+   "User": "liq",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.003777777777777778,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.003777777777777778,
+   "App_Cost": 0,
+   "StartDate": "2021/02/20",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.012222222222222223,
+   "Mem_GB_Hours": 0.005544255574544271,
+   "GPU_Hours": 0.012222222222222223,
+   "Runtime": 0.012222222222222223,
+   "App_Hours": 0.012222222222222223,
+   "JobId": "32217",
+   "Queue": "local",
+   "User": "liq",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.002444444444444445,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.002444444444444445,
+   "App_Cost": 0,
+   "StartDate": "2021/02/19",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "User": "simforge9",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-03",
+ "CPU_Hours": 40.4554244061439,
+ "Mem_GB_Hours": 11.98359914445293,
+ "GPU_Hours": 40.4554244061439,
+ "App_Cost": 202.27712203071948,
+ "CPU_Cost": 20.22771220307195,
+ "Mem_Cost": 0,
+ "GPU_Cost": 20.22771220307195,
+ "Total_Cost": 242.73254643686346,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 40.4554244061439,
+   "Cost": 202.27712203071948
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 40.4554244061439,
+   "Mem_GB_Hours": 11.98359914445293,
+   "GPU_Hours": 40.4554244061439,
+   "Runtime": 40.4554244061439,
+   "App_Hours": 40.4554244061439,
+   "JobId": "21380",
+   "Queue": "local",
+   "User": "simforge9",
+   "App": "Abaqus",
+   "JobDescription": "Abaqus",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 20.22771220307195,
+   "Mem_Cost": 0,
+   "GPU_Cost": 20.22771220307195,
+   "App_Cost": 202.27712203071948,
+   "StartDate": "2020/12/17",
+   "Project": "default"
+  }
+ ]
+}

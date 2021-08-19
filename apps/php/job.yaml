@@ -1,0 +1,103 @@
+  page_title: 作业
+  rows:
+  - width: 6    # 1-12
+    buttons:
+    - label: KILL
+      attr: danger
+      action: "actionJob('kill')"
+    - label: SUSPEND
+      attr: warning
+      action: "actionJob('stop')"
+    - label: RESUME
+      attr: success
+      action: "actionJob('resume')"
+    description:
+      id: job
+      rows:
+        jobid:
+          title: JOB_ID
+        status:
+          title: JOB_STATUS
+        project:
+          title: PROJECT
+        ins_name:
+          title: INSTANCE_NAME
+        appname:
+          title: APP_NAME
+        username:
+          title: USERNAME 
+        queue:
+          title: QUEUE
+        cwd:
+          title: CURRENT_WORKING_DIR
+        ncpus:
+          title: CPUS
+        command:
+          title: JOB_COMMAND
+        submit_time:
+          title: SUBMIT_TIME
+        start_time:
+          title: START_TIME
+        finish_time:
+          title: FINISH_TIME
+        runtime:
+          title: RUN_TIME
+        memusage:
+          title: MEM_USAGE
+        output:
+          title: OUTPUT_FILE
+        pending_reason:
+          title: PENDING_REASONS
+        susp_reason:
+          title: SUSPENSION_REASONS
+      update:
+        interval: 5
+        url: php/job.php
+        post: '{"action":"update"}'
+  - width: 6
+    file:
+      height: 660
+  - width: 12
+    height: 200px
+    joboutput:
+       interval: 5
+  modals:
+  - modal: del-modal
+    title: KILL
+    buttons:
+    - label: KILL
+      attr: danger
+      url: php/jobs.php
+      post: '{"action":"kill"}'
+      confirm:
+      - jobid
+      - ins_name
+      - appname
+    - label: CANCEL
+      attr: success
+  - modal: b1-modal
+    title: SUSPEND
+    buttons:
+    - label: SUSPEND
+      attr: warning
+      url: php/jobs.php
+      post: '{"action": "stop"}'
+      confirm:
+        - jobid
+        - ins_name
+        - appname
+    - label: CANCEL
+      attr: success
+  - modal: b2-modal
+    title: RESUME
+    buttons:
+    - label: RESUME
+      attr: success
+      url: php/jobs.php
+      post: '{"action":"resume"}'
+      confirm:
+        - jobid
+        - ins_name
+        - appname
+    - label: CANCEL
+      attr: secondary 

@@ -1,0 +1,36 @@
+#!/bin/bash
+sid=`vncserver 2>&1 | grep $USER | grep desktop | cut -d':' -f3`
+process=`vncserver -list | grep \:$sid | awk '{print $2}'`
+if [ _$process == '_' ]; then
+    echo Cannot start VNC session
+    exit 1
+fi
+
+function sighd() {
+   vncserver -kill :$sid > /dev/null
+   exit 1
+}
+
+trap sighd SIGINT SIGTERM
+
+export DISPLAY=:$sid
+if [ _$CUBEGUIAPPSCRIPT != '_' ]; then
+    echo DISPLAY=$DISPLAY
+    $CUBEGUIAPPSCRIPT &
+fi
+
+cpost -d "$HOSTNAME $sid" $CB_JOBID > /dev/null
+while true; do
+  sleep 2
+  if [ _$CUBEGUIAPPSCRIPT != '_' ]; then
+    jobs | grep Running 2>&1 > /dev/null
+    if [ $? != 0 ]; then
+       vncserver -kill :$sid > /dev/null
+       exit 0
+    fi
+  fi
+  process=`vncserver -list | grep \:$sid | awk '{print $2}'`
+  if [ _$process == '_' ]; then
+    break
+  fi
+done

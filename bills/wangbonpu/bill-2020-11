@@ -1,0 +1,44 @@
+{
+ "User": "wangbonpu",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 0.06445582552277779,
+ "Mem_GB_Hours": 0.00472547361334512,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.012891165104555556,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.012891165104555556,
+ "App_Hours": {
+  "AnsysAPDL": {
+   "Hours": 0.06445582552277779,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.06445582552277779,
+   "Mem_GB_Hours": 0.00472547361334512,
+   "GPU_Hours": 0,
+   "Runtime": 0.06445582552277779,
+   "App_Hours": 0.06445582552277779,
+   "JobId": "17325",
+   "Queue": "q_x86_expr",
+   "User": "wangbonpu",
+   "App": "AnsysAPDL",
+   "JobDescription": "1",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.012891165104555556,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/19",
+   "Project": "default"
+  }
+ ]
+}

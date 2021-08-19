@@ -1,0 +1,64 @@
+{
+ "User": "luanqw",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-02",
+ "CPU_Hours": 0.19499999999999998,
+ "Mem_GB_Hours": 0.018907366858588324,
+ "GPU_Hours": 0.028333333333333332,
+ "App_Cost": 0,
+ "CPU_Cost": 0.039,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.014166666666666666,
+ "Total_Cost": 0.0865,
+ "App_Hours": {
+  "AnsysEM": {
+   "Hours": 0.19499999999999998,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.16666666666666666,
+   "Mem_GB_Hours": 0.00008577770657009548,
+   "GPU_Hours": 0,
+   "Runtime": 0.006944444444444444,
+   "App_Hours": 0.16666666666666666,
+   "JobId": "29980",
+   "Queue": "q_x86_expr",
+   "User": "luanqw",
+   "App": "AnsysEM",
+   "JobDescription": "Batch-AnsysEM",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/AnsysEMyaml Maxwell2D /home/export/base/nsccwuxi_amd/luanqw/WORK/gem.aedt 60",
+   "Cluster": "aip",
+   "CPU_Cost": 0.03333333333333333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/02/03",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.028333333333333332,
+   "Mem_GB_Hours": 0.018821589152018228,
+   "GPU_Hours": 0.028333333333333332,
+   "Runtime": 0.028333333333333332,
+   "App_Hours": 0.028333333333333332,
+   "JobId": "29981",
+   "Queue": "local",
+   "User": "luanqw",
+   "App": "AnsysEM",
+   "JobDescription": "gem",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.005666666666666667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.014166666666666666,
+   "App_Cost": 0,
+   "StartDate": "2021/02/03",
+   "Project": "default"
+  }
+ ]
+}

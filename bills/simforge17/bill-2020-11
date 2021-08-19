@@ -1,0 +1,84 @@
+{
+ "User": "simforge17",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 975.8348556001864,
+ "Mem_GB_Hours": 0.20667507067302376,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 487.9174278000932,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 730.189549464702,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 975.8348556001864,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 473.45004615792874,
+   "Mem_GB_Hours": 0.10345116600692043,
+   "GPU_Hours": 0,
+   "Runtime": 14.795313942435273,
+   "App_Hours": 473.45004615792874,
+   "JobId": "18213",
+   "Queue": "q_x86_vio_share",
+   "User": "simforge17",
+   "App": "Abaqus",
+   "JobDescription": "ZZWS-NOIMB",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/abaqus614 /home/export/base/nsccwuxi_amd/simforge17/WORK/INP/KX-CRH2-T-ZZWS-NOIMB.inp",
+   "Cluster": "aip",
+   "CPU_Cost": 236.72502307896437,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/25",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 439.466393984711,
+   "Mem_GB_Hours": 0.09610051464817879,
+   "GPU_Hours": 0,
+   "Runtime": 13.733324812022218,
+   "App_Hours": 439.466393984711,
+   "JobId": "18228",
+   "Queue": "q_x86_cn_sim",
+   "User": "simforge17",
+   "App": "Abaqus",
+   "JobDescription": "WS-NOPXMH",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/abaqus614 /home/export/base/nsccwuxi_amd/simforge17/WORK/INP/KX-CRH2-T-ZZWSIMB50-NOPXMH.inp",
+   "Cluster": "aip",
+   "CPU_Cost": 219.7331969923555,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/25",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 62.91841545754666,
+   "Mem_GB_Hours": 0.007123390017924544,
+   "GPU_Hours": 0,
+   "Runtime": 0.9831002415241665,
+   "App_Hours": 62.91841545754666,
+   "JobId": "18214",
+   "Queue": "q_x86_cn_sim",
+   "User": "simforge17",
+   "App": "Abaqus",
+   "JobDescription": "ZZWS-IMB50-PXMH03mm",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/abaqus614 /home/export/base/nsccwuxi_amd/simforge17/WORK/INP/KX-CRH2-T-ZZWSIMB50-PXMH03mm.inp",
+   "Cluster": "aip",
+   "CPU_Cost": 31.45920772877333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/11/25",
+   "Project": "default"
+  }
+ ]
+}

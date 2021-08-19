@@ -1,0 +1,88 @@
+{
+ "User": "xiaopengyu",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 4.181553719523333,
+ "Mem_GB_Hours": 4.0487874634049925,
+ "GPU_Hours": 4.181553719523333,
+ "App_Cost": 0,
+ "CPU_Cost": 0.8363107439046668,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.8363107439046668,
+ "Total_Cost": 1.762625460787667,
+ "App_Hours": {
+  "FluentMeshing": {
+   "Hours": 0.0925,
+   "Cost": 0
+  },
+  "Hypermesh": {
+   "Hours": 4.089053719523333,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 4.0018314973011115,
+   "Mem_GB_Hours": 3.9171645502563246,
+   "GPU_Hours": 4.0018314973011115,
+   "Runtime": 4.0018314973011115,
+   "App_Hours": 4.0018314973011115,
+   "JobId": "14320",
+   "Queue": "local",
+   "User": "xiaopengyu",
+   "App": "Hypermesh",
+   "JobDescription": "Hypermesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.8003662994602223,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.8003662994602223,
+   "App_Cost": 0,
+   "StartDate": "2020/10/23",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.08722222222222223,
+   "Mem_GB_Hours": 0.09661042955186633,
+   "GPU_Hours": 0.08722222222222223,
+   "Runtime": 0.08722222222222223,
+   "App_Hours": 0.08722222222222223,
+   "JobId": "14301",
+   "Queue": "local",
+   "User": "xiaopengyu",
+   "App": "Hypermesh",
+   "JobDescription": "Hypermesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.017444444444444446,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.017444444444444446,
+   "App_Cost": 0,
+   "StartDate": "2020/10/23",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.0925,
+   "Mem_GB_Hours": 0.03501248359680176,
+   "GPU_Hours": 0.0925,
+   "Runtime": 0.0925,
+   "App_Hours": 0.0925,
+   "JobId": "14316",
+   "Queue": "local",
+   "User": "xiaopengyu",
+   "App": "FluentMeshing",
+   "JobDescription": "FluentMeshing",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0185,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0185,
+   "App_Cost": 0,
+   "StartDate": "2020/10/23",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+  page_title: APPLICATIONS
+  rows:
+  - width: 12    # 1-12
+    table:
+      id: users
+      thead:
+      - APP_NAME
+      - TOTAL_NUM_SLOTS
+      - NUM_PENDING_JOBS
+      - NUM_RUNNING_JOBS
+      - NUM_SUSP_JOBS
+      tbody:
+      - name
+      - njobs
+      - npend
+      - nrun
+      - nstop
+      update:
+        interval: 30
+        url: php/appusage.php
+        post: '{"action":"update"}'
+      lengthMenu: '[20, 50]'
+      idkey: none
+      noselect: yes

@@ -1,0 +1,34 @@
+  page_title: GPU_STATUS
+  rows:
+  - width: 12    # 1-12
+    table:
+      id: gpus
+      thead:
+      - HOST
+      - STATUS
+      - GPU ID
+      - MODEL
+      - TOTAL_MEMORY
+      - FREE_MEMORY
+      - TEMPERATURE
+      - GUT
+      - GMUT
+      - GPUUT
+      tbody:
+      - name
+      - status
+      - id
+      - model
+      - tmem
+      - fmem
+      - temp
+      - gut
+      - gmut
+      - gpuut
+      update:
+        interval: 30
+        url: php/gpus.php
+        post: '{"action":"update"}'
+      lengthMenu: '[30, 100, 500]'
+      idkey: none
+      noselect: yes

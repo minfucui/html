@@ -1,0 +1,53 @@
+  page_title: APP_ORDER
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: USE
+      attr: success
+      modal: b1-modal
+    - label: UNUSE
+      attr: warning
+      modal: b2-modal
+    table:
+      id: apporders
+      thead:
+      - APP_NAME
+      - CATEGORY
+      - USE
+      - DESCRIPTION
+      tbody:
+      - appname
+      - catname
+      - use
+      - description
+      update:
+        url: php/appuse.php
+        post: '{"action":"update"}'
+      order: '[[1, "asc"]]'
+      lengthMenu: '[100,200]'
+      idkey: none
+  modals:
+  - modal: b1-modal
+    title: USE
+    buttons:
+    - label: USE
+      attr: success
+      url: php/appuse.php
+      post: '{"action": "add_orders"}'
+      confirm:
+      - appname
+      - catname
+    - label: CANCEL
+      attr: secondary
+  - modal: b2-modal
+    title: UNUSE
+    buttons:
+    - label: UNUSE
+      attr: warning
+      url: php/appuse.php
+      post: '{"action": "del_apps"}'
+      confirm:
+      - appname
+      - catname
+    - label: CANCEL
+      attr: secondary 

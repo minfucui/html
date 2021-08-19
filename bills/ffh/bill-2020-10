@@ -1,0 +1,88 @@
+{
+ "User": "ffh",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.2289169513188889,
+ "Mem_GB_Hours": 0.08539882999191967,
+ "GPU_Hours": 0.061953798587777775,
+ "App_Cost": 1.1445847565944447,
+ "CPU_Cost": 0.11445847565944445,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.030976899293888888,
+ "Total_Cost": 2.517961606833889,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 0.16696315273111112,
+   "Cost": 0.8348157636555557
+  },
+  "Hypermesh": {
+   "Hours": 0.061953798587777775,
+   "Cost": 0.3097689929388889
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.08889824303222223,
+   "Mem_GB_Hours": 0.008506583626319003,
+   "GPU_Hours": 0,
+   "Runtime": 0.08889824303222223,
+   "App_Hours": 0.08889824303222223,
+   "JobId": "14785",
+   "Queue": "q_x86_expr",
+   "User": "ffh",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.04444912151611111,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.4444912151611112,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.061953798587777775,
+   "Mem_GB_Hours": 0.06976734100008725,
+   "GPU_Hours": 0.061953798587777775,
+   "Runtime": 0.061953798587777775,
+   "App_Hours": 0.061953798587777775,
+   "JobId": "14787",
+   "Queue": "local",
+   "User": "ffh",
+   "App": "Hypermesh",
+   "JobDescription": "Hypermesh",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.030976899293888888,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.030976899293888888,
+   "App_Cost": 0.3097689929388889,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.07806490969888889,
+   "Mem_GB_Hours": 0.007124905365513425,
+   "GPU_Hours": 0,
+   "Runtime": 0.07806490969888889,
+   "App_Hours": 0.07806490969888889,
+   "JobId": "14786",
+   "Queue": "q_x86_expr",
+   "User": "ffh",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.039032454849444446,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.3903245484944445,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  }
+ ]
+}

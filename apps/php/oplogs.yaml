@@ -1,0 +1,18 @@
+  page_title: OP_LOGS 
+  rows:
+  - width: 12    # 1-12
+    table:
+      id: op_logs
+      thead:
+      - TIME
+      - USER
+      - CATEGORY
+      - ACTIVITY
+      tbody:
+      - time
+      - username
+      - category
+      - notes
+      noselect: yes
+      lengthMenu: '[30, 100, 300]'
+      idkey: none

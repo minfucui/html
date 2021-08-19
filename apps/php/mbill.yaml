@@ -1,0 +1,35 @@
+  page_title: BILLS
+  rows:
+  - width: 12    # 1-12
+    description:
+      id: mbill
+      title: USER
+      rows:
+  - width: 12
+    table:
+      id: bills
+      thead:
+      - STARTDATE
+      - USER
+      - APP_NAME
+      - JOB_ID
+      - CPU(核小时)
+      - GPU(个小时)
+      - 内存(GB小时)
+      - QUEUE
+      - 应用价格
+      - 小计
+      tbody:
+      - EndDate
+      - User
+      - App
+      - JobId
+      - CPU_Hours
+      - GPU_Hours
+      - Mem_GB_Hours
+      - Queue
+      - App_Cost
+      - Total_Cost
+      idkey: none
+      order: '[[1, "desc"],[4,"desc"]]'
+      noselect: yes

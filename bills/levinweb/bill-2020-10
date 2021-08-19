@@ -1,0 +1,68 @@
+{
+ "User": "levinweb",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 1.9817427510233332,
+ "Mem_GB_Hours": 0.007027706648575986,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.3963485502046667,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.4963509835006667,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 1.9817427510233332,
+   "Cost": 0
+  },
+  "Fluent": {
+   "Hours": 0,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 1.9817427510233332,
+   "Mem_GB_Hours": 0.007027706648575986,
+   "GPU_Hours": 0,
+   "Runtime": 0.9908713755116666,
+   "App_Hours": 1.9817427510233332,
+   "JobId": "14330",
+   "Queue": "q_x86_expr",
+   "User": "levinweb",
+   "App": "Abaqus",
+   "JobDescription": "Batch-Abaqus",
+   "JobName": "/home/export/online3/amd_share/shangruan/bin/abaqus614 /home/export/base/nsccwuxi_masoncom/levinweb/WORK/test/VanOord-Loaded.inp",
+   "Cluster": "aip",
+   "CPU_Cost": 0.3963485502046667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/10/23",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0,
+   "Mem_GB_Hours": 0,
+   "GPU_Hours": 0,
+   "Runtime": 0,
+   "App_Hours": 0,
+   "JobId": "14334",
+   "Queue": "q_x86_expr",
+   "User": "levinweb",
+   "App": "Fluent",
+   "JobDescription": "Batch-Fluent",
+   "JobName": "/home/export/base/nsccwuxi_amd/amd_app/amd_share/shangruan/bin/fluentyaml /home/export/base/nsccwuxi_masoncom/levinweb/WORK/test/pipe.jou 2d",
+   "Cluster": "aip",
+   "CPU_Cost": 0,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/10/23",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "User": "xeigy",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-01",
+ "CPU_Hours": 0.12583983499444445,
+ "Mem_GB_Hours": 0.06479560571895178,
+ "GPU_Hours": 0.12583983499444445,
+ "App_Cost": 0,
+ "CPU_Cost": 0.025167966998888888,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.025167966998888888,
+ "Total_Cost": 0.050335933997777776,
+ "App_Hours": {
+  "Abaqus": {
+   "Hours": 0.10250650166111111,
+   "Cost": 0
+  },
+  "Abaqus614": {
+   "Hours": 0.023333333333333334,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.023333333333333334,
+   "Mem_GB_Hours": 0.012203216552734375,
+   "GPU_Hours": 0.023333333333333334,
+   "Runtime": 0.023333333333333334,
+   "App_Hours": 0.023333333333333334,
+   "JobId": "26025",
+   "Queue": "local",
+   "User": "xeigy",
+   "App": "Abaqus614",
+   "JobDescription": "test",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.004666666666666667,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.004666666666666667,
+   "App_Cost": 0,
+   "StartDate": "2021/01/08",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.10250650166111111,
+   "Mem_GB_Hours": 0.052592389166217404,
+   "GPU_Hours": 0.10250650166111111,
+   "Runtime": 0.10250650166111111,
+   "App_Hours": 0.10250650166111111,
+   "JobId": "25863",
+   "Queue": "local",
+   "User": "xeigy",
+   "App": "Abaqus",
+   "JobDescription": "test0107",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.020501300332222222,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.020501300332222222,
+   "App_Cost": 0,
+   "StartDate": "2021/01/07",
+   "Project": "default"
+  }
+ ]
+}

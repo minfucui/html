@@ -1,0 +1,44 @@
+{
+ "User": "amd_xqy",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-04",
+ "CPU_Hours": 447.8761934665344,
+ "Mem_GB_Hours": 1545.9769278217263,
+ "GPU_Hours": 447.8761934665344,
+ "App_Cost": 223.9380967332672,
+ "CPU_Cost": 223.9380967332672,
+ "Mem_Cost": 0,
+ "GPU_Cost": 223.9380967332672,
+ "Total_Cost": 671.8142901998,
+ "App_Hours": {
+  "ParaView": {
+   "Hours": 447.8761934665344,
+   "Cost": 223.9380967332672
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 447.8761934665344,
+   "Mem_GB_Hours": 1545.9769278217263,
+   "GPU_Hours": 447.8761934665344,
+   "Runtime": 447.8761934665344,
+   "App_Hours": 447.8761934665344,
+   "JobId": "39729",
+   "Queue": "local",
+   "User": "amd_xqy",
+   "App": "ParaView",
+   "JobDescription": "ParaView",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 223.9380967332672,
+   "Mem_Cost": 0,
+   "GPU_Cost": 223.9380967332672,
+   "App_Cost": 223.9380967332672,
+   "StartDate": "2021/04/09",
+   "Project": "default"
+  }
+ ]
+}

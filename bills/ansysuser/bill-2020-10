@@ -1,0 +1,44 @@
+{
+ "User": "ansysuser",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-10",
+ "CPU_Hours": 0.03888888888888889,
+ "Mem_GB_Hours": 0.002854686313205295,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 0.007777777777777778,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.007777777777777778,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 0.03888888888888889,
+   "Cost": 0
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.03888888888888889,
+   "Mem_GB_Hours": 0.002854686313205295,
+   "GPU_Hours": 0,
+   "Runtime": 0.03888888888888889,
+   "App_Hours": 0.03888888888888889,
+   "JobId": "14788",
+   "Queue": "q_x86_expr",
+   "User": "ansysuser",
+   "App": "Fluent",
+   "JobDescription": "TEST1",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.007777777777777778,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2020/10/27",
+   "Project": "default"
+  }
+ ]
+}

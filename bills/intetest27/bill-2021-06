@@ -1,0 +1,73 @@
+{
+ "User": "intetest27",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-06",
+ "CPU_Hours": 10.507858225944448,
+ "Mem_GB_Hours": 6.154914581338854,
+ "GPU_Hours": 0,
+ "App_Cost": 0,
+ "CPU_Cost": 3.1523574677833333,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 3.1523574677833333,
+ "App_Hours": {},
+ "Details": [
+  {
+   "CPU_Hours": 0.3902843639725,
+   "Mem_GB_Hours": 0.5158728857157628,
+   "GPU_Hours": 0,
+   "Runtime": 0.3902843639725,
+   "App_Hours": 0.3902843639725,
+   "JobId": "48109",
+   "Queue": "intesim",
+   "User": "intetest27",
+   "JobName": "/home/export/online3/intesim_share/script/AnsysEM/AnsysEM04 /home/export/online3/intetest27/intetest27/tf_jing/liubo/Maxwell20210531151925/tf.aedt",
+   "Cluster": "aip",
+   "CPU_Cost": 0.11708530919175,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/06/15",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.07972222222222222,
+   "Mem_GB_Hours": 0.013073040644327799,
+   "GPU_Hours": 0,
+   "Runtime": 0.07972222222222222,
+   "App_Hours": 0.07972222222222222,
+   "JobId": "46891",
+   "Queue": "intesim",
+   "User": "intetest27",
+   "JobName": "/home/export/online3/intesim_share/script/fluent/fluent01 3ddp",
+   "Cluster": "aip",
+   "CPU_Cost": 0.023916666666666666,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/06/04",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 10.037851639749725,
+   "Mem_GB_Hours": 5.625968654978763,
+   "GPU_Hours": 0,
+   "Runtime": 10.037851639749725,
+   "App_Hours": 10.037851639749725,
+   "JobId": "46324",
+   "Queue": "intesim",
+   "User": "intetest27",
+   "JobName": "/home/export/online3/intesim_share/script/AnsysEM/AnsysEM04 /home/export/base/nsccwuxi_intesim/intetest27/online3/intetest27/tf_jing/liubo/Maxwell20210531151925/tf.aedt",
+   "Cluster": "aip",
+   "CPU_Cost": 3.0113554919249164,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0,
+   "StartDate": "2021/05/31",
+   "Project": "default"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+  page_title: APP_ORDER
+  rows:
+  - width: 12    # 1-12
+    table:
+      id: userapp
+      thead:
+      - USERNAME
+      - NUM_APPS_ORDERED
+      tbody:
+      - username
+      - app_permitted
+      update:
+        url: php/apporder.php
+        post: '{"action":"update"}'
+      idkey: username
+      order: '[[1, "asc"]]'
+      noselect: yes

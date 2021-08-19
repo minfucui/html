@@ -1,0 +1,64 @@
+{
+ "User": "simforge8",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2021-06",
+ "CPU_Hours": 0.011944444444444445,
+ "Mem_GB_Hours": 0.0007981618245442709,
+ "GPU_Hours": 0,
+ "App_Cost": 0.059722222222222225,
+ "CPU_Cost": 0.0059722222222222225,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0,
+ "Total_Cost": 0.11611111111111111,
+ "App_Hours": {
+  "Fluent": {
+   "Hours": 0.011944444444444445,
+   "Cost": 0.059722222222222225
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.009166666666666667,
+   "Mem_GB_Hours": 0.0006993611653645834,
+   "GPU_Hours": 0,
+   "Runtime": 0.009166666666666667,
+   "App_Hours": 0.009166666666666667,
+   "JobId": "47711",
+   "Queue": "q_x86_expr",
+   "User": "simforge8",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.004583333333333333,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.04583333333333334,
+   "StartDate": "2021/06/11",
+   "Project": "default"
+  },
+  {
+   "CPU_Hours": 0.002777777777777778,
+   "Mem_GB_Hours": 0.00009880065917968751,
+   "GPU_Hours": 0,
+   "Runtime": 0.002777777777777778,
+   "App_Hours": 0.002777777777777778,
+   "JobId": "47710",
+   "Queue": "q_x86_cn_sim",
+   "User": "simforge8",
+   "App": "Fluent",
+   "JobDescription": "Fluent",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.001388888888888889,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0,
+   "App_Cost": 0.01388888888888889,
+   "StartDate": "2021/06/11",
+   "Project": "default"
+  }
+ ]
+}

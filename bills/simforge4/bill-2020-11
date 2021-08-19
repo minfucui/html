@@ -1,0 +1,44 @@
+{
+ "User": "simforge4",
+ "Queues": "all",
+ "Clusters": [
+  "aip"
+ ],
+ "Month": "2020-11",
+ "CPU_Hours": 0.008888888888888889,
+ "Mem_GB_Hours": 0.0032044813368055556,
+ "GPU_Hours": 0.008888888888888889,
+ "App_Cost": 0.044444444444444446,
+ "CPU_Cost": 0.0044444444444444444,
+ "Mem_Cost": 0,
+ "GPU_Cost": 0.0044444444444444444,
+ "Total_Cost": 0.05333333333333334,
+ "App_Hours": {
+  "PointWise": {
+   "Hours": 0.008888888888888889,
+   "Cost": 0.044444444444444446
+  }
+ },
+ "Details": [
+  {
+   "CPU_Hours": 0.008888888888888889,
+   "Mem_GB_Hours": 0.0032044813368055556,
+   "GPU_Hours": 0.008888888888888889,
+   "Runtime": 0.008888888888888889,
+   "App_Hours": 0.008888888888888889,
+   "JobId": "16012",
+   "Queue": "local",
+   "User": "simforge4",
+   "App": "PointWise",
+   "JobDescription": "PointWise",
+   "JobName": "cubevnc",
+   "Cluster": "aip",
+   "CPU_Cost": 0.0044444444444444444,
+   "Mem_Cost": 0,
+   "GPU_Cost": 0.0044444444444444444,
+   "App_Cost": 0.044444444444444446,
+   "StartDate": "2020/11/06",
+   "Project": "default"
+  }
+ ]
+}
