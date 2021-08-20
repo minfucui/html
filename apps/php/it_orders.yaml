@@ -70,7 +70,7 @@
     - label: DELETE
       attr: danger
       url: php/it_orders.php
-      post: '{"action": "delete_orders"}'
+      post: '{"action": "delete_order"}'
       confirm: 
         - username
         - organization

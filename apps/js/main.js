@@ -1793,6 +1793,39 @@ function userInfo(username)
     });
 }
 
+function creatorInfo(username)
+{
+    $.ajax({
+        type: "post",
+        url: 'php/supportorders.php',
+        data: JSON.stringify({action: 'creatorInfo', creator: username}),
+        contentType: "application/json",
+        dataType: "json",
+        success: function(d) {
+            if (d.code == 0 && d.data) {
+                user = d.data;
+                $('#gen-modal-title').html(dict.USERNAME + ': ' + user.description.id);
+                $('#gen-modal-confirm').html(dict.OK);
+                clearButtonClass('gen-modal-confirm', 'btn-');
+                $('#gen-modal-confirm').addClass('btn-success');
+                $('#gen-modal-cancel').hide();
+                $('#gen-modal-body').html(descriptionHTML(user.description));
+                $('#gen-modal').modal('show');
+                $('#gen-modal-confirm').off('click');
+                $('#gen-modal-confirm').click(function() {
+                    $('#gen-modal').modal('hide');
+                    $('#gen-modal-cancel').show();
+                });
+            } else {
+                failureHandler(d.message);
+            }
+        },
+        error: function(msg) {
+            alert("Back end error!");
+        }
+    });
+}
+
 function openvnc(j, p)
 {
     var url = "/php/vnc.php?jobid=" + j + "&pw=" + p;

@@ -231,6 +231,18 @@ databases:
       type: VARCHAR(20)
     - name: approvedat
       type: DATETIME
+  - name: supportorders
+    columns:
+    - name: orderid
+      type: INT(11)
+      options: primary key auto_increment
+    - name: creator
+      type: VARCHAR(20)
+    - name: create_time
+      type: DATETIME
+    - name: task
+      type: VARCHAR(1024)
+      options: NOT NULL
 - dbname: aiphist
   tables:
   - name: accounting

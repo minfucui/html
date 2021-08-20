@@ -100,6 +100,7 @@ include 'header.php';
     </form>
 
     <div id="budget"></div>
+    <div id="support"></div>
 
     <script type="text/javascript">
 
@@ -165,6 +166,13 @@ include 'header.php';
                'id="charge_req" value="充值申请"></form>';
         $('#budget').html(form);
         $('#balance').val(d.balance);
+
+        form1 = '<h3>平台技术支持</h3><form class="bootstrap-frm" id="support-form">' +
+               '<label><span>请求支持内容:</span><textarea style="height:60px;" type="text" maxlength="200" id="reqtext"></textarea></label>' +
+               '<label><span></span><input type="hidden" id="hidden"></label>' +
+               '<input type="button" onclick="supportReq()", class="restart buttoncreate" ' +
+               'id="support_req" value="提交请求"></form>';
+        $('#support').html(form1);
     }
 
     function popError(m) {
@@ -208,7 +216,7 @@ include 'header.php';
         });
     }
 
-    function chargeReq() {  // 修改金额
+    function chargeReq() {  // 充值申请
         var d = {username: $('#username').val(),
                  pay: parseFloat($('#pay').val())};
         if (isNaN(d.pay) || d.pay < 100) {
@@ -232,6 +240,33 @@ include 'header.php';
             }
         });
     }
+
+    function supportReq() {  // 技术支持申请
+        var d = {creator: $('#username').val(),
+                 task: $('#reqtext').val()};
+        if (!d.task) {
+            popError('请求内容为空！');
+            return;
+        }
+        $.ajax({
+            type: 'post',
+            url: 'php/itSupport.php',
+            async: false,
+            data: JSON.stringify({action:'support', data: d}),
+            dataType: "json",
+            success: function(r) {
+                if (r.code == 0) {
+                    Win10_child.childLayer('请求成功，请等候线下联系');
+                    $('#reqtext').val('');
+                } else
+                    Win10_child.childLayer(r.message);
+            },
+            error: function(e){
+                Win10_child.childLayer('backend error');
+            }
+        });
+    }
+
     function chPasswd() {  // 修改密码
         var d = {username: $('#username').val(),
                  pw: encodeURI($('#oldpasswd').val()),

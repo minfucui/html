@@ -63,10 +63,12 @@ side_menu:
   - title: 工单
     icon: tasks
     submenu:
-      - title: 平台技术支持
+      - title: 注册申请
         url: it_orders.php
       - title: 充值请求
         url: chargeorders.php
+      - title: 平台技术支持
+        url: supportorders.php
     access:
     - 保密员
     - 管理员

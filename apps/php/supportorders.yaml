@@ -1,0 +1,39 @@
+  page_title: IT_SUPPORT_ORDERS
+  rows:
+  - width: 12    # 1-12
+    buttons:
+    - label: FINISH_SUPPORT
+      attr: primary
+      action: finish
+      modal: b1-modal
+    table:
+      id: supportorders
+      thead:
+      - REQID
+      - USERNAME
+      - REQ_TIME
+      - REQTEXT
+      tbody:
+      - orderid
+      - creator
+      - create_time
+      - task
+      update:
+        url: php/supportorders.php
+        post: '{"action":"update"}'
+      order: '[[3, "asc"]]'
+      idkey: none
+  modals:
+  - modal: b1-modal
+    title: FINISH_SUPPORT
+    buttons:
+    - label: FINISH_SUPPORT
+      attr: primary
+      url: php/supportorders.php
+      post: '{"action":"finish"}'
+      confirm:
+      - orderid
+      - creator
+      - task
+    - label: CANCEL
+      attr: secondary
