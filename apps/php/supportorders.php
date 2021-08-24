@@ -12,8 +12,9 @@ function updateData()
         $rows[$i]['creator'] = '<a href="javascript:creatorInfo(\''.
                       $rows[$i]['creator'].'\');">'.
                       $rows[$i]['creator'].'</a>';
+        $rows[$i]['status'] = $rows[$i]['status']==1 ? "未处理" : "已处理";
     }
-        
+    
     return $rows;
 }
 
@@ -42,11 +43,11 @@ switch($_POST['action']) {
         }
         break;
     case 'finish':
-        $toDelete = $_POST['data'];
-        if (sizeof($toDelete) < 1)
+        $toUpdate = $_POST['data'];
+        if (sizeof($toUpdate) < 1)
             break;
-        foreach($toDelete as $del) {
-            $result = deleteARow($tablename, ['orderid'=>$del]);
+        foreach($toUpdate as $id) {
+            $result = modifyARow($tablename, ['orderid'=>$id], ['status'=>2]);
             if (isset($result['error'])) {
                 $ret['code'] = 500;
                 $ret['message'] = $result['error'];

@@ -13,15 +13,17 @@
       - USERNAME
       - REQ_TIME
       - REQTEXT
+      - STATUS
       tbody:
       - orderid
       - creator
       - create_time
       - task
+      - status
       update:
         url: php/supportorders.php
         post: '{"action":"update"}'
-      order: '[[3, "asc"]]'
+      order: '[[5, "desc"], [3, "asc"]]'
       idkey: none
   modals:
   - modal: b1-modal

@@ -243,6 +243,8 @@ databases:
     - name: task
       type: VARCHAR(1024)
       options: NOT NULL
+    - name: status
+      type: TINYINT(1)
 - dbname: aiphist
   tables:
   - name: accounting
